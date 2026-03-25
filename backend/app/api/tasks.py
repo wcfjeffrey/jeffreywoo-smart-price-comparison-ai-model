@@ -3,6 +3,9 @@ from typing import List
 from app.models.task import Task, TaskCreate, TaskUpdate
 from app.services.task_scheduler import TaskScheduler
 import logging
+from datetime import datetime, timedelta
+import pytz
+from googleapiclient.discovery import build
 
 router = APIRouter()
 scheduler = TaskScheduler()
@@ -130,17 +133,71 @@ async def get_task(task_id: str):
         raise HTTPException(status_code=500, detail=str(e))
 
 
-@router.post("/", response_model=Task, status_code=status.HTTP_201_CREATED)
-async def create_task(task: TaskCreate):
+@router.post("/tasks/")
+async def create_task(task: dict):
     """Create a new scheduled task"""
     try:
-        logger.info(f"Creating task for product: {task.product_name}")
-        new_task = await scheduler.create_task(task)
-        return new_task
-    except Exception as e:
-        logger.error(f"Error creating task: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.info(f"Creating task for product: {task.get('product_name')}")
 
+        # 1. Save task to database first
+        new_task = await scheduler.create_task(task)
+
+        # 2. Create Google Calendar event if requested
+        if task.get("notification_method") in ["calendar", "both"]:
+            try:
+                user_timezone = task.get("timezone", "Asia/Hong_Kong")
+
+                # Parse time (e.g. "18:40")
+                time_str = task["time"]
+                today = datetime.now(pytz.timezone(user_timezone)).date()
+
+                local_tz = pytz.timezone(user_timezone)
+                local_time = datetime.strptime(time_str, "%H:%M").time()
+                local_dt = datetime.combine(today, local_time)
+                aware_local_dt = local_tz.localize(local_dt)
+
+                # Convert to UTC for Google
+                utc_dt = aware_local_dt.astimezone(pytz.UTC)
+
+                event = {
+                    'summary': f'Price Check: {task["product_name"]}',
+                    'description': f'Scheduled price alert for {task["product_name"]}\nFrequency: {task["frequency"]}',
+                    'start': {
+                        'dateTime': utc_dt.isoformat(),
+                        'timeZone': user_timezone,
+                    },
+                    'end': {
+                        'dateTime': (utc_dt + timedelta(minutes=30)).isoformat(),
+                        'timeZone': user_timezone,
+                    },
+                    'reminders': {
+                        'useDefault': False,
+                        'overrides': [
+                            {'method': 'popup', 'minutes': 10},
+                            {'method': 'email', 'minutes': 30},
+                        ],
+                    },
+                }
+
+                # Replace 'your_credentials' with your actual Google credentials object
+                service = build('calendar', 'v3', credentials=your_credentials)
+                created_event = service.events().insert(calendarId='primary', body=event).execute()
+
+                logger.info(f"✅ Google Calendar event created successfully for {task['product_name']}")
+
+            except Exception as calendar_err:
+                logger.warning(f"Failed to create Google Calendar event: {calendar_err}")
+                # Don't fail the whole task creation if calendar fails
+
+        return {
+            "status": "success",
+            "message": "Task created successfully",
+            "task": new_task
+        }
+
+    except Exception as e:
+        logger.error(f"Error creating task: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail=str(e))
 
 @router.put("/{task_id}", response_model=Task)
 async def update_task(task_id: str, task_update: TaskUpdate):
