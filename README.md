@@ -178,22 +178,23 @@ This app leverages procurement, supply chain, and financial principles to automa
 - **Supply Chain Resilience** — Recommends supplier diversification strategies
 
 ## 💡 Procurement Transformation Impact
-This project showcases how AI can reshape procurement and supply chain management by:
-- Digitizing strategic sourcing with predictive modeling and real-time insights
-- Enhancing procurement decisions through scenario simulations and supplier ranking
-- Optimizing purchasing costs with 15-25% average savings across test categories
-- Driving supply chain resilience by identifying alternative suppliers automatically
+This project showcases how AI can reshape procurement and supply chain management by:  
+- Digitizing strategic sourcing with predictive modeling and real-time insights  
+- Enhancing procurement decisions through scenario simulations and supplier ranking  
+- Optimizing purchasing costs with 15-25% average savings across test categories  
+- Driving supply chain resilience by identifying alternative suppliers automatically  
 - Promoting data-driven procurement with secure handling of pricing intelligence
 
 ## ⭐ Technical Skills Demonstrated
-Skill Area	Specific Competencies
-AI/ML Engineering	Multi-agent systems, LLM integration (GPT-4o, DeepSeek), hybrid AI+ML predictions, cross-encoder rerank models, reinforcement learning (Q-learning)
-Big Data	Apache Spark for distributed processing, Parquet data warehousing, PySpark analytics
-MLOps	MLflow model tracking, experiment logging, model versioning
-Full-Stack Development	FastAPI async backend, Next.js 14 frontend, Tailwind CSS, real-time dashboards
-Database Design	PostgreSQL with SQLAlchemy async, Redis caching, schema design
-DevOps	Docker containerization, Kubernetes orchestration, GitHub Actions CI/CD
-API Integration	Google Calendar OAuth 2.0, Gmail SMTP, Windows API, ChatAnywhere LLM API
+|Skill Area	| Specific Competencies|
+|-----------|----------------------|
+|AI/ML	| Engineering	Multi-agent systems, LLM integration (GPT-4o, DeepSeek), hybrid AI+ML predictions, cross-encoder rerank models, reinforcement learning (Q-learning)|
+|Big Data	| Apache Spark for distributed processing, Parquet data warehousing, PySpark analytics|
+|MLOps	| MLflow model tracking, experiment logging, model versioning|
+|Full-Stack Development	| FastAPI async backend, Next.js 14 frontend, Tailwind CSS, real-time dashboards|
+|Database Design	| PostgreSQL with SQLAlchemy async, Redis caching, schema design|
+|DevOps	| Docker containerization, Kubernetes orchestration, GitHub Actions CI/CD|
+|API Integration	| Google Calendar OAuth 2.0, Gmail SMTP, Windows API, ChatAnywhere LLM API|
 
 ## Automated Scheduling with Windows Integration
 Set up a price check once — the system handles everything else.
@@ -247,7 +248,6 @@ Email Reports:
 |Bulk Purchase Optimization	|RL-driven recommendations for optimal order quantities|
 
 ## 🔐 Security & Authentication
-Feature	Description
 - JWT Authentication	(Placeholder for production)
 - OAuth 2.0	Complete Google OAuth flow for calendar access
 - Environment Secrets	All API keys and credentials stored in .env
