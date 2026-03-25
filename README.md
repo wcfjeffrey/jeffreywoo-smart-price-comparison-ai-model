@@ -4,7 +4,6 @@
  
 ## JeffreyWoo Smart Price Comparison System
 
-## 📊 Overview
 ![Python](https://img.shields.io/badge/Python-3.11-blue.svg)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.104.1-green.svg)
 ![Next.js](https://img.shields.io/badge/Next.js-14.0.3-black.svg)
@@ -13,6 +12,8 @@
 ![MLflow](https://img.shields.io/badge/MLflow-2.7.0-yellow.svg)
 ![Docker](https://img.shields.io/badge/Docker-24.0-blue.svg)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-1.28-blue.svg)
+
+## 📊 Overview
 
 Not your typical price comparison tool!
 
