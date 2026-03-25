@@ -6,6 +6,7 @@ import logging
 from datetime import datetime, timedelta
 import pytz
 from googleapiclient.discovery import build
+from google.oauth2.credentials import Credentials
 
 router = APIRouter()
 scheduler = TaskScheduler()
@@ -135,7 +136,7 @@ async def get_task(task_id: str):
 
 @router.post("/tasks/")
 async def create_task(task: dict):
-    """Create a new scheduled task"""
+    """Create a new scheduled task with Google Calendar support"""
     try:
         logger.info(f"Creating task for product: {task.get('product_name')}")
 
@@ -147,7 +148,7 @@ async def create_task(task: dict):
             try:
                 user_timezone = task.get("timezone", "Asia/Hong_Kong")
 
-                # Parse time (e.g. "18:40")
+                # Parse the time (e.g. "18:40")
                 time_str = task["time"]
                 today = datetime.now(pytz.timezone(user_timezone)).date()
 
@@ -156,7 +157,7 @@ async def create_task(task: dict):
                 local_dt = datetime.combine(today, local_time)
                 aware_local_dt = local_tz.localize(local_dt)
 
-                # Convert to UTC for Google
+                # Convert to UTC for Google Calendar
                 utc_dt = aware_local_dt.astimezone(pytz.UTC)
 
                 event = {
@@ -179,15 +180,19 @@ async def create_task(task: dict):
                     },
                 }
 
-                # Replace 'your_credentials' with your actual Google credentials object
-                service = build('calendar', 'v3', credentials=your_credentials)
-                created_event = service.events().insert(calendarId='primary', body=event).execute()
+                creds = Credentials.from_authorized_user_file('token.json')
+                service = build('calendar', 'v3', credentials=creds)
 
-                logger.info(f"✅ Google Calendar event created successfully for {task['product_name']}")
+                created_event = service.events().insert(
+                    calendarId='primary',
+                    body=event
+                ).execute()
+
+                logger.info(f"✅ Google Calendar event created for {task['product_name']} at {aware_local_dt}")
 
             except Exception as calendar_err:
-                logger.warning(f"Failed to create Google Calendar event: {calendar_err}")
-                # Don't fail the whole task creation if calendar fails
+                logger.warning(f"Failed to create Google Calendar event (task still created): {calendar_err}")
+                # Do NOT fail the whole task if calendar fails
 
         return {
             "status": "success",
