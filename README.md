@@ -198,10 +198,10 @@ This project showcases how AI can reshape procurement and supply chain managemen
 
 ## Automated Scheduling with Windows Integration
 Set up a price check once — the system handles everything else:
-- ⏰ **Scheduled Checks:**	Daily / Weekly / Monthly automatic price checks
-- 📧 **Email Reports:**	Get price reports in HTML
-- 📅 **Calendar Events:**	Auto-create Google Calendar meetings to review prices
-- 💬 **Desktop Alerts:**	Windows notifications when prices change
+- ⏰ **Scheduled Checks**	— Daily / Weekly / Monthly automatic price checks
+- 📧 **Email Reports**	— Get price reports in HTML
+- 📅 **Calendar Events**	— Auto-create Google Calendar meetings to review prices
+- 💬 **Desktop Alerts**	— Windows notifications when prices change
 
 <pre lang="markdown">
 ┌─────────────────────────────────────────────────────────────────┐
