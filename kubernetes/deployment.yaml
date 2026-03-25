@@ -1,0 +1,85 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: price-comparison-backend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: price-comparison-backend
+  template:
+    metadata:
+      labels:
+        app: price-comparison-backend
+    spec:
+      containers:
+      - name: backend
+        image: price-comparison-backend:latest
+        ports:
+        - containerPort: 8000
+        env:
+        - name: OPENAI_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: openai-secret
+              key: api-key
+        - name: OPENAI_BASE_URL
+          value: "https://api.chatanywhere.tech/v1"
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "500m"
+          limits:
+            memory: "1Gi"
+            cpu: "1000m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: price-comparison-backend
+spec:
+  selector:
+    app: price-comparison-backend
+  ports:
+  - port: 8000
+    targetPort: 8000
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: price-comparison-frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: price-comparison-frontend
+  template:
+    metadata:
+      labels:
+        app: price-comparison-frontend
+    spec:
+      containers:
+      - name: frontend
+        image: price-comparison-frontend:latest
+        ports:
+        - containerPort: 3000
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: price-comparison-frontend
+spec:
+  selector:
+    app: price-comparison-frontend
+  ports:
+  - port: 3000
+    targetPort: 3000
+  type: LoadBalancer
