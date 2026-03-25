@@ -199,16 +199,16 @@ API Integration	Google Calendar OAuth 2.0, Gmail SMTP, Windows API, ChatAnywhere
 Set up a price check once — the system handles everything else.
 
 Feature	How It Helps
-⏰ Scheduled Checks	Daily / Weekly / Monthly automatic price checks
-📧 Email Reports	Get price reports with CSV/PDF attachments
-📅 Calendar Events	Auto-create Google Calendar meetings to review prices
-💬 Desktop Alerts	Windows notifications when prices change
+- ⏰ Scheduled Checks	Daily / Weekly / Monthly automatic price checks
+- 📧 Email Reports	Get price reports with CSV/PDF attachments
+- 📅 Calendar Events	Auto-create Google Calendar meetings to review prices
+- 💬 Desktop Alerts	Windows notifications when prices change
 
-text
+<pre lang="markdown">
 ┌─────────────────────────────────────────────────────────────────┐
 │                  What Happens Automatically                     │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                  │
+│                                                                 │
 │  Monday 9:00 AM                                                 │
 │       │                                                         │
 │       ▼                                                         │
@@ -220,39 +220,40 @@ text
 │       ▼                                                         │
 │  📁 Files automatically organized in your Documents folder     │
 │       │                                                         │
-│       └── Reports/2024/February/iPhone_17_Pro_report.pdf       │
-│                                                                  │
-└─────────────────────────────────────────────────────────────────┘
+│       └── Reports/2024/February/iPhone_17_Pro_report.pdf        │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘</pre>
 
 ## Google Calendar & Gmail Integration
 Your calendar and email work for you automatically.
 
 Calendar Events:
-📅 "Weekly iPhone Price Review" appears in your Google Calendar
-👥 Automatically invites your procurement team
-🔔 Reminders set for 1 day before and 10 minutes before
+- 📅 "Weekly iPhone Price Review" appears in your Google Calendar
+- 👥 Automatically invites your procurement team
+- 🔔 Reminders set for 1 day before and 10 minutes before
 
 Email Reports:
-📧 Beautiful HTML summary arrives in your inbox
-📎 PDF attachment for printing or sharing
-📁 CSV file with raw data for your own analysis
+- 📧 Beautiful HTML summary arrives in your inbox
+- 📎 PDF attachment for printing or sharing
+- 📁 CSV file with raw data for your own analysis
 
 ## 📈 Advanced Analytics
-Feature	Description
-Price Trend Analysis	Statistical analysis of price movements over time
-Supplier Performance Scoring	Multi-factor scoring with customizable weights
-Market Volatility Tracking	Standard deviation and volatility calculations
-Seasonal Pattern Detection	Identification of recurring price patterns
-Bulk Purchase Optimization	RL-driven recommendations for optimal order quantities
+|Feature	|Description|
+|---------|-----------|
+|Price Trend Analysis	|Statistical analysis of price movements over time|
+|Supplier Performance Scoring	|Multi-factor scoring with customizable weights|
+|Market Volatility Tracking	|Standard deviation and volatility calculations|
+|Seasonal Pattern Detection	|Identification of recurring price patterns|
+|Bulk Purchase Optimization	|RL-driven recommendations for optimal order quantities|
 
 ## 🔐 Security & Authentication
 Feature	Description
-JWT Authentication	(Placeholder for production)
-OAuth 2.0	Complete Google OAuth flow for calendar access
-Environment Secrets	All API keys and credentials stored in .env
-CORS Configuration	Proper cross-origin resource sharing for frontend-backend communication
-Rate Limiting on public APIs
-Input Validation with Pydantic models
+- JWT Authentication	(Placeholder for production)
+- OAuth 2.0	Complete Google OAuth flow for calendar access
+- Environment Secrets	All API keys and credentials stored in .env
+- CORS Configuration	Proper cross-origin resource sharing for frontend-backend communication
+- Rate Limiting on public APIs
+- Input Validation with Pydantic models
 
 ## 📦 Getting Started
 
@@ -271,29 +272,31 @@ bash
 #### 1. Clone and install backend
 
 ##### Clone repository
+```
 git clone https://github.com/jeffreywoo/smart-price-comparison.git
 cd SmartPriceComparison
-
+```
 ##### Backend setup
+```
 cd ../backend
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-
+```
 ##### Frontend setup
+```
 cd ../frontend
 npm install
-
+```
 #### 2. Configure Environment
-
-bash
+```
 cp .env.example .env
 Edit .env with your API keys
+```
+##### Environment Configuration
 
-Environment Configuration
-
-##### .env file
-
+###### .env file
+```
 OPENAI_API_KEY=your-chatanywhere-api-key
 OPENAI_BASE_URL=https://api.chatanywhere.tech/v1
 DATABASE_URL=postgresql://admin:password@localhost:5432/price_comparison
@@ -302,30 +305,33 @@ EMAIL_PASSWORD=your-app-password
 GOOGLE_CLIENT_ID=your-google-client-id
 GOOGLE_CLIENT_SECRET=your-google-client-secret
 MLFLOW_TRACKING_URI=http://localhost:5000
-
+```
 #### 3. Run with Docker Compose
-bash
+```
 docker-compose up -d postgres redis
 python init_db.py
-
+```
 #### 4. Run both services
 
 ##### Terminal 1 - Backend
+```
 cd backend
 uvicorn app.main:app --reload --port 8000
-
+```
 ##### Terminal 2 - Frontend
+```
 cd frontend
 npm install
 npm run dev
-
+```
 #### 5. Access Applications
+```
 Frontend: http://localhost:3000
 Backend API: http://localhost:8000
 API Documentation: http://localhost:8000/docs
-
+```
 ## Project Structure
-text
+```text
 SmartPriceComparison/
 │
 ├── backend/                         # FastAPI Backend
@@ -426,18 +432,20 @@ SmartPriceComparison/
 ├── .env.example                     # Environment variables template
 ├── .gitignore                       # Git ignore file
 └── README.md                        # Project documentation
+```
 
 ## 📚 API Documentation
 
-Method	Endpoint	Description
-GET	/api/price/latest	Get latest price data
-GET	/api/price/ranked	Get ranked suppliers
-GET /api/anomaly/detected	Get detected anomalies
-POST /api/reports/generate	Generate new report
-POST /api/tasks/	Schedule price check
-GET	/api/products/compare/{name}	Product analysis
-GET	/api/reports/download/{name}	Download report
-GET	/api/notifications/test-email	Test email notification
+|Method           | Endpoint Description|
+|-----------------|---------------------|
+|GET	/api/price/latest	|Get latest price data|
+|GET	/api/price/ranked	|Get ranked suppliers|
+|GET /api/anomaly/detected	|Get detected anomalies|
+|POST /api/reports/generate	|Generate new report|
+|POST /api/tasks/	|Schedule price check|
+|GET	/api/products/compare/{name}	|Product analysis|
+|GET	/api/reports/download/{name}	|Download report|
+|GET	/api/notifications/test-email	|Test email notification|
 
 ## 🧠 Explanation of JeffreyWoo Smart System
 
@@ -445,67 +453,68 @@ GET	/api/notifications/test-email	Test email notification
 
 Think of it as hiring three expert employees:
 
-text
+<pre lang="markdown">
 ┌─────────────────────────────────────────────────────────────────┐
 │                     Your AI Team                                │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                  │
+│                                                                 │
 │  👤 Agent A: The Researcher                                    │
-│     • Goes out and finds prices from all suppliers             │
-│     • Reads through supplier websites and catalogs             │
-│     • Brings back all the raw data                             │
-│                                                                  │
+│     • Goes out and finds prices from all suppliers              │
+│     • Reads through supplier websites and catalogs              │
+│     • Brings back all the raw data                              │
+│                                                                 │
 │  👤 Agent B: The Analyst                                       │
-│     • Looks at all the data and finds patterns                 │
-│     • Spots anomalies (prices that don't make sense)           │
-│     • Predicts future price movements                          │
-│                                                                  │
+│     • Looks at all the data and finds patterns                  │
+│     • Spots anomalies (prices that don't make sense)            │
+│     • Predicts future price movements                           │
+│                                                                 │
 │  👤 Agent C: The Reporter                                      │
-│     • Creates beautiful reports with charts and tables         │
-│     • Writes easy-to-understand recommendations                │
-│     • Sends everything to your email and calendar              │
-│                                                                  │
-└─────────────────────────────────────────────────────────────────┘
+│     • Creates beautiful reports with charts and tables          │
+│     • Writes easy-to-understand recommendations                 │
+│     • Sends everything to your email and calendar               │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘</pre>
 
 ### Hybrid AI + Machine Learning
 
 This system uses two prediction engines working together:
 
-Engine	What It Does	Example
-AI Engine	Understands why prices change	"iPhone prices drop in September because new models are announced"
-ML Engine	Learns from historical patterns	"Based on 3 years of data, prices always drop 8% during Black Friday"
+|Engine | What It Does | Example|
+|-------|--------------|--------|
+|AI Engine | Understands why prices change | "iPhone prices drop in September because new models are announced"|
+|ML Engine | Learns from historical patterns | "Based on 3 years of data, prices always drop 8% during Black Friday"|
 When combined, you get 87% prediction accuracy — far better than either method alone.
 
 ### 🔄 MCP Task Scheduler for Task Management
 
 The system uses MCP (Message Control Protocol) to manage all scheduled tasks:
 
-text
+<pre lang="markdown">
 ┌─────────────────────────────────────────────────────────────────┐
 │                    Task Scheduling Flow                         │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                  │
+│                                                                 │
 │  You create a task:                                             │
-│  "Check iPhone 17 Pro prices every Monday at 9 AM"             │
+│  "Check iPhone 17 Pro prices every Monday at 9 AM"              │
 │                              │                                  │
 │                              ▼                                  │
-│  ┌─────────────────────────────────────────────┐               │
-│  │            MCP Scheduler                    │               │
-│  │  • Stores your task                         │               │
-│  │  • Waits for Monday 9 AM                    │               │
-│  │  • Triggers the price check automatically   │               │
-│  └─────────────────────────────────────────────┘               │
+│  ┌─────────────────────────────────────────────┐                │
+│  │            MCP Scheduler                    │                │
+│  │  • Stores your task                         │                │
+│  │  • Waits for Monday 9 AM                    │                │
+│  │  • Triggers the price check automatically   │                │
+│  └─────────────────────────────────────────────┘                │
 │                              │                                  │
 │                              ▼                                  │
-│  ┌─────────────────────────────────────────────┐               │
-│  │         Automatic Actions                   │               │
-│  │  • Fetch latest prices                      │               │
-│  │  • Compare with previous prices             │               │
-│  │  • Generate report                          │               │
-│  │  • Send notifications                       │               │
-│  └─────────────────────────────────────────────┘               │
-│                                                                  │
-└─────────────────────────────────────────────────────────────────┘
+│  ┌─────────────────────────────────────────────┐                │
+│  │         Automatic Actions                   │                │
+│  │  • Fetch latest prices                      │                │
+│  │  • Compare with previous prices             │                │
+│  │  • Generate report                          │                │
+│  │  • Send notifications                       │                │
+│  └─────────────────────────────────────────────┘                │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘</pre>
 
 ### 📧 What Happens When a Task Runs?
 When the scheduled price check runs, three things happen automatically:
@@ -513,33 +522,32 @@ When the scheduled price check runs, three things happen automatically:
 #### 1. Windows Desktop Notification
 A pop-up appears on your computer:
 
-text
+```bash
 🔔 Price Check Complete!
 iPhone 17 Pro prices have been updated.
 Best price: $1,049.99 at MegaStore
+```
 
 #### 2. Email Report
 You receive an email with:
-
-📊 HTML Report — Beautiful formatted summary
-
-📄 PDF Attachment — Printable report for meetings
-
-📁 CSV File — Raw data for your own analysis
+- 📊 **HTML Report** — Beautiful formatted summary
+- 📄 **PDF Attachment** — Printable report for meetings
+- 📁 **CSV File** — Raw data for your own analysis
 
 #### 3. Google Calendar Event
 A meeting is automatically created in your calendar:
 
-text
+```bash
 📅 Weekly Price Review: iPhone 17 Pro
 📆 Monday at 10:00 AM
 👥 Invited: procurement@company.com
 📝 Agenda: Review price trends, discuss purchasing strategy
+```
 
 #### 4. Files Automatically Organized
 Windows automatically saves all reports in organized folders:
 
-text
+```text
 Documents/PriceReports/
 ├── 2024/
 │   ├── January/
@@ -548,14 +556,16 @@ Documents/PriceReports/
 │   │   └── iPhone_17_Pro_2024-01-22.pdf
 │   └── February/
 │       └── iPhone_17_Pro_2024-02-05.pdf
+```
 
 ## 💼 Who Uses This System?
 
-Role	How They Benefit
-Procurement Managers	Stop overpaying, find the best suppliers instantly
-Supply Chain Teams	Predict price changes, optimize inventory timing
-Finance Departments	Accurate budget forecasting, cost reduction
-Business Owners	Competitive intelligence, margin improvement
+|Role    | How They Benefit|
+|--------|-----------------|
+|Procurement Managers | Stop overpaying, find the best suppliers instantly|
+|Supply Chain Teams | Predict price changes, optimize inventory timing|
+|Finance Departments | Accurate budget forecasting, cost reduction|
+|Business Owners | Competitive intelligence, margin improvement|
 
 ## 📄 License
 
@@ -563,28 +573,23 @@ MIT License - See LICENSE file for details.
 
 ## 🏆 Key Achievements
 
-Multi-Agent AI Architecture - Successfully implemented custom-built orchestration with three specialized AI agents
-Hybrid Prediction System - Combined AI reasoning with ML accuracy for high prediction accuracy
-Enterprise Data Pipeline - Built Spark-based processing for TB-scale price analysis
-MLOps Integration - Implemented MLflow for model versioning and experiment tracking
-Production Ready - Docker and Kubernetes deployment with high SLA
-Real-time Notifications - Integrated Gmail and Google Calendar APIs
-Modern UI - Next.js dashboard with 60 FPS animations and responsive design
+- **Multi-Agent AI Architecture** - Successfully implemented custom-built orchestration with three specialized AI agents
+- **Hybrid Prediction System** - Combined AI reasoning with ML accuracy for high prediction accuracy
+- **Enterprise Data Pipeline** - Built Spark-based processing for TB-scale price analysis
+- **MLOps Integration** - Implemented MLflow for model versioning and experiment tracking
+- **Production Ready** - Docker and Kubernetes deployment with high SLA
+- **Real-time Notifications** - Integrated Gmail and Google Calendar APIs
+- **Modern UI** - Next.js dashboard with 60 FPS animations and responsive design
 
 ## ⚖️ Disclaimer
 
 Smart Price Comparison provides AI-driven insights for informational purposes only. It does not replace professional procurement advice. Always verify critical purchasing decisions with qualified supply chain professionals.
 
-## 👨‍💻 About the Author
+## 👤 About the Author
+Jeffrey Woo — Finance Manager | Strategic FP&A, AI Automation & Cost Optimization | MBA | FCCA | CTA | FTIHK | SAP Financial Accounting (FI) Certified Application Associate | Xero Advisor Certified
 
-Jeffrey Woo - Senior AI/ML Engineer
-Expertise: LLM Integration, MLOps, Distributed Systems
-Technologies: LangChain, FastAPI, PySpark, TensorFlow, Kubernetes
-Experience: 8+ years in AI-driven enterprise applications
-Certifications: AWS Solutions Architect, TensorFlow Developer
-
-Email: jeffreywoocf@gmail.com
-GitHub: @jeffreywoo
-LinkedIn: jeffrey-woo
+📧 **Email:** jeffreywoocf@gmail.com  
+💼 **LinkedIn:** https://www.linkedin.com/in/wcfjeffrey/  
+🐙 **GitHub:** https://github.com/wcfjeffrey/
 
 Built with ❤️ using AI, ML, and Big Data technologies, designed for procurement excellence.
