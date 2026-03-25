@@ -79,7 +79,7 @@ Most price comparison tools just show you today's prices. This system goes furth
 │  ┌──────────────────┐    ┌──────────────────┐    ┌──────────────────┐       │
 │  │   Agent A        │    │   Agent B        │    │   Agent C        │       │
 │  │   Data Fetcher   │───▶│   Analyst       │───▶│   Reporter       │       │
-│  │   (GPT-4o)       │    │   (DeepSeek-V3)  │    │   (GPT-4.1-mini) │       │
+│  │   (GPT-4o-ca)    │    │   (DeepSeek-V3)  │    │   (GPT-4.1-mini) │       │
 │  └──────────────────┘    └──────────────────┘    └──────────────────┘       │
 │          │                       │                       │                  │
 │          ▼                       ▼                       ▼                  │
@@ -188,13 +188,13 @@ This project showcases how AI can reshape procurement and supply chain managemen
 ## ⭐ Technical Skills Demonstrated
 |Skill Area	| Specific Competencies|
 |-----------|----------------------|
-|AI/ML Engineering | Multi-agent systems, LLM integration (GPT-4o, DeepSeek), hybrid AI+ML predictions, cross-encoder rerank models, reinforcement learning (Q-learning)|
+|AI/ML Engineering | Multi-agent systems, LLM integration (GPT-4o-ca, DeepSeek-V3, GPT-4.1-mini), hybrid AI+ML predictions, cross-encoder rerank models, reinforcement learning (Q-learning)|
 |Big Data	| Apache Spark for distributed processing, Parquet data warehousing, PySpark analytics|
 |MLOps	| MLflow model tracking, experiment logging, model versioning|
-|Full-Stack Development	| FastAPI async backend, Next.js 14 frontend, Tailwind CSS, real-time dashboards|
+|Full-Stack Development	| FastAPI async backend, Next.js frontend, Tailwind CSS, real-time dashboards|
 |Database Design	| PostgreSQL with SQLAlchemy async, Redis caching, schema design|
 |DevOps	| Docker containerization, Kubernetes orchestration, GitHub Actions CI/CD|
-|API Integration	| Google Calendar OAuth 2.0, Gmail SMTP, Windows API, ChatAnywhere LLM API|
+|API Integration	| Google Calendar OAuth, Gmail SMTP, Windows API, ChatAnywhere LLM API|
 
 ## Automated Scheduling with Windows Integration
 Set up a price check once — the system handles everything else.
@@ -221,7 +221,7 @@ Feature	How It Helps
 │       ▼                                                         │
 │  📁 Files automatically organized in your Documents folder     │
 │       │                                                         │
-│       └── Reports/2026/March/iPhone_17_Pro_report.pdf        │
+│       └── Reports/2026/March/iPhone_17_Pro_report.pdf           │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘</pre>
 
@@ -248,8 +248,8 @@ Email Reports:
 |Bulk Purchase Optimization	|RL-driven recommendations for optimal order quantities|
 
 ## 🔐 Security & Authentication
-- JWT Authentication	(Placeholder for production)
-- OAuth 2.0	Complete Google OAuth flow for calendar access
+- JWT Authentication
+- OAuth Complete Google OAuth flow for calendar access
 - Environment Secrets	All API keys and credentials stored in .env
 - CORS Configuration	Proper cross-origin resource sharing for frontend-backend communication
 - Rate Limiting on public APIs
