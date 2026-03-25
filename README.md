@@ -233,8 +233,7 @@ Calendar Events:
 
 Email Reports:
 - 📧 Beautiful HTML summary arrives in your inbox
-- 📎 HTML attachment for printing or sharing
-- 📁 CSV file with raw data for your own analysis
+- 📁 HTML attachment for printing or sharing
 
 ## 📈 Advanced Analytics
 |Feature	|Description|
