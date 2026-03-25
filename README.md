@@ -197,9 +197,7 @@ This project showcases how AI can reshape procurement and supply chain managemen
 |API Integration	| Google Calendar OAuth, Gmail SMTP, Windows API, ChatAnywhere LLM API|
 
 ## Automated Scheduling with Windows Integration
-Set up a price check once — the system handles everything else.
-
-Feature	How It Helps
+Set up a price check once — the system handles everything else:
 - ⏰ Scheduled Checks	Daily / Weekly / Monthly automatic price checks
 - 📧 Email Reports	Get price reports with CSV/PDF attachments
 - 📅 Calendar Events	Auto-create Google Calendar meetings to review prices
