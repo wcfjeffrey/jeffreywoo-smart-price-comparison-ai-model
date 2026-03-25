@@ -175,7 +175,8 @@ export default function HomePage() {
           time: scheduleTime,
           day_of_week: scheduleFrequency === 'weekly' ? 0 : null,
           notification_method: notificationMethod,
-          email: email || null
+          email: email || null,
+          timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
         })
       });
 
