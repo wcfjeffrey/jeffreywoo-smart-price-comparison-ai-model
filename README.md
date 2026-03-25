@@ -566,6 +566,10 @@ Documents/PriceReports/
 |Finance Departments | Accurate budget forecasting, cost reduction|
 |Business Owners | Competitive intelligence, margin improvement|
 
+## ⚖️ Disclaimer
+
+Smart Price Comparison provides AI-driven insights for informational purposes only. It does not replace professional procurement advice. Always verify critical purchasing decisions with qualified supply chain professionals.
+
 ## 📄 License
 
 MIT License - See LICENSE file for details.
@@ -580,9 +584,7 @@ MIT License - See LICENSE file for details.
 - **Real-time Notifications** - Integrated Gmail and Google Calendar APIs
 - **Modern UI** - Next.js dashboard with 60 FPS animations and responsive design
 
-## ⚖️ Disclaimer
-
-Smart Price Comparison provides AI-driven insights for informational purposes only. It does not replace professional procurement advice. Always verify critical purchasing decisions with qualified supply chain professionals.
+## 📋 Sample
 
 ## 👤 About the Author
 Jeffrey Woo — Finance Manager | Strategic FP&A, AI Automation & Cost Optimization | MBA | FCCA | CTA | FTIHK | SAP Financial Accounting (FI) Certified Application Associate | Xero Advisor Certified
