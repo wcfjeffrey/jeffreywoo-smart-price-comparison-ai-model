@@ -5,14 +5,14 @@
 ## JeffreyWoo Smart Price Comparison System
 
 ## 📊 Overview
-[![Python](https://img.shields.io/badge/Python-3.11-blue.svg]
-[![Python](https://img.shields.io/badge/FastAPI-0.104.1-green.svg]
-[![Python](https://img.shields.io/badge/Next.js-14.0.3-black.svg]
-[![Python](https://img.shields.io/badge/React-18.2.0-blue.svg]
-[![Python](https://img.shields.io/badge/Apache%2520Spark-3.4.0-red.svg]
-[![Python](https://img.shields.io/badge/MLflow-2.7.0-yellow.svg]
-[![Python](https://img.shields.io/badge/Docker-24.0-blue.svg]
-[![Python](https://img.shields.io/badge/Kubernetes-1.28-blue.svg]
+![Python](https://img.shields.io/badge/Python-3.11-blue.svg)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.104.1-green.svg)
+![Next.js](https://img.shields.io/badge/Next.js-14.0.3-black.svg)
+![React](https://img.shields.io/badge/React-18.2.0-blue.svg)
+![Apache Spark](https://img.shields.io/badge/Apache%20Spark-3.4.0-red.svg)
+![MLflow](https://img.shields.io/badge/MLflow-2.7.0-yellow.svg)
+![Docker](https://img.shields.io/badge/Docker-24.0-blue.svg)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-1.28-blue.svg)
 
 Not your typical price comparison tool!
 
