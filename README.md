@@ -1,4 +1,8 @@
-﻿# JeffreyWoo Smart Price Comparison System
+<div align="center">
+  <img src="assets/JeffreyWooSmartPriceComparison.png" alt="JeffreyWooSmartPriceComparisonBanner" width="1200" height="600" />
+</div>
+ 
+## JeffreyWoo Smart Price Comparison System
 
 ## 📊 Overview
 https://img.shields.io/badge/Python-3.11-blue.svg
