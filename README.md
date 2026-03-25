@@ -294,7 +294,7 @@ Edit .env with your API keys
 ##### Environment Configuration
 
 ```
-.env file
+//.env file
 
 OPENAI_API_KEY=your-chatanywhere-api-key
 OPENAI_BASE_URL=https://api.chatanywhere.tech/v1
