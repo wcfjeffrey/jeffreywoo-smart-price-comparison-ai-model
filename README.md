@@ -28,7 +28,7 @@
 
 ### 🧠 AI-Powered Strategic Guidance
 - **Multi-Agent AI Architecture** — Three specialized AI agents (Data Fetcher, Price Analyst, Report Generator) work together like a team of experts
-- **Hybrid AI + ML Predictions** — Combines AI reasoning (why prices change) with ML accuracy (numeric forecasts) for 87% prediction accuracy
+- **Hybrid AI + ML Predictions** — Combines AI reasoning (why prices change) with ML accuracy (numeric forecasts) for high prediction accuracy
 - **Rerank Models** — Cross-encoder rerank models that understand trade-offs between price, delivery speed, and reliability for ranking vendors
 
 ### 🔍 Advanced Analytics & Automation
@@ -482,6 +482,7 @@ This system uses two prediction engines working together:
 |-------|--------------|--------|
 |AI Engine | Understands why prices change | "iPhone prices drop in September because new models are announced"|
 |ML Engine | Learns from historical patterns | "Based on 3 years of data, prices always drop 8% during Black Friday"|
+
 When combined, you get 87% prediction accuracy — far better than either method alone.
 
 ### 🔄 MCP Task Scheduler for Task Management
