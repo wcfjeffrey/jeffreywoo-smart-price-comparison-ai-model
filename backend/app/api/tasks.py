@@ -1,10 +1,10 @@
 from fastapi import APIRouter, HTTPException, status
-from typing import List
 from app.models.task import Task, TaskCreate, TaskUpdate
 from app.services.task_scheduler import TaskScheduler
 import logging
 from datetime import datetime, timedelta
 import pytz
+import os
 from googleapiclient.discovery import build
 from google.oauth2.credentials import Credentials
 
@@ -133,6 +133,20 @@ async def get_task(task_id: str):
         logger.error(f"Error getting task {task_id}: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
+def get_google_credentials():
+    try:
+        creds = Credentials(
+            token=None,  # We'll refresh if needed
+            refresh_token=os.getenv("GOOGLE_REFRESH_TOKEN"),
+            client_id=os.getenv("GOOGLE_CLIENT_ID"),
+            client_secret=os.getenv("GOOGLE_CLIENT_SECRET"),
+            token_uri="https://oauth2.googleapis.com/token",
+            scopes=["https://www.googleapis.com/auth/calendar"]
+        )
+        return creds
+    except Exception as e:
+        logger.error(f"Failed to load Google credentials: {e}")
+        return None
 
 @router.post("/tasks/")
 async def create_task(task: dict):
@@ -140,7 +154,7 @@ async def create_task(task: dict):
     try:
         logger.info(f"Creating task for product: {task.get('product_name')}")
 
-        # 1. Save task to database first
+        # 1. Save task to database
         new_task = await scheduler.create_task(task)
 
         # 2. Create Google Calendar event if requested
@@ -148,7 +162,7 @@ async def create_task(task: dict):
             try:
                 user_timezone = task.get("timezone", "Asia/Hong_Kong")
 
-                # Parse the time (e.g. "18:40")
+                # Parse time
                 time_str = task["time"]
                 today = datetime.now(pytz.timezone(user_timezone)).date()
 
@@ -157,7 +171,6 @@ async def create_task(task: dict):
                 local_dt = datetime.combine(today, local_time)
                 aware_local_dt = local_tz.localize(local_dt)
 
-                # Convert to UTC for Google Calendar
                 utc_dt = aware_local_dt.astimezone(pytz.UTC)
 
                 event = {
@@ -180,19 +193,23 @@ async def create_task(task: dict):
                     },
                 }
 
-                creds = Credentials.from_authorized_user_file('token.json')
+                # Build service using credentials from .env
+                creds = get_google_credentials()
+                if creds is None:
+                    raise Exception("Google credentials not loaded")
+
                 service = build('calendar', 'v3', credentials=creds)
 
                 created_event = service.events().insert(
-                    calendarId='primary',
+                    calendarId=os.getenv("GOOGLE_CALENDAR_ID", "primary"),
                     body=event
                 ).execute()
 
-                logger.info(f"✅ Google Calendar event created for {task['product_name']} at {aware_local_dt}")
+                logger.info(f"✅ Google Calendar event created successfully for {task['product_name']}")
 
             except Exception as calendar_err:
-                logger.warning(f"Failed to create Google Calendar event (task still created): {calendar_err}")
-                # Do NOT fail the whole task if calendar fails
+                logger.warning(f"Failed to create Google Calendar event: {calendar_err}")
+                # Task is still created even if calendar fails
 
         return {
             "status": "success",
