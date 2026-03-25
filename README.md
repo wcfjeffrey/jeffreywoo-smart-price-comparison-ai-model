@@ -39,7 +39,7 @@
 
 ### ⏰ Task Automation & Notifications
 - **Scheduled Price Checks** — Daily/weekly/monthly automatic price monitoring
-- **Email Reports** — HTML reports with PDF and CSV attachments (compatible with Gmail, Outlook, Exchange, and any SMTP-enabled email system)
+- **Email Reports** — Delivery of HTML reports to emails (compatible with Gmail, Outlook, Exchange, and any SMTP-enabled email system)
 - **Calendar Integration** — Auto-creates review meetings with attendees and reminders (compatible with any calendar system that supports iCal/ICS format)
 - **Windows Desktop Notifications** — Real-time pop-up alerts when prices change
 
@@ -68,7 +68,7 @@ Most price comparison tools just show you today's prices. This system goes furth
 |Task Automation	|❌ No	|✅ Scheduled checks with notifications|
 |Reinforcement Learning	|❌ No	|✅ Q-learning for optimal strategies|
 |Big Data Processing	|❌ No	|✅ Apache Spark|
-|Report Generation	|❌ Manual	|✅ Automatic (HTML/PDF/CSV)|
+|Report Generation	|❌ Manual	|✅ Automatic (HTML/JSON/CSV)|
 
 ## 🏗️ Multi-Agent AI System Architecture
 <pre lang="markdown">
@@ -198,10 +198,10 @@ This project showcases how AI can reshape procurement and supply chain managemen
 
 ## Automated Scheduling with Windows Integration
 Set up a price check once — the system handles everything else:
-- ⏰ Scheduled Checks	Daily / Weekly / Monthly automatic price checks
-- 📧 Email Reports	Get price reports with CSV/PDF attachments
-- 📅 Calendar Events	Auto-create Google Calendar meetings to review prices
-- 💬 Desktop Alerts	Windows notifications when prices change
+- ⏰ **Scheduled Checks:**	Daily / Weekly / Monthly automatic price checks
+- 📧 **Email Reports:**	Get price reports in HTML
+- 📅 **Calendar Events:**	Auto-create Google Calendar meetings to review prices
+- 💬 **Desktop Alerts:**	Windows notifications when prices change
 
 <pre lang="markdown">
 ┌─────────────────────────────────────────────────────────────────┐
@@ -219,7 +219,7 @@ Set up a price check once — the system handles everything else:
 │       ▼                                                         │
 │  📁 Files automatically organized in your Documents folder     │
 │       │                                                         │
-│       └── Reports/2026/March/iPhone_17_Pro_report.pdf           │
+│       └── Reports/2026/March/iPhone_17_Pro_report.html          │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘</pre>
 
@@ -233,7 +233,7 @@ Calendar Events:
 
 Email Reports:
 - 📧 Beautiful HTML summary arrives in your inbox
-- 📎 PDF attachment for printing or sharing
+- 📎 HTML attachment for printing or sharing
 - 📁 CSV file with raw data for your own analysis
 
 ## 📈 Advanced Analytics
@@ -529,7 +529,7 @@ Best price: $1,049.99 at MegaStore
 #### 2. Email Report
 You receive an email with:
 - 📊 **HTML Report** — Beautiful formatted summary
-- 📄 **PDF Attachment** — Printable report for meetings
+- 📄 **JSON File** — Easily imported into Power BI, Tableau, Power Query, or turned into a spreadsheet by any converters for further analysis
 - 📁 **CSV File** — Raw data for your own analysis
 
 #### 3. Google Calendar Event
@@ -549,11 +549,11 @@ Windows automatically saves all reports in organized folders:
 Documents/PriceReports/
 ├── 2024/
 │   ├── January/
-│   │   ├── iPhone_17_Pro_2024-01-15.pdf
-│   │   ├── iPhone_17_Pro_2024-01-15.csv
-│   │   └── iPhone_17_Pro_2024-01-22.pdf
+│   │   ├── iPhone_17_Pro_2024-01-15.html
+│   │   ├── iPhone_17_Pro_2024-01-15.json
+│   │   └── iPhone_17_Pro_2024-01-22.csv
 │   └── February/
-│       └── iPhone_17_Pro_2024-02-05.pdf
+│       └── iPhone_17_Pro_2024-02-05.html
 ```
 
 ## 💼 Who Uses This System?
