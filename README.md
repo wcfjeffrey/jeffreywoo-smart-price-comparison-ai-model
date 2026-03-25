@@ -188,7 +188,7 @@ This project showcases how AI can reshape procurement and supply chain managemen
 ## ⭐ Technical Skills Demonstrated
 |Skill Area	| Specific Competencies|
 |-----------|----------------------|
-|AI/ML	| Engineering	Multi-agent systems, LLM integration (GPT-4o, DeepSeek), hybrid AI+ML predictions, cross-encoder rerank models, reinforcement learning (Q-learning)|
+|AI/ML Engineering | Multi-agent systems, LLM integration (GPT-4o, DeepSeek), hybrid AI+ML predictions, cross-encoder rerank models, reinforcement learning (Q-learning)|
 |Big Data	| Apache Spark for distributed processing, Parquet data warehousing, PySpark analytics|
 |MLOps	| MLflow model tracking, experiment logging, model versioning|
 |Full-Stack Development	| FastAPI async backend, Next.js 14 frontend, Tailwind CSS, real-time dashboards|
