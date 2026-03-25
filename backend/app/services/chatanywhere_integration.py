@@ -59,7 +59,7 @@ class ChatAnywhereIntegration:
         """
 
         payload = {
-            "model": "gpt-4o-mini",
+            "model": "gpt-4o-ca",
             "messages": [
                 {"role": "system", "content": "You are a price data extraction agent. Return only valid JSON."},
                 {"role": "user", "content": prompt}
@@ -217,7 +217,7 @@ class ChatAnywhereIntegration:
             ]
         }
 
-    async def _call_api_with_json_response(self, messages: List[Dict], model: str = "gpt-4o-mini") -> Dict:
+    async def _call_api_with_json_response(self, messages: List[Dict], model: str = "gpt-4o-ca") -> Dict:
         """Call ChatAnywhere API and parse JSON response"""
 
         payload = {
