@@ -17,7 +17,7 @@
 
 > **Not your typical price comparison tool!**
 
-JeffreyWoo Smart Price Comparison is an enterprise-grade AI-powered procurement decision-making assistant app through multi-agent AI architecture, hybrid AI+ML predictions, reinforcement learning, and big data analytics with email/calendar integration to help procurement professionals, supply chain managers, and businesses make smarter, faster, and more confident purchasing decisions. It automatically compares prices, predicts future trends, detects anomalies, and optimizes procurement strategies.
+**JeffreyWoo Smart Price Comparison** is an enterprise-grade AI-powered procurement decision-making assistant app through multi-agent AI architecture, hybrid AI+ML predictions, reinforcement learning, and big data analytics with email/calendar integration to help procurement professionals, supply chain managers, and businesses make smarter, faster, and more confident purchasing decisions. It automatically compares prices, predicts future trends, detects anomalies, and optimizes procurement strategies.
 
 ## ✨ What It Does
 
@@ -55,7 +55,7 @@ JeffreyWoo Smart Price Comparison is an enterprise-grade AI-powered procurement 
 - Apache Spark (Big Data Processing) for processing millions of price records across thousands of suppliers
 - MLflow for model versioning and experiment tracking
 
-## 🚀 Why Choose Smart Price Comparison
+## 🚀 Why Choose JeffreyWoo Smart Price Comparison
 
 Most price comparison tools just show you today's prices. This system goes further — embedding AI into your procurement workflow so you can anticipate price changes, identify the best suppliers, optimize purchase timing, and align purchasing strategies with long-term business goals.
 
@@ -73,7 +73,7 @@ Most price comparison tools just show you today's prices. This system goes furth
 ## 🏗️ Multi-Agent AI System Architecture
 <pre lang="markdown">
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                 JeffreyWoo Smart Price Comparison System                    │
+│                   JeffreyWoo Smart Price Comparison                         │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │                                                                             │
 │  ┌──────────────────┐    ┌──────────────────┐    ┌──────────────────┐       │
