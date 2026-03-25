@@ -15,40 +15,40 @@
 
 ## 📊 Overview
 
-Not your typical price comparison tool!
+> **Not your typical price comparison tool!**
 
 JeffreyWoo Smart Price Comparison is an enterprise-grade AI-powered procurement decision-making assistant app through multi-agent AI architecture, hybrid AI+ML predictions, reinforcement learning, and big data analytics with email/calendar integration to help procurement professionals, supply chain managers, and businesses make smarter, faster, and more confident purchasing decisions. It automatically compares prices, predicts future trends, detects anomalies, and optimizes procurement strategies.
 
 ## ✨ What It Does
 
-📊 Real-Time Price Intelligence
+### 📊 Real-Time Price Intelligence
 - Compare prices across multiple suppliers instantly using AI agents
 - Analyze price trends by day/week/month with predictive models
 - Track supplier performance (price, delivery time, rating) in real-time
 
-🧠 AI-Powered Strategic Guidance
-- Multi-Agent AI Architecture — Three specialized AI agents (Data Fetcher, Price Analyst, Report Generator) work together like a team of experts
-- Hybrid AI + ML Predictions — Combines AI reasoning (why prices change) with ML accuracy (numeric forecasts) for 87% prediction accuracy
-- Rerank Models — Cross-encoder rerank models that understand trade-offs between price, delivery speed, and reliability for ranking vendors
+### 🧠 AI-Powered Strategic Guidance
+- **Multi-Agent AI Architecture** — Three specialized AI agents (Data Fetcher, Price Analyst, Report Generator) work together like a team of experts
+- **Hybrid AI + ML Predictions** — Combines AI reasoning (why prices change) with ML accuracy (numeric forecasts) for 87% prediction accuracy
+- **Rerank Models** — Cross-encoder rerank models that understand trade-offs between price, delivery speed, and reliability for ranking vendors
 
-🔍 Advanced Analytics & Automation
-- Price Predictions — Short-term (30-day) and long-term (90-day) forecasts with confidence scores
-- Anomaly Detection — Automatically detects price outliers (statistical anomalies >2.5 standard deviations), and provide anomaly alerts
-- Risk Analysis — Risk scores (0-100) with detailed risk factors (price volatility, limited supply, long delivery)
-- Reinforcement Learning — Q-learning agent that learns optimal purchasing strategies through 2,000+ training episodes
+### 🔍 Advanced Analytics & Automation
+- **Price Predictions** — Short-term (30-day) and long-term (90-day) forecasts with confidence scores
+- **Anomaly Detection** — Automatically detects price outliers (statistical anomalies >2.5 standard deviations), and provide anomaly alerts
+- **Risk Analysis** — Risk scores (0-100) with detailed risk factors (price volatility, limited supply, long delivery)
+- **Reinforcement Learning** — Q-learning agent that learns optimal purchasing strategies through 2,000+ training episodes
 
-⏰ Task Automation & Notifications
-- Scheduled Price Checks — Daily/weekly/monthly automatic price monitoring
-- Email Reports — HTML reports with PDF and CSV attachments (compatible with Gmail, Outlook, Exchange, and any SMTP-enabled email system)
-- Calendar Integration — Auto-creates review meetings with attendees and reminders (compatible with any calendar system that supports iCal/ICS format)
-- Windows Desktop Notifications — Real-time pop-up alerts when prices change
+### ⏰ Task Automation & Notifications
+- **Scheduled Price Checks** — Daily/weekly/monthly automatic price monitoring
+- **Email Reports** — HTML reports with PDF and CSV attachments (compatible with Gmail, Outlook, Exchange, and any SMTP-enabled email system)
+- **Calendar Integration** — Auto-creates review meetings with attendees and reminders (compatible with any calendar system that supports iCal/ICS format)
+- **Windows Desktop Notifications** — Real-time pop-up alerts when prices change
 
-🌍 Multi-Market & Multi-Supplier Analysis
+### 🌍 Multi-Market & Multi-Supplier Analysis
 - Supports any product category (electronics, office supplies, industrial equipment)
 - Unlimited supplier comparison with intelligent ranking
 - Historical trend analysis across 10+ years of price data
 
-🔒 Enterprise-Grade Architecture
+### 🔒 Enterprise-Grade Architecture
 - Built with Docker and Kubernetes for scalable deployment
 - PostgreSQL for persistent task and history storage
 - Redis for high-performance caching
@@ -59,121 +59,123 @@ JeffreyWoo Smart Price Comparison is an enterprise-grade AI-powered procurement 
 
 Most price comparison tools just show you today's prices. This system goes further — embedding AI into your procurement workflow so you can anticipate price changes, identify the best suppliers, optimize purchase timing, and align purchasing strategies with long-term business goals.
 
-Feature	Traditional Tools	Smart Price Comparison
-Price Comparison	✅ Yes	✅ Yes
-Supplier Ranking	❌ Basic	✅ AI-powered with trade-off analysis
-Price Predictions	❌ No	✅ Hybrid AI+ML (high accuracy)
-Anomaly Detection	❌ No	✅ Statistical & AI detection
-Task Automation	❌ No	✅ Scheduled checks with notifications
-Reinforcement Learning	❌ No	✅ Q-learning for optimal strategies
-Big Data Processing	❌ No	✅ Apache Spark
-Report Generation	❌ Manual	✅ Automatic (HTML/PDF/CSV)
+|     Feature    | Traditional Tools | Smart Price Comparison |
+|----------------|-------------------|------------------------|
+|Price Comparison	|✅ Yes	|✅ Yes|
+|Supplier Ranking	|❌ Basic	|✅ AI-powered with trade-off analysis|
+|Price Predictions	|❌ No	|✅ Hybrid AI+ML (high accuracy)|
+|Anomaly Detection	|❌ No	|✅ Statistical & AI detection|
+|Task Automation	|❌ No	|✅ Scheduled checks with notifications|
+|Reinforcement Learning	|❌ No	|✅ Q-learning for optimal strategies|
+|Big Data Processing	|❌ No	|✅ Apache Spark|
+|Report Generation	|❌ Manual	|✅ Automatic (HTML/PDF/CSV)|
 
 ## 🏗️ Multi-Agent AI System Architecture
-text
+<pre lang="markdown">
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                 JeffreyWoo Smart Price Comparison System                    │
 ├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                              │
+│                                                                             │
 │  ┌──────────────────┐    ┌──────────────────┐    ┌──────────────────┐       │
 │  │   Agent A        │    │   Agent B        │    │   Agent C        │       │
 │  │   Data Fetcher   │───▶│   Analyst       │───▶│   Reporter       │       │
-│  │   (GPT-4o)       │    │   (DeepSeek-V3) │    │   (GPT-4.1-mini) │       │
+│  │   (GPT-4o)       │    │   (DeepSeek-V3)  │    │   (GPT-4.1-mini) │       │
 │  └──────────────────┘    └──────────────────┘    └──────────────────┘       │
 │          │                       │                       │                  │
 │          ▼                       ▼                       ▼                  │
 │  ┌──────────────────────────────────────────────────────────────────┐       │
 │  │                    Hybrid Prediction Engine                      │       │
-│  │  ┌─────────────────────┐    ┌─────────────────────┐             │       │
-│  │  │  AI Predictions     │ +  │  ML Predictions     │ = Hybrid   │       │
-│  │  │  (LLM Reasoning)    │    │  (Random Forest)    │   Result   │       │
-│  │  └─────────────────────┘    └─────────────────────┘             │       │
+│  │  ┌─────────────────────┐    ┌─────────────────────┐              │       │
+│  │  │  AI Predictions     │ +  │  ML Predictions     │ = Hybrid     │       │
+│  │  │  (LLM Reasoning)    │    │  (Random Forest)    │   Result     │       │
+│  │  └─────────────────────┘    └─────────────────────┘              │       │
 │  └──────────────────────────────────────────────────────────────────┘       │
-│                                    │                                       │
-│                                    ▼                                       │
+│                                    │                                        │
+│                                    ▼                                        │
 │  ┌──────────────────────────────────────────────────────────────────┐       │
-│  │                    Data & Infrastructure                          │       │
-│  │  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐         │       │
-│  │  │  Spark   │  │  MLflow  │  │  Docker  │  │   K8s    │         │       │
-│  │  │  Big Data│  │  Model   │  │  Contain │  │  Orchest │         │       │
-│  │  └──────────┘  └──────────┘  └──────────┘  └──────────┘         │       │
+│  │                    Data & Infrastructure                         │       │
+│  │  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐          │       │
+│  │  │  Spark   │  │  MLflow  │  │  Docker  │  │   K8s    │          │       │
+│  │  │  Big Data│  │  Model   │  │  Contain │  │  Orchest │          │       │
+│  │  └──────────┘  └──────────┘  └──────────┘  └──────────┘          │       │
 │  └──────────────────────────────────────────────────────────────────┘       │
-│                                                                              │
-└─────────────────────────────────────────────────────────────────────────────┘
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘</pre>
 
 ## 📦 Data Pipeline
-text
+<pre lang="markdown">
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                         Complete Data Pipeline                              │
 ├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                              │
-│  External Sources                                                          │
-│       │                                                                     │
-│       ▼                                                                     │
-│  ┌─────────────────┐                                                       │
-│  │ Data Ingestion  │ → Raw price data collected from ChatAnywhere API      │
-│  └────────┬────────┘                                                       │
-│           ▼                                                                │
-│  ┌─────────────────┐                                                       │
-│  │ Data Warehouse  │ → Stored as Parquet files for efficient querying      │
-│  └────────┬────────┘                                                       │
-│           ▼                                                                │
-│  ┌─────────────────┐                                                       │
-│  │ Spark Processing│ → Distributed processing for large-scale analytics   │
-│  └────────┬────────┘                                                       │
-│           ▼                                                                │
-│  ┌─────────────────┐                                                       │
-│  │ MLflow Training │ → Model training, tracking, and versioning           │
-│  └────────┬────────┘                                                       │
-│           ▼                                                                │
-│  ┌─────────────────┐                                                       │
-│  │ RL Optimization │ → Reinforcement learning for procurement strategies  │
-│  └────────┬────────┘                                                       │
-│           ▼                                                                │
-│  ┌─────────────────┐                                                       │
-│  │ Frontend Display│ → Dashboard, reports, calendar, charts               │
-│  └─────────────────┘                                                       │
-│                                                                              │
-└─────────────────────────────────────────────────────────────────────────────┘
+│                                                                             │
+│    External Sources                                                         │
+│           │                                                                 │
+│           ▼                                                                 │
+│  ┌─────────────────┐                                                        │
+│  │ Data Ingestion  │ → Raw price data collected from ChatAnywhere API       │
+│  └────────┬────────┘                                                        │
+│           ▼                                                                 │
+│  ┌─────────────────┐                                                        │
+│  │ Data Warehouse  │ → Stored as Parquet files for efficient querying       │
+│  └────────┬────────┘                                                        │
+│           ▼                                                                 │
+│  ┌─────────────────┐                                                        │
+│  │ Spark Processing│ → Distributed processing for large-scale analytics     │
+│  └────────┬────────┘                                                        │
+│           ▼                                                                 │
+│  ┌─────────────────┐                                                        │
+│  │ MLflow Training │ → Model training, tracking, and versioning             │
+│  └────────┬────────┘                                                        │
+│           ▼                                                                 │
+│  ┌─────────────────┐                                                        │
+│  │ RL Optimization │ → Reinforcement learning for procurement strategies    │
+│  └────────┬────────┘                                                        │
+│           ▼                                                                 │
+│  ┌─────────────────┐                                                        │
+│  │ Frontend Display│ → Dashboard, reports, calendar, charts                 │
+│  └─────────────────┘                                                        │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘</pre>
 
 ## 🤖 Tech Stack
-Category	Technologies
-Language	Python, TypeScript
-Backend Framework	FastAPI (async)
-Frontend Framework	Next.js, React
-UI	Tailwind CSS, Recharts, Framer Motion
-AI/LLM	ChatAnywhere API (GPT-4o-ca, DeepSeek-V3, GPT-4.1-mini)
-Machine Learning	scikit-learn (Random Forest, Linear Regression)
-Reinforcement Learning	OpenAI Gym (Q-Learning)
-Rerank Models	Sentence-Transformers (Cross-Encoder)
-Big Data	Apache Spark (PySpark), Parquet
-MLOps	MLflow
-Database	PostgreSQL, Redis
-DevOps	Docker, Kubernetes, GitHub Actions
-APIs	Google Calendar, Gmail, Windows API
+| Category| Technologies| 
+|---------|-------------|
+| Language	| Python, TypeScript| 
+| Backend Framework	| FastAPI (async)| 
+| Frontend Framework	| Next.js, React| 
+| UI	| Tailwind CSS, Recharts, Framer Motion| 
+| AI/LLM	| ChatAnywhere API (GPT-4o-ca, DeepSeek-V3, GPT-4.1-mini)| 
+| Machine Learning	| scikit-learn (Random Forest, Linear Regression)| 
+| Reinforcement Learning	| OpenAI Gym (Q-Learning)| 
+| Rerank Models	| Sentence-Transformers (Cross-Encoder)| 
+| Big Data	| Apache Spark (PySpark), Parquet| 
+| MLOps	| MLflow| 
+| Database	| PostgreSQL, Redis| 
+| DevOps	| Docker, Kubernetes, GitHub Actions| 
+| APIs	| Google Calendar, Gmail, Windows API| 
 
 ## 📈 Financial & Procurement Theories Applied
 This app leverages procurement, supply chain, and financial principles to automate supplier evaluation, price analysis, and purchase decisions. It transforms raw price data into actionable insights for procurement managers, supply chain directors, and CFOs:
 
 ### 📊 Supplier Evaluation Framework
-- Total Cost of Ownership (TCO) — The app calculates true cost beyond purchase price, incorporating delivery time and quality ratings
-- Supplier Scorecard — Multi-factor scoring (price 40% + delivery 30% + rating 30%) embedded into dashboards
-- Strategic Sourcing — Identifies optimal supplier mix based on volume, urgency, and risk tolerance
+- **Total Cost of Ownership (TCO)** — The app calculates true cost beyond purchase price, incorporating delivery time and quality ratings
+- **Supplier Scorecard** — Multi-factor scoring (price 40% + delivery 30% + rating 30%) embedded into dashboards
+- **Strategic Sourcing** — Identifies optimal supplier mix based on volume, urgency, and risk tolerance
 
 ### 📉 Price Analysis & Forecasting
-- Time Series Analysis — Moving averages and trend detection for price patterns
-- Seasonal Adjustment — Identifies recurring price cycles (Black Friday, new product launches)
-- Volatility Measurement — Standard deviation analysis for price stability assessment
+- **Time Series Analysis** — Moving averages and trend detection for price patterns
+- **Seasonal Adjustment** — Identifies recurring price cycles (Black Friday, new product launches)
+- **Volatility Measurement** — Standard deviation analysis for price stability assessment
 
 ### 🎯 Procurement Optimization
-- Economic Order Quantity (EOQ) — RL-driven recommendations for optimal order quantities
-- Bulk Purchase Optimization — Q-learning agent learns when bulk discounts justify larger orders
-- Inventory Timing — Predicts optimal purchase windows based on price trends
+- **Economic Order Quantity (EOQ)** — RL-driven recommendations for optimal order quantities
+- **Bulk Purchase Optimization** — Q-learning agent learns when bulk discounts justify larger orders
+- **Inventory Timing** — Predicts optimal purchase windows based on price trends
 
 ### 🔬 Risk Management
-- Supplier Risk Scoring — Identifies single-supplier dependencies and concentration risk
-- Price Shock Detection — Flags sudden price changes >15% within 30 days
-- Supply Chain Resilience — Recommends supplier diversification strategies
+- **Supplier Risk Scoring** — Identifies single-supplier dependencies and concentration risk
+- **Price Shock Detection** — Flags sudden price changes >15% within 30 days
+- **Supply Chain Resilience** — Recommends supplier diversification strategies
 
 ## 💡 Procurement Transformation Impact
 This project showcases how AI can reshape procurement and supply chain management by:
