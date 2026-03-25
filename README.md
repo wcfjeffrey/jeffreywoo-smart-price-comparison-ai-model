@@ -587,20 +587,20 @@ MIT License - See LICENSE file for details.
 
 ## 📋 Sample
 
-  <img src="assets/JeffreyWooSmartPriceComparison1.png" alt="JeffreyWooSmartPriceComparison1" width="1200" height="1000" />
-  <img src="assets/JeffreyWooSmartPriceComparison2.png" alt="JeffreyWooSmartPriceComparison2" width="1200" height="600" />
+  <img src="assets/JeffreyWooSmartPriceComparison1.png" alt="JeffreyWooSmartPriceComparison1" width="1200" height="600" />
+  <img src="assets/JeffreyWooSmartPriceComparison2.png" alt="JeffreyWooSmartPriceComparison2" width="1200" height="1000" />
   <img src="assets/JeffreyWooSmartPriceComparison3.png" alt="JeffreyWooSmartPriceComparison3" width="1200" height="600" />
   <img src="assets/JeffreyWooSmartPriceComparison4.png" alt="JeffreyWooSmartPriceComparison4" width="1200" height="600" />
   <img src="assets/JeffreyWooSmartPriceComparison5.png" alt="JeffreyWooSmartPriceComparison5" width="1200" height="600" />
   <img src="assets/JeffreyWooSmartPriceComparison6.png" alt="JeffreyWooSmartPriceComparison6" width="1200" height="600" />
-  <img src="assets/JeffreyWooSmartPriceComparison7.png" alt="JeffreyWooSmartPriceComparison7" width="1200" height="800" />
-  <img src="assets/JeffreyWooSmartPriceComparison8.png" alt="JeffreyWooSmartPriceComparison8" width="1200" height="600" />
+  <img src="assets/JeffreyWooSmartPriceComparison7.png" alt="JeffreyWooSmartPriceComparison7" width="1200" height="600" />
+  <img src="assets/JeffreyWooSmartPriceComparison8.png" alt="JeffreyWooSmartPriceComparison8" width="1200" height="800" />
   <img src="assets/JeffreyWooSmartPriceComparison9.png" alt="JeffreyWooSmartPriceComparison9" width="1200" height="600" />
   <img src="assets/JeffreyWooSmartPriceComparison10.png" alt="JeffreyWooSmartPriceComparison10" width="1200" height="600" />
   <img src="assets/JeffreyWooSmartPriceComparison11.png" alt="JeffreyWooSmartPriceComparison11" width="1200" height="600" />
-  <img src="assets/JeffreyWooSmartPriceComparison12.png" alt="JeffreyWooSmartPriceComparison12" width="1200" height="800" />
-  <img src="assets/JeffreyWooSmartPriceComparison13.png" alt="JeffreyWooSmartPriceComparison13" width="1200" height="1200" />
-  <img src="assets/JeffreyWooSmartPriceComparison14.png" alt="JeffreyWooSmartPriceComparison14" width="1200" height="600" />
+  <img src="assets/JeffreyWooSmartPriceComparison12.png" alt="JeffreyWooSmartPriceComparison12" width="1200" height="600" />
+  <img src="assets/JeffreyWooSmartPriceComparison13.png" alt="JeffreyWooSmartPriceComparison13" width="1200" height="800" />
+  <img src="assets/JeffreyWooSmartPriceComparison14.png" alt="JeffreyWooSmartPriceComparison14" width="1200" height="1200" />
   <img src="assets/JeffreyWooSmartPriceComparison15.png" alt="JeffreyWooSmartPriceComparison15" width="1200" height="600" />
   
 ## 👤 About the Author
