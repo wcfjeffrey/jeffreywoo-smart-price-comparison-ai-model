@@ -185,7 +185,7 @@ This project showcases how AI can reshape procurement and supply chain managemen
 - Driving supply chain resilience by identifying alternative suppliers automatically  
 - Promoting data-driven procurement with secure handling of pricing intelligence
 
-## ⭐ Technical Skills Demonstrated
+## ⭐ Technical Skills Strengthened
 |Skill Area	| Specific Competencies|
 |-----------|----------------------|
 |AI/ML Engineering | Multi-agent systems, LLM integration (GPT-4o-ca, DeepSeek-V3, GPT-4.1-mini), hybrid AI+ML predictions, cross-encoder rerank models, reinforcement learning (Q-learning)|
