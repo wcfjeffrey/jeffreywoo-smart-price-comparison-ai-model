@@ -181,7 +181,7 @@ This app leverages procurement, supply chain, and financial principles to automa
 This project showcases how AI can reshape procurement and supply chain management by:  
 - Digitizing strategic sourcing with predictive modeling and real-time insights  
 - Enhancing procurement decisions through scenario simulations and supplier ranking  
-- Optimizing purchasing costs with 15-25% average savings across test categories  
+- Optimizing purchasing costs with high cost savings across test categories  
 - Driving supply chain resilience by identifying alternative suppliers automatically  
 - Promoting data-driven procurement with secure handling of pricing intelligence
 
@@ -221,7 +221,7 @@ Feature	How It Helps
 │       ▼                                                         │
 │  📁 Files automatically organized in your Documents folder     │
 │       │                                                         │
-│       └── Reports/2024/February/iPhone_17_Pro_report.pdf        │
+│       └── Reports/2026/March/iPhone_17_Pro_report.pdf        │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘</pre>
 
@@ -333,104 +333,104 @@ API Documentation: http://localhost:8000/docs
 ```text
 SmartPriceComparison/
 │
-├── backend/                         # FastAPI Backend
+├── backend/                                # FastAPI Backend
 │   ├── app/
-│   │   ├── api/                     # REST API Endpoints
-│   │   │   ├── price_compare.py    # Price comparison endpoints
-│   │   │   ├── anomaly_detection.py # Anomaly detection endpoints
-│   │   │   ├── reports.py          # Report generation endpoints
-│   │   │   ├── tasks.py            # Task management endpoints
-│   │   │   ├── products.py         # Product analysis endpoints
-│   │   │   └── notifications.py    # Email & calendar endpoints
+│   │   ├── api/                            # REST API Endpoints
+│   │   │   ├── price_compare.py            # Price comparison endpoints
+│   │   │   ├── anomaly_detection.py        # Anomaly detection endpoints
+│   │   │   ├── reports.py                  # Report generation endpoints
+│   │   │   ├── tasks.py                    # Task management endpoints
+│   │   │   ├── products.py                 # Product analysis endpoints
+│   │   │   └── notifications.py            # Email & calendar endpoints
 │   │   │
-│   │   ├── services/                # Business Logic Layer
-│   │   │   ├── agent_a.py          # AI Agent: Data Fetcher
-│   │   │   ├── agent_b.py          # AI Agent: Price Analyst
-│   │   │   ├── agent_c.py          # AI Agent: Report Generator
-│   │   │   ├── agent_orchestrator.py # Multi-Agent Workflow Orchestrator
-│   │   │   ├── hybrid_predictor.py  # AI + ML Hybrid Predictions
-│   │   │   ├── rerank_service.py    # Supplier Rerank Model (Cross-Encoder)
+│   │   ├── services/                       # Business Logic Layer
+│   │   │   ├── agent_a.py                  # AI Agent: Data Fetcher
+│   │   │   ├── agent_b.py                  # AI Agent: Price Analyst
+│   │   │   ├── agent_c.py                  # AI Agent: Report Generator
+│   │   │   ├── agent_orchestrator.py       # Multi-Agent Workflow Orchestrator
+│   │   │   ├── hybrid_predictor.py         # AI + ML Hybrid Predictions
+│   │   │   ├── rerank_service.py           # Supplier Rerank Model (Cross-Encoder)
 │   │   │   ├── chatanywhere_integration.py # ChatAnywhere API Client
-│   │   │   ├── task_scheduler.py    # APScheduler Task Management
-│   │   │   ├── notification_service.py # Email & Calendar Notifications
-│   │   │   ├── google_integration.py # Google Calendar API
-│   │   │   ├── windows_integration.py # Windows Desktop Notifications
-│   │   │   └── redis_cache.py       # Redis Cache Service
+│   │   │   ├── task_scheduler.py           # APScheduler Task Management
+│   │   │   ├── notification_service.py     # Email & Calendar Notifications
+│   │   │   ├── google_integration.py       # Google Calendar API
+│   │   │   ├── windows_integration.py      # Windows Desktop Notifications
+│   │   │   └── redis_cache.py              # Redis Cache Service
 │   │   │
-│   │   ├── core/                    # Core Configuration
-│   │   │   ├── config.py           # Environment settings
-│   │   │   └── database.py         # PostgreSQL connection
+│   │   ├── core/                           # Core Configuration
+│   │   │   ├── config.py                   # Environment settings
+│   │   │   └── database.py                 # PostgreSQL connection
 │   │   │
-│   │   ├── models/                  # Data Models
-│   │   │   └── task.py             # Task data structure
+│   │   ├── models/                         # Data Models
+│   │   │   └── task.py                     # Task data structure
 │   │   │
-│   │   └── main.py                  # FastAPI Application Entry Point
+│   │   └── main.py                         # FastAPI Application Entry Point
 │   │
-│   ├── data/                        # Persistent Data Storage
-│   │   ├── tasks.json              # Task storage (fallback)
-│   │   └── price_comparison.db     # SQLite (fallback)
+│   ├── data/                               # Persistent Data Storage
+│   │   ├── tasks.json                      # Task storage (fallback)
+│   │   └── price_comparison.db             # SQLite (fallback)
 │   │
-│   ├── requirements.txt             # Python dependencies
-│   └── Dockerfile                   # Docker container configuration
+│   ├── requirements.txt                    # Python dependencies
+│   └── Dockerfile                          # Docker container configuration
 │
-├── frontend/                        # Next.js Frontend
+├── frontend/                               # Next.js Frontend
 │   ├── src/
 │   │   ├── app/
-│   │   │   ├── page.tsx            # Main Dashboard
-│   │   │   ├── layout.tsx          # Root layout
-│   │   │   └── globals.css         # Global styles
+│   │   │   ├── page.tsx                    # Main Dashboard
+│   │   │   ├── layout.tsx                  # Root layout
+│   │   │   └── globals.css                 # Global styles
 │   │   │
 │   │   ├── components/
-│   │   │   └── ui/                 # Reusable UI Components
-│   │   │       ├── card.tsx        # Card component
-│   │   │       ├── button.tsx      # Button component
-│   │   │       ├── badge.tsx       # Badge component
-│   │   │       ├── input.tsx       # Input component
-│   │   │       ├── select.tsx      # Dropdown select
-│   │   │       ├── tabs.tsx        # Tab component
-│   │   │       └── alert.tsx       # Alert component
+│   │   │   └── ui/                         # Reusable UI Components
+│   │   │       ├── card.tsx                # Card component
+│   │   │       ├── button.tsx              # Button component
+│   │   │       ├── badge.tsx               # Badge component
+│   │   │       ├── input.tsx               # Input component
+│   │   │       ├── select.tsx              # Dropdown select
+│   │   │       ├── tabs.tsx                # Tab component
+│   │   │       └── alert.tsx               # Alert component
 │   │   │
-│   │   └── lib/                    # Utility functions
-│   │       └── utils.ts            # Helper functions
+│   │   └── lib/                            # Utility functions
+│   │       └── utils.ts                    # Helper functions
 │   │
-│   ├── public/                      # Static assets
-│   ├── package.json                 # NPM dependencies
-│   ├── tailwind.config.js           # Tailwind CSS config
-│   ├── next.config.js               # Next.js config
-│   └── Dockerfile                   # Docker container configuration
+│   ├── public/                             # Static assets
+│   ├── package.json                        # NPM dependencies
+│   ├── tailwind.config.js                  # Tailwind CSS config
+│   ├── next.config.js                      # Next.js config
+│   └── Dockerfile                          # Docker container configuration
 │
-├── ml/                              # Machine Learning Module
+├── ml/                                     # Machine Learning Module
 │   ├── inference/
-│   │   └── price_predictor.py      # ML price predictions
+│   │   └── price_predictor.py              # ML price predictions
 │   │
 │   ├── reinforcement_learning/
-│   │   ├── procurement_env.py      # OpenAI Gym environment
-│   │   └── train_agent.py          # RL training script
+│   │   ├── procurement_env.py              # OpenAI Gym environment
+│   │   └── train_agent.py                  # RL training script
 │   │
-│   └── tensorflow/                  # TensorFlow Models (optional)
-│       └── price_predictor.py      # TensorFlow neural network
+│   └── tensorflow/                         # TensorFlow Models (optional)
+│       └── price_predictor.py              # TensorFlow neural network
 │
-├── data/                            # Data Processing
-│   ├── spark/                      # Apache Spark jobs
-│   │   └── price_processor.py      # PySpark data processor
+├── data/                                   # Data Processing
+│   ├── spark/                              # Apache Spark jobs
+│   │   └── price_processor.py              # PySpark data processor
 │   │
-│   ├── ingestion/                  # Data ingestion pipeline
-│   │   └── price_ingestion.py      # Data loader
+│   ├── ingestion/                          # Data ingestion pipeline
+│   │   └── price_ingestion.py              # Data loader
 │   │
-│   └── warehouse/                  # Data warehouse (Parquet)
+│   └── warehouse/                          # Data warehouse (Parquet)
 │       ├── price_comparison.parquet
 │       └── historical_prices.parquet
 │
-├── kubernetes/                      # Kubernetes Deployment
-│   └── deployment.yaml              # K8s manifests
+├── kubernetes/                             # Kubernetes Deployment
+│   └── deployment.yaml                     # K8s manifests
 │
-├── reports/                         # Generated Reports
-│   └── price_data_*.csv            # Exported reports
+├── reports/                                # Generated Reports
+│   └── price_data_*.csv                    # Exported reports
 │
-├── docker-compose.yml               # Docker Compose configuration
-├── .env.example                     # Environment variables template
-├── .gitignore                       # Git ignore file
-└── README.md                        # Project documentation
+├── docker-compose.yml                      # Docker Compose configuration
+├── .env.example                            # Environment variables template
+├── .gitignore                              # Git ignore file
+└── README.md                               # Project documentation
 ```
 
 ## 📚 API Documentation
