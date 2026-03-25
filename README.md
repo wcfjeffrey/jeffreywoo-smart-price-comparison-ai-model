@@ -601,6 +601,7 @@ MIT License - See LICENSE file for details.
   <img src="assets/JeffreyWooSmartPriceComparison12.png" alt="JeffreyWooSmartPriceComparison12" width="1200" height="800" />
   <img src="assets/JeffreyWooSmartPriceComparison13.png" alt="JeffreyWooSmartPriceComparison13" width="1200" height="1200" />
   <img src="assets/JeffreyWooSmartPriceComparison14.png" alt="JeffreyWooSmartPriceComparison14" width="1200" height="600" />
+  <img src="assets/JeffreyWooSmartPriceComparison15.png" alt="JeffreyWooSmartPriceComparison15" width="1200" height="600" />
   
 ## 👤 About the Author
 Jeffrey Woo — Finance Manager | Strategic FP&A, AI Automation & Cost Optimization | MBA | FCCA | CTA | FTIHK | SAP Financial Accounting (FI) Certified Application Associate | Xero Advisor Certified
