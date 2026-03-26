@@ -264,12 +264,14 @@ Email Reports:
 |Bulk Purchase Optimization	|RL-driven recommendations for optimal order quantities|
 
 ## 🔐 Security & Authentication
-- JWT Authentication
-- OAuth Complete Google OAuth flow for calendar access
-- Environment Secrets	All API keys and credentials stored in .env
-- CORS Configuration	Proper cross-origin resource sharing for frontend-backend communication
-- Rate Limiting on public APIs
-- Input Validation with Pydantic models
+|Feature	|Description|Business Impact|
+|---------|-----------|---------------|
+|JWT Authentication|Secure token‑based authentication for user sessions|Ensures controlled access to procurement dashboards and financial data|
+|OAuth (Google Integration)|Complete Google OAuth flow for calendar access|Enables seamless scheduling and communication while maintaining enterprise‑grade security|
+|Environment Secrets|All API keys and credentials stored in .env files|Protects sensitive finance data and supports compliance with IT security policies|
+|CORS Configuration|Proper cross-origin resource sharing between frontend and backend|Guarantees safe communication across distributed systems without exposing vulnerabilities|
+|Rate Limiting|Applied to public APIs|Prevents abuse, ensures system stability, and protects financial workflows from denial‑of‑service risks|
+|Input Validation|Pydantic models enforce strict schema validation|Reduces errors, prevents injection attacks, and strengthens data integrity in procurement records|
 
 ## 📦 Getting Started
 
