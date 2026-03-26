@@ -245,12 +245,12 @@ Set up a price check once — the system handles everything else:
 ## 🗓️ Google Calendar & 📧 Gmail Integration
 Your calendar and email work for you automatically.
 
-Calendar Events:
+### Calendar Events:
 - 📅 "Weekly iPhone Price Review" appears in your Google Calendar
 - 👥 Automatically invites your procurement team
 - 🔔 Reminders set for 1 day before and 10 minutes before
 
-Email Reports:
+### Email Reports:
 - 📧 Beautiful HTML summary arrives in your inbox
 - 📁 HTML attachment for printing or sharing
 
