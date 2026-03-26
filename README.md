@@ -482,7 +482,7 @@ This system uses two prediction engines working together:
 
 |Engine | What It Does | Example|
 |-------|--------------|--------|
-|AI Engine | Understands why prices change | "iPhone prices drop in September because new models are announced"|
+|AI Engine | Understands why prices change | "iPhone 17 Pro prices drop in March 2026 because new models are announced"|
 |ML Engine | Learns from historical patterns | "Based on 3 years of data, prices always drop 8% during Black Friday"|
 
 When combined, you get high prediction accuracy — far better than either method alone.
@@ -551,13 +551,13 @@ Windows automatically saves all reports in organized folders:
 
 ```text
 Documents/PriceReports/
-├── 2024/
+├── 2026/
 │   ├── January/
-│   │   ├── iPhone_17_Pro_2024-01-15.html
-│   │   ├── iPhone_17_Pro_2024-01-15.json
-│   │   └── iPhone_17_Pro_2024-01-22.csv
+│   │   ├── iPhone_17_Pro_2026-01-15.html
+│   │   ├── iPhone_17_Pro_2026-01-15.json
+│   │   └── iPhone_17_Pro_2026-01-15.csv
 │   └── February/
-│       └── iPhone_17_Pro_2024-02-05.html
+│       └── iPhone_17_Pro_2026-02-15.html
 ```
 
 ## 💼 Who Uses This System?
