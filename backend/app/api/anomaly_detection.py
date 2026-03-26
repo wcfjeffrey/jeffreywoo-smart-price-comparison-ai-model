@@ -20,7 +20,6 @@ async def get_anomalies():
 
         anomalies = analysis.get('anomalies', [])
 
-        # Add detected_at timestamp if not present
         for anomaly in anomalies:
             if 'detected_at' not in anomaly:
                 anomaly['detected_at'] = datetime.now().isoformat()
