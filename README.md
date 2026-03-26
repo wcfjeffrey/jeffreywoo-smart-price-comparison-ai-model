@@ -444,26 +444,26 @@ Set up a price check once — the system handles everything else:
 - 💬 **Desktop Alerts**	— Windows notifications when prices change
 
 <pre lang="markdown">
-┌─────────────────────────────────────────────────────────────────┐
-│                  What Happens Automatically                     │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                 │
-│  Monday 9:00 AM                                                 │
-│       │                                                         │
-│       ▼                                                         │
-│  📊 System checks prices (takes 5 seconds)                     │
-│       │                                                         │
-│       ▼                                                         │
-│  💬 Windows Desktop Notification: "🔔 Price check complete!    │
-│      iPhone 17 Pro prices have been updated.                    │
-│      Best price: $1,049.99 at MegaStore"                        │
-│       │                                                         │
-│       ▼                                                         │
-│  📁 Files automatically organized in your Documents folder     │
-│       │                                                         │
-│       └── Reports/2026/March/iPhone_17_Pro_report.html          │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘</pre>
+┌───────────────────────────────────────────────────────────────────┐
+│                  What Happens Automatically                       │
+├───────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│  Monday 9:00 AM                                                   │
+│       │                                                           │
+│       ▼                                                           │
+│  📊 System checks prices (takes 5 seconds)                       │
+│       │                                                           │
+│       ▼                                                           │
+│  💬 Windows Desktop Notification: "🔔 Price check complete!      │
+│      iPhone 17 Pro prices have been updated.                      │
+│      Best price: $1,049.99 at MegaStore"                          │
+│       │                                                           │
+│       ▼                                                           │
+│  📁 Files automatically organized in your Documents folder       │
+│       │                                                           │
+│       └── Reports/2026/March/iPhone 17 Pro_report_2026-01-25.html │
+│                                                                   │
+└───────────────────────────────────────────────────────────────────┘</pre>
 
 #### 2. 📧 Email Report
 You automatically receive an email with:
