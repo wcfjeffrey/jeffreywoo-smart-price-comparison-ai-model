@@ -213,7 +213,7 @@ This project showcases how AI can reshape procurement and supply chain managemen
 |Risk & Compliance Management | Automated anomaly detection and supplier risk scoring embedded into workflows. | Improves governance, reduces fraud exposure, and ensures compliance with internal controls.|
 |Strategic Procurement & Negotiation | Supplier ranking models balance cost, delivery, and quality for optimal vendor selection. | Drives cost savings, strengthens negotiation leverage, and supports long term supplier relationships.|
 |Digital Finance Transformation Leadership | ERP like integration using PostgreSQL, Redis, Docker, and Kubernetes for scalable automation. | Demonstrates readiness to lead modernization initiatives and align finance systems with enterprise digital strategy.|
-|Reporting & Communication	Automated generation of HTML, PDF, and CSV reports for stakeholders. |	Improves transparency, accelerates decision cycles, and strengthens executive communication.|
+|Reporting & Communication | Automated generation of HTML, PDF, and CSV reports for stakeholders. |	Improves transparency, accelerates decision cycles, and strengthens executive communication.|
 
 ## 🪟 Automated Scheduling with Windows Integration
 Set up a price check once — the system handles everything else:
