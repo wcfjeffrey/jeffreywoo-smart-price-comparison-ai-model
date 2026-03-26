@@ -159,23 +159,27 @@ This app leverages procurement, supply chain, and financial principles to automa
 
 ### 📊 Supplier Evaluation Framework
 - **Total Cost of Ownership (TCO)** — The app calculates true cost beyond purchase price, incorporating delivery time and quality ratings
-- **Supplier Scorecard** — Multi-factor scoring (price 40% + delivery 30% + rating 30%) embedded into dashboards
-- **Strategic Sourcing** — Identifies optimal supplier mix based on volume, urgency, and risk tolerance
+- **Supplier Scorecard** — Multi-factor scoring (price 40% + delivery 30% + rating 30%) embedded into dashboards for transparent decision‑making
+- **Strategic Sourcing** — Identifies optimal supplier mix based on volume, urgency, and risk tolerance, aligning with corporate finance strategies
+- **Portfolio & Trade‑off Analysis** — Supplier rerank models balance price, speed, and reliability, echoing portfolio optimization theory
 
 ### 📉 Price Analysis & Forecasting
-- **Time Series Analysis** — Moving averages and trend detection for price patterns
-- **Seasonal Adjustment** — Identifies recurring price cycles (Black Friday, new product launches)
-- **Volatility Measurement** — Standard deviation analysis for price stability assessment
+- **Time Series Analysis** — Moving averages and trend detection for procurement cost forecasting
+- **Seasonal Adjustment** — Detects recurring cycles (e.g., Black Friday, new product launches) to optimize timing
+- **Volatility Measurement** — Standard deviation analysis for price stability and risk assessment
+- **Forecasting & Econometrics** — Hybrid AI + ML predictions (30‑day short‑term, 90‑day long‑term) apply econometric forecasting principles to procurement costs
 
 ### 🎯 Procurement Optimization
-- **Economic Order Quantity (EOQ)** — RL-driven recommendations for optimal order quantities
+- **Economic Order Quantity (EOQ)** — Reinforcement learning (RL) driven recommendations for optimal order quantities to minimize holding and transaction costs
 - **Bulk Purchase Optimization** — Q-learning agent learns when bulk discounts justify larger orders
-- **Inventory Timing** — Predicts optimal purchase windows based on price trends
+- **Inventory Timing** — Predicts optimal purchase windows based on price trends, strengthening working capital management
+- **Cost Optimization & Purchasing Timing** — Reinforcement learning simulates optimal buying strategies, echoing EOQ and dynamic pricing theory
 
 ### 🔬 Risk Management
 - **Supplier Risk Scoring** — Identifies single-supplier dependencies and concentration risk
-- **Price Shock Detection** — Flags sudden price changes >15% within 30 days
-- **Supply Chain Resilience** — Recommends supplier diversification strategies
+- **Price Shock Detection** — Flags sudden price changes >15% within 30 days for proactive mitigation
+- **Supply Chain Resilience** — Recommends supplier diversification strategies to safeguard against disruptions
+- **Risk Management Theory** — Anomaly detection and risk scoring apply statistical finance methods to identify volatility and supply risk
 
 ## 💡 Procurement Transformation Impact
 This project showcases how AI can reshape procurement and supply chain management by:  
@@ -184,6 +188,12 @@ This project showcases how AI can reshape procurement and supply chain managemen
 - Optimizing purchasing costs with high cost savings across test categories  
 - Driving supply chain resilience by identifying alternative suppliers automatically  
 - Promoting data-driven procurement with secure handling of pricing intelligence
+
+## 🔄 Finance Transformation Impact
+- Automation of Procurement Workflows - Scheduled price checks, email/calendar integration, and Windows notifications reduce manual effort, aligning with digital transformation goals
+- Data‑Driven Decision Making - Apache Spark and MLflow enable big data analytics, strengthening transparency and compliance in procurement
+- Strategic Alignment - Embedding AI into procurement helps finance teams anticipate market changes, optimize supplier contracts, and align purchasing with corporate strategy
+- Cross‑Functional Efficiency - Integration with Gmail/Google Calendar/Windows demonstrates how finance operations can be embedded into enterprise workflows, reducing silos
 
 ## ⭐ Technical Skills Strengthened
 |Skill Area	| Specific Competencies|
@@ -195,6 +205,15 @@ This project showcases how AI can reshape procurement and supply chain managemen
 |Database Design	| PostgreSQL with SQLAlchemy async, Redis caching, schema design|
 |DevOps	| Docker containerization, Kubernetes orchestration, GitHub Actions CI/CD|
 |API Integration	| Google Calendar OAuth, Gmail SMTP, Windows API, ChatAnywhere LLM API|
+
+## 💡 Finance Skills Strengthened
+|Skill Area	|Specific Competencies|Business Impact|
+|-----------|---------------------|---------------|
+|Analytical Skills | Applied AI/ML predictive modeling to interpret complex financial data and identify actionable insights. | Enhances forecasting accuracy, supports smarter purchasing, and strengthens data driven decision making.|
+|Risk & Compliance Management | Automated anomaly detection and supplier risk scoring embedded into workflows. | Improves governance, reduces fraud exposure, and ensures compliance with internal controls.|
+|Strategic Procurement & Negotiation | Supplier ranking models balance cost, delivery, and quality for optimal vendor selection. | Drives cost savings, strengthens negotiation leverage, and supports long term supplier relationships.|
+|Digital Finance Transformation Leadership | ERP like integration using PostgreSQL, Redis, Docker, and Kubernetes for scalable automation. | Demonstrates readiness to lead modernization initiatives and align finance systems with enterprise digital strategy.|
+|Reporting & Communication	Automated generation of HTML, PDF, and CSV reports for stakeholders. |	Improves transparency, accelerates decision cycles, and strengthens executive communication.|
 
 ## 🪟 Automated Scheduling with Windows Integration
 Set up a price check once — the system handles everything else:
