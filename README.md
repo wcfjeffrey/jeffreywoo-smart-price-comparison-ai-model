@@ -196,7 +196,7 @@ This project showcases how AI can reshape procurement and supply chain managemen
 |DevOps	| Docker containerization, Kubernetes orchestration, GitHub Actions CI/CD|
 |API Integration	| Google Calendar OAuth, Gmail SMTP, Windows API, ChatAnywhere LLM API|
 
-## Automated Scheduling with Windows Integration
+## 🪟 Automated Scheduling with Windows Integration
 Set up a price check once — the system handles everything else:
 - ⏰ **Scheduled Checks**	— Daily / Weekly / Monthly automatic price checks
 - 📧 **Email Reports**	— Get price reports in HTML
@@ -223,7 +223,7 @@ Set up a price check once — the system handles everything else:
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘</pre>
 
-## Google Calendar & Gmail Integration
+## 🗓️ Google Calendar & 📧 Gmail Integration
 Your calendar and email work for you automatically.
 
 Calendar Events:
@@ -262,7 +262,7 @@ Email Reports:
 - OpenAI API Key (via chatanywhere.tech)
 - Docker Desktop (for PostgreSQL/Redis)
 
-### Setup
+### ⚙️ Setup
 
 #### 1. Clone and install backend
 
@@ -328,7 +328,7 @@ Frontend: http://localhost:3000
 Backend API: http://localhost:8000
 API Documentation: http://localhost:8000/docs
 ```
-## Project Structure
+## 📑 Project Structure
 ```text
 SmartPriceComparison/
 │
@@ -476,7 +476,7 @@ Think of it as hiring three expert employees:
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘</pre>
 
-### Hybrid AI + Machine Learning
+### 🧠 Hybrid AI + Machine Learning
 
 This system uses two prediction engines working together:
 
@@ -518,7 +518,7 @@ The system uses MCP (Message Control Protocol) to manage all scheduled tasks:
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘</pre>
 
-### 📧 What Happens When a Task Runs?
+### 🪄 What Happens When a Task Runs?
 When the scheduled price check runs, three things happen automatically:
 
 #### 1. Windows Desktop Notification
@@ -546,7 +546,7 @@ A meeting is automatically created in your calendar:
 📝 Agenda: Review price trends, discuss purchasing strategy
 ```
 
-#### 4. Files Automatically Organized
+#### 4. 🗂️ Files Automatically Organized
 Windows automatically saves all reports in organized folders:
 
 ```text
