@@ -466,7 +466,7 @@ Set up a price check once — the system handles everything else:
 │       ▼                                                             │
 │  💬 Windows Desktop Notification: "🔔 Price check complete!        │
 │      iPhone 17 Pro prices have been updated.                        │
-│      Best price: $1,049.99 at MegaStore"                            │
+│      Best price: $1,129.99 at GadgetHub"                            │
 │       │                                                             │
 │       ▼                                                             │
 │  📁 Files automatically organized in your Documents folder         │
