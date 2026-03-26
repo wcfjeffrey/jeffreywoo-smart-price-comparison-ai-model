@@ -84,7 +84,7 @@ Most price comparison tools just show you today's prices. This system goes furth
 |Feature	|Description|Business Impact|
 |---------|-----------|---------------|
 |Price Trend Analysis	|Statistical analysis of price movements over time|Improves forecasting accuracy, enabling finance teams to anticipate cost changes and optimize procurement timing|
-|Supplier Performance Scoring	|Hybrid scoring model combining deterministic weighted factors (price, delivery, rating) with a cross‑encoder neural network that understands semantic trade‑offs|Reduces procurement costs through optimal supplier selection, provides transparent and audit‑ready rationale, and strengthens negotiation leverage by quantifying value beyond simple price comparisons|
+|Supplier Performance Scoring	|Hybrid scoring model combining deterministic weighted factors (price 50% + delivery 20% + rating 30%) with a cross‑encoder neural network that understands semantic trade‑offs|Reduces procurement costs through optimal supplier selection, provides transparent and audit‑ready rationale, and strengthens negotiation leverage by quantifying value beyond simple price comparisons|
 |Market Volatility Tracking	|Standard deviation and volatility calculations|Identifies unstable markets early, supporting risk mitigation and resilient procurement strategies|
 |Seasonal Pattern Detection	|Identification of recurring price patterns|Helps procurement managers align purchasing with seasonal cycles, reducing costs and improving inventory planning|
 |Bulk Purchase Optimization	|RL-driven recommendations for optimal order quantities|Minimizes holding and transaction costs while maximizing discounts, strengthening working capital efficiency|
@@ -104,7 +104,7 @@ This app leverages procurement, supply chain, and financial principles to automa
 
 ### 📊 Supplier Evaluation Framework
 - **Total Cost of Ownership (TCO)** — The app calculates true cost beyond purchase price, incorporating delivery time and quality ratings
-- **Supplier Scorecard** — Hybrid AI‑powered supplier evaluation combining deterministic weighted metrics (price, delivery, rating) with a cross‑encoder neural network that understands semantic trade‑offs, delivering transparent, audit‑ready decision‑making by quantifying value beyond simple price comparisons
+- **Supplier Scorecard** — Hybrid AI‑powered supplier evaluation combining deterministic weighted metrics (price 50% + delivery 20% + rating 30%) with a cross‑encoder neural network that understands semantic trade‑offs, delivering transparent, audit‑ready decision‑making by quantifying value beyond simple price comparisons
 - **Strategic Sourcing** — Identifies optimal supplier mix based on volume, urgency, and risk tolerance, aligning with corporate finance strategies
 - **Portfolio & Trade‑off Analysis** — Supplier rerank models balance price, speed, and reliability, echoing portfolio optimization theory
 
