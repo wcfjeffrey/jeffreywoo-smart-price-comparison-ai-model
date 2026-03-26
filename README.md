@@ -70,6 +70,25 @@ Most price comparison tools just show you today's prices. This system goes furth
 |Big Data Processing	|❌ No	|✅ Apache Spark|
 |Report Generation	|❌ Manual	|✅ Automatic (HTML/JSON/CSV)|
 
+## 📈 Advanced Analytics
+|Feature	|Description|Business Impact|
+|---------|-----------|---------------|
+|Price Trend Analysis	|Statistical analysis of price movements over time|Improves forecasting accuracy, enabling finance teams to anticipate cost changes and optimize procurement timing|
+|Supplier Performance Scoring	|Multi-factor scoring with customizable weights|Enhances vendor selection, drives cost savings, and strengthens negotiation leverage with transparent supplier evaluation|
+|Market Volatility Tracking	|Standard deviation and volatility calculations|Identifies unstable markets early, supporting risk mitigation and resilient procurement strategies|
+|Seasonal Pattern Detection	|Identification of recurring price patterns|Helps procurement managers align purchasing with seasonal cycles, reducing costs and improving inventory planning|
+|Bulk Purchase Optimization	|RL-driven recommendations for optimal order quantities|Minimizes holding and transaction costs while maximizing discounts, strengthening working capital efficiency|
+
+## 🔐 Security & Authentication
+|Feature	|Description|Business Impact|
+|---------|-----------|---------------|
+|JWT Authentication|Secure token‑based authentication for user sessions|Ensures controlled access to procurement dashboards and financial data|
+|OAuth (Google Integration)|Complete Google OAuth flow for calendar access|Enables seamless scheduling and communication while maintaining enterprise‑grade security|
+|Environment Secrets|All API keys and credentials stored in .env files|Protects sensitive finance data and supports compliance with IT security policies|
+|CORS Configuration|Proper cross-origin resource sharing between frontend and backend|Guarantees safe communication across distributed systems without exposing vulnerabilities|
+|Rate Limiting|Applied to public APIs|Prevents abuse, ensures system stability, and protects financial workflows from denial‑of‑service risks|
+|Input Validation|Pydantic models enforce strict schema validation|Reduces errors, prevents injection attacks, and strengthens data integrity in procurement records|
+
 ## 📈 Financial & Procurement Theories Applied
 This app leverages procurement, supply chain, and financial principles to automate supplier evaluation, price analysis, and purchase decisions. It transforms raw price data into actionable insights for procurement managers, supply chain directors, and CFOs:
 
@@ -214,64 +233,6 @@ This project showcases how AI can reshape procurement and supply chain managemen
 | Database	| PostgreSQL, Redis| 
 | DevOps	| Docker, Kubernetes, GitHub Actions| 
 | APIs	| Google Calendar, Gmail, Windows API| 
-
-## 🪟 Automated Scheduling with Windows Integration
-Set up a price check once — the system handles everything else:
-- ⏰ **Scheduled Checks**	— Daily / Weekly / Monthly automatic price checks
-- 📧 **Email Reports**	— Get price reports in HTML
-- 📅 **Calendar Events**	— Auto-create Google Calendar meetings to review prices
-- 💬 **Desktop Alerts**	— Windows notifications when prices change
-
-<pre lang="markdown">
-┌─────────────────────────────────────────────────────────────────┐
-│                  What Happens Automatically                     │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                 │
-│  Monday 9:00 AM                                                 │
-│       │                                                         │
-│       ▼                                                         │
-│  📊 System checks prices (takes 5 seconds)                     │
-│       │                                                         │
-│       ▼                                                         │
-│  💬 Windows Desktop Notification: "Price check complete!"      │
-│       │                                                         │
-│       ▼                                                         │
-│  📁 Files automatically organized in your Documents folder     │
-│       │                                                         │
-│       └── Reports/2026/March/iPhone_17_Pro_report.html          │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘</pre>
-
-## 🗓️ Google Calendar & 📧 Gmail Integration
-Your calendar and email work for you automatically.
-
-### Calendar Events:
-- 📅 "Weekly iPhone Price Review" appears in your Google Calendar
-- 👥 Automatically invites your procurement team
-- 🔔 Reminders set for 1 day before and 10 minutes before
-
-### Email Reports:
-- 📧 Beautiful HTML summary arrives in your inbox
-- 📁 HTML attachment for printing or sharing
-
-## 📈 Advanced Analytics
-|Feature	|Description|
-|---------|-----------|
-|Price Trend Analysis	|Statistical analysis of price movements over time|
-|Supplier Performance Scoring	|Multi-factor scoring with customizable weights|
-|Market Volatility Tracking	|Standard deviation and volatility calculations|
-|Seasonal Pattern Detection	|Identification of recurring price patterns|
-|Bulk Purchase Optimization	|RL-driven recommendations for optimal order quantities|
-
-## 🔐 Security & Authentication
-|Feature	|Description|Business Impact|
-|---------|-----------|---------------|
-|JWT Authentication|Secure token‑based authentication for user sessions|Ensures controlled access to procurement dashboards and financial data|
-|OAuth (Google Integration)|Complete Google OAuth flow for calendar access|Enables seamless scheduling and communication while maintaining enterprise‑grade security|
-|Environment Secrets|All API keys and credentials stored in .env files|Protects sensitive finance data and supports compliance with IT security policies|
-|CORS Configuration|Proper cross-origin resource sharing between frontend and backend|Guarantees safe communication across distributed systems without exposing vulnerabilities|
-|Rate Limiting|Applied to public APIs|Prevents abuse, ensures system stability, and protects financial workflows from denial‑of‑service risks|
-|Input Validation|Pydantic models enforce strict schema validation|Reduces errors, prevents injection attacks, and strengthens data integrity in procurement records|
 
 ## 💼 Who Uses This System?
 
@@ -475,23 +436,43 @@ The system uses MCP (Message Control Protocol) to manage all scheduled tasks:
 ### 🪄 What Happens When a Task Runs?
 When the scheduled price check runs, three things happen automatically:
 
-#### 1. Windows Desktop Notification
-A pop-up appears on your computer:
+#### 1. 🪟 Windows Desktop Notification
+Set up a price check once — the system handles everything else:
+- ⏰ **Scheduled Checks**	— Daily / Weekly / Monthly automatic price checks
+- 📧 **Email Reports**	— Get price reports in HTML
+- 📅 **Calendar Events**	— Auto-create Google Calendar meetings to review prices
+- 💬 **Desktop Alerts**	— Windows notifications when prices change
 
-```bash
-🔔 Price Check Complete!
-iPhone 17 Pro prices have been updated.
-Best price: $1,049.99 at MegaStore
-```
+<pre lang="markdown">
+┌─────────────────────────────────────────────────────────────────┐
+│                  What Happens Automatically                     │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  Monday 9:00 AM                                                 │
+│       │                                                         │
+│       ▼                                                         │
+│  📊 System checks prices (takes 5 seconds)                     │
+│       │                                                         │
+│       ▼                                                         │
+│  💬 Windows Desktop Notification: "🔔 Price check complete!    │
+│      iPhone 17 Pro prices have been updated.                    │
+│      Best price: $1,049.99 at MegaStore"                        │
+│       │                                                         │
+│       ▼                                                         │
+│  📁 Files automatically organized in your Documents folder     │
+│       │                                                         │
+│       └── Reports/2026/March/iPhone_17_Pro_report.html          │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘</pre>
 
-#### 2. Email Report
-You receive an email with:
-- 📊 **HTML Report** — Beautiful formatted summary
+#### 2. 📧 Email Report
+You automatically receive an email with:
+- 📊 **HTML Report** — Beautiful formatted HTML summary for printing or sharing arrives in your inbox
 - 📄 **JSON File** — Easily imported into Power BI, Tableau, Power Query, or turned into a spreadsheet by any converters for further analysis
 - 📁 **CSV File** — Raw data for your own analysis
 
-#### 3. Google Calendar Event
-A meeting is automatically created in your calendar:
+#### 3. 🗓️ Google Calendar Event
+A meeting is automatically created in your Google Calendar (e.g., including reminders set for 1 day before and 10 minutes before):
 
 ```bash
 📅 Weekly Price Review: iPhone 17 Pro
