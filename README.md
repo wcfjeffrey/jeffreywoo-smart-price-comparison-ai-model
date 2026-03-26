@@ -133,10 +133,10 @@ This project showcases how AI can reshape procurement and supply chain managemen
 ## 💡 Finance Skills Strengthened
 |Skill Area	|Specific Competencies|Business Impact|
 |-----------|---------------------|---------------|
-|Analytical Skills | Applied AI/ML predictive modeling to interpret complex financial data and identify actionable insights | Enhances forecasting accuracy, supports smarter purchasing, and strengthens data driven decision making|
+|Analytical Skills | Applied AI/ML predictive modeling to interpret complex financial data and identify actionable insights | Enhances forecasting accuracy, supports smarter purchasing, and strengthens data-driven decision making|
 |Risk & Compliance Management | Automated anomaly detection and supplier risk scoring embedded into workflows | Improves governance, reduces fraud exposure, and ensures compliance with internal controls|
-|Strategic Procurement & Negotiation | Supplier ranking models balance cost, delivery, and quality for optimal vendor selection | Drives cost savings, strengthens negotiation leverage, and supports long term supplier relationships|
-|Digital Finance Transformation Leadership | ERP like integration using PostgreSQL, Redis, Docker, and Kubernetes for scalable automation | Demonstrates readiness to lead modernization initiatives and align finance systems with enterprise digital strategy|
+|Strategic Procurement & Negotiation | Supplier ranking models balance cost, delivery, and quality for optimal vendor selection | Drives cost savings, strengthens negotiation leverage, and supports long-term supplier relationships|
+|Digital Finance Transformation Leadership | ERP-like integration using PostgreSQL, Redis, Docker, and Kubernetes for scalable automation | Demonstrates readiness to lead modernization initiatives and align finance systems with enterprise digital strategy|
 |Reporting & Communication | Automated generation of HTML, PDF, and CSV reports for stakeholders |	Improves transparency, accelerates decision cycles, and strengthens executive communication|
 
 ## ⭐ Technical Skills Strengthened
@@ -172,13 +172,13 @@ This project showcases how AI can reshape procurement and supply chain managemen
 │  └──────────────────────────────────────────────────────────────────┘       │
 │                                    │                                        │
 │                                    ▼                                        │
-│  ┌──────────────────────────────────────────────────────────────────┐       │
-│  │                    Data & Infrastructure                         │       │
-│  │  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐          │       │
-│  │  │  Spark   │  │  MLflow  │  │  Docker  │  │   K8s    │          │       │
-│  │  │  Big Data│  │  Model   │  │  Contain │  │  Orchest │          │       │
-│  │  └──────────┘  └──────────┘  └──────────┘  └──────────┘          │       │
-│  └──────────────────────────────────────────────────────────────────┘       │
+│  ┌───────────────────────────────────────────────────────────────────┐      │
+│  │                    Data & Infrastructure                          │      │
+│  │  ┌──────────┐  ┌──────────┐  ┌───────────┐  ┌──────────┐          │      │
+│  │  │  Spark   │  │  MLflow  │  │ Docker    │  │   K8s    │          │      │
+│  │  │  Big Data│  │  Model   │  │ Container │  │ Orchest. │          │      │
+│  │  └──────────┘  └──────────┘  └───────────┘  └──────────┘          │      │
+│  └───────────────────────────────────────────────────────────────────┘      │
 │                                                                             │
 └─────────────────────────────────────────────────────────────────────────────┘</pre>
 
@@ -467,7 +467,7 @@ Set up a price check once — the system handles everything else:
 
 #### 2. 📧 Email Report
 You automatically receive an email with:
-- 📊 **HTML Report** — Beautiful formatted HTML summary for printing or sharing arrives in your inbox
+- 📊 **HTML Report** — Beautifully formatted HTML summary for printing or sharing arrives in your inbox
 - 📄 **JSON File** — Easily imported into Power BI, Tableau, Power Query, or turned into a spreadsheet by any converters for further analysis
 - 📁 **CSV File** — Raw data for your own analysis
 
@@ -606,8 +606,8 @@ MIT License - See LICENSE file for details.
 - **Enterprise Data Pipeline** - Built Spark-based processing for TB-scale price analysis
 - **MLOps Integration** - Implemented MLflow for model versioning and experiment tracking
 - **Production Ready** - Docker and Kubernetes deployment with high Service-Level Agreement (SLA)
-- **Real-time Notifications** - Integrated Gmail and Google Calendar APIs
-- **Modern UI** - Next.js dashboard with 60 FPS animations and responsive design
+- **Real-time Notifications** - Integrated Gmail, Google Calendar, and Windows APIs
+- **Modern UI** - Next.js dashboard with responsive design
   
 ## 👤 About the Author
 Jeffrey Woo — Finance Manager | Strategic FP&A, AI Automation & Cost Optimization | MBA | FCCA | CTA | FTIHK | SAP Financial Accounting (FI) Certified Application Associate | Xero Advisor Certified
