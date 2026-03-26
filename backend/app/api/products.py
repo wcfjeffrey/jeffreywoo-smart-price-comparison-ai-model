@@ -1,12 +1,11 @@
 from fastapi import APIRouter, HTTPException, BackgroundTasks
 from typing import Dict, Any, List
 from datetime import datetime
-import logging
+
 from app.services.product_analyzer import ProductAnalyzer
 
 router = APIRouter()
 analyzer = ProductAnalyzer()
-logger = logging.getLogger(__name__)
 
 
 @router.post("/analyze")
@@ -19,7 +18,6 @@ async def analyze_product(product_name: str, background_tasks: BackgroundTasks =
             "data": result
         }
     except Exception as e:
-        logger.error(f"Error analyzing product: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
@@ -33,7 +31,6 @@ async def get_product_analysis(product_name: str):
             "data": result
         }
     except Exception as e:
-        logger.error(f"Error analyzing product: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
@@ -43,13 +40,9 @@ async def compare_product_prices(product_name: str):
     try:
         result = await analyzer.analyze_product(product_name)
 
-        # Debug: Log what we received
-        logger.info(f"Analyzer result type: {type(result)}")
-
         # Ensure result is a dictionary
         if isinstance(result, list):
             # If result is a list, wrap it in a dictionary
-            logger.warning(f"Result is a list, wrapping in dictionary")
             analysis_data = {
                 "data": result,
                 "suppliers": result,
@@ -67,7 +60,6 @@ async def compare_product_prices(product_name: str):
             analysis_data = result
         else:
             # Unknown type, create empty dict
-            logger.error(f"Unexpected result type: {type(result)}")
             analysis_data = {}
 
         # Format comparison data
@@ -83,18 +75,11 @@ async def compare_product_prices(product_name: str):
             "risk_analysis": analysis_data.get("risk_analysis", {}),
         }
 
-        # Debug: Log what we're returning
-        logger.info(f"Returning comparison for {product_name}")
-        logger.info(f"Predictions present: {bool(comparison.get('predictions'))}")
-        logger.info(f"Short-term prediction: {comparison.get('predictions', {}).get('short_term_trend', {}).get('direction', 'N/A')}")
-        logger.info(f"Short-term change: {comparison.get('predictions', {}).get('short_term_trend', {}).get('change_percent', 0)}%")
-
         return {
             "status": "success",
             "data": comparison
         }
     except Exception as e:
-        logger.error(f"Error comparing prices for {product_name}: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail=f"Analysis failed: {str(e)}")
 
 
@@ -129,7 +114,6 @@ async def get_ml_predictions(product_name: str):
             "timestamp": datetime.now().isoformat()
         }
     except Exception as e:
-        logger.error(f"ML prediction error: {e}")
         return {"status": "error", "message": str(e)}
 
 
@@ -195,14 +179,12 @@ async def rl_optimize(product_name: str):
         }
 
     except ImportError as e:
-        logger.warning(f"RL modules not available: {e}")
         return {
             "status": "warning",
             "message": "Reinforcement Learning module not fully configured. Run training first: python ml/reinforcement_learning/train_agent.py",
             "setup_instructions": "1. Install gymnasium: pip install gymnasium\n2. Run training: python ml/reinforcement_learning/train_agent.py"
         }
     except Exception as e:
-        logger.error(f"RL optimization error: {e}")
         return {
             "status": "error",
             "message": str(e),
@@ -248,7 +230,6 @@ async def clear_product_cache(product_name: str):
             "message": f"Cache cleared for {product_name}"
         }
     except Exception as e:
-        logger.error(f"Error clearing cache: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
@@ -262,5 +243,4 @@ async def clear_all_cache():
             "message": "All cache cleared"
         }
     except Exception as e:
-        logger.error(f"Error clearing cache: {e}")
         raise HTTPException(status_code=500, detail=str(e))
