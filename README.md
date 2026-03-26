@@ -70,6 +70,67 @@ Most price comparison tools just show you today's prices. This system goes furth
 |Big Data Processing	|❌ No	|✅ Apache Spark|
 |Report Generation	|❌ Manual	|✅ Automatic (HTML/JSON/CSV)|
 
+## 📈 Financial & Procurement Theories Applied
+This app leverages procurement, supply chain, and financial principles to automate supplier evaluation, price analysis, and purchase decisions. It transforms raw price data into actionable insights for procurement managers, supply chain directors, and CFOs:
+
+### 📊 Supplier Evaluation Framework
+- **Total Cost of Ownership (TCO)** — The app calculates true cost beyond purchase price, incorporating delivery time and quality ratings
+- **Supplier Scorecard** — Multi-factor scoring (price 40% + delivery 30% + rating 30%) embedded into dashboards for transparent decision‑making
+- **Strategic Sourcing** — Identifies optimal supplier mix based on volume, urgency, and risk tolerance, aligning with corporate finance strategies
+- **Portfolio & Trade‑off Analysis** — Supplier rerank models balance price, speed, and reliability, echoing portfolio optimization theory
+
+### 📉 Price Analysis & Forecasting
+- **Time Series Analysis** — Moving averages and trend detection for procurement cost forecasting
+- **Seasonal Adjustment** — Detects recurring cycles (e.g., Black Friday, new product launches) to optimize timing
+- **Volatility Measurement** — Standard deviation analysis for price stability and risk assessment
+- **Forecasting & Econometrics** — Hybrid AI + ML predictions (30‑day short‑term, 90‑day long‑term) apply econometric forecasting principles to procurement costs
+
+### 🎯 Procurement Optimization
+- **Economic Order Quantity (EOQ)** — Reinforcement learning (RL) driven recommendations for optimal order quantities to minimize holding and transaction costs
+- **Bulk Purchase Optimization** — Q-learning agent learns when bulk discounts justify larger orders
+- **Inventory Timing** — Predicts optimal purchase windows based on price trends, strengthening working capital management
+- **Cost Optimization & Purchasing Timing** — Reinforcement learning simulates optimal buying strategies, echoing EOQ and dynamic pricing theory
+
+### 🔬 Risk Management
+- **Supplier Risk Scoring** — Identifies single-supplier dependencies and concentration risk
+- **Price Shock Detection** — Flags sudden price changes >15% within 30 days for proactive mitigation
+- **Supply Chain Resilience** — Recommends supplier diversification strategies to safeguard against disruptions
+- **Risk Management Theory** — Anomaly detection and risk scoring apply statistical finance methods to identify volatility and supply risk
+
+## 🔄 Finance Transformation Impact
+- Automation of Procurement Workflows - Scheduled price checks, email/calendar integration, and Windows notifications reduce manual effort, aligning with digital transformation goals
+- Data‑Driven Decision Making - Apache Spark and MLflow enable big data analytics, strengthening transparency and compliance in procurement
+- Strategic Alignment - Embedding AI into procurement helps finance teams anticipate market changes, optimize supplier contracts, and align purchasing with corporate strategy
+- Cross‑Functional Efficiency - Integration with Gmail/Google Calendar/Windows demonstrates how finance operations can be embedded into enterprise workflows, reducing silos
+
+## 💡 Procurement Transformation Impact
+This project showcases how AI can reshape procurement and supply chain management by:  
+- Digitizing strategic sourcing with predictive modeling and real-time insights  
+- Enhancing procurement decisions through scenario simulations and supplier ranking  
+- Optimizing purchasing costs with high cost savings across test categories  
+- Driving supply chain resilience by identifying alternative suppliers automatically  
+- Promoting data-driven procurement with secure handling of pricing intelligence
+
+## 💡 Finance Skills Strengthened
+|Skill Area	|Specific Competencies|Business Impact|
+|-----------|---------------------|---------------|
+|Analytical Skills | Applied AI/ML predictive modeling to interpret complex financial data and identify actionable insights | Enhances forecasting accuracy, supports smarter purchasing, and strengthens data driven decision making|
+|Risk & Compliance Management | Automated anomaly detection and supplier risk scoring embedded into workflows | Improves governance, reduces fraud exposure, and ensures compliance with internal controls|
+|Strategic Procurement & Negotiation | Supplier ranking models balance cost, delivery, and quality for optimal vendor selection | Drives cost savings, strengthens negotiation leverage, and supports long term supplier relationships|
+|Digital Finance Transformation Leadership | ERP like integration using PostgreSQL, Redis, Docker, and Kubernetes for scalable automation | Demonstrates readiness to lead modernization initiatives and align finance systems with enterprise digital strategy|
+|Reporting & Communication | Automated generation of HTML, PDF, and CSV reports for stakeholders |	Improves transparency, accelerates decision cycles, and strengthens executive communication|
+
+## ⭐ Technical Skills Strengthened
+|Skill Area	| Specific Competencies|Business Impact|
+|-----------|----------------------|---------------|
+|AI/ML Engineering | Multi-agent systems, LLM integration (GPT-4o-ca, DeepSeek-V3, GPT-4.1-mini), hybrid AI+ML predictions, cross-encoder rerank models, reinforcement learning (Q-learning)|Enables smarter procurement decisions, supplier ranking, and predictive cost optimization — directly improving financial efficiency and risk management|
+|Big Data	| Apache Spark for distributed processing, Parquet data warehousing, PySpark analytics|Provides scalable analytics for large procurement datasets, strengthening transparency, compliance, and enterprise‑wide financial reporting|
+|MLOps	| MLflow model tracking, experiment logging, model versioning|Ensures reliable, auditable AI models for finance workflows, supporting governance, reproducibility, and continuous improvement in transformation projects|
+|Full-Stack Development	| FastAPI async backend, Next.js frontend, Tailwind CSS, real-time dashboards|Delivers user‑friendly dashboards for CFOs and procurement managers, improving decision speed and stakeholder engagement|
+|Database Design	| PostgreSQL with SQLAlchemy async, Redis caching, schema design|Provides robust financial data storage and fast retrieval, ensuring accuracy in procurement records and compliance reporting|
+|DevOps	| Docker containerization, Kubernetes orchestration, GitHub Actions CI/CD|Guarantees scalable, resilient finance applications with automated deployment — reducing downtime and supporting digital transformation|
+|API Integration	| Google Calendar OAuth, Gmail SMTP, Windows API, ChatAnywhere LLM API|Embeds finance workflows into enterprise systems (scheduling, notifications, communication), breaking silos and improving cross‑functional efficiency|
+
 ## 🏗️ Multi-Agent AI System Architecture
 <pre lang="markdown">
 ┌─────────────────────────────────────────────────────────────────────────────┐
@@ -154,67 +215,6 @@ Most price comparison tools just show you today's prices. This system goes furth
 | DevOps	| Docker, Kubernetes, GitHub Actions| 
 | APIs	| Google Calendar, Gmail, Windows API| 
 
-## 📈 Financial & Procurement Theories Applied
-This app leverages procurement, supply chain, and financial principles to automate supplier evaluation, price analysis, and purchase decisions. It transforms raw price data into actionable insights for procurement managers, supply chain directors, and CFOs:
-
-### 📊 Supplier Evaluation Framework
-- **Total Cost of Ownership (TCO)** — The app calculates true cost beyond purchase price, incorporating delivery time and quality ratings
-- **Supplier Scorecard** — Multi-factor scoring (price 40% + delivery 30% + rating 30%) embedded into dashboards for transparent decision‑making
-- **Strategic Sourcing** — Identifies optimal supplier mix based on volume, urgency, and risk tolerance, aligning with corporate finance strategies
-- **Portfolio & Trade‑off Analysis** — Supplier rerank models balance price, speed, and reliability, echoing portfolio optimization theory
-
-### 📉 Price Analysis & Forecasting
-- **Time Series Analysis** — Moving averages and trend detection for procurement cost forecasting
-- **Seasonal Adjustment** — Detects recurring cycles (e.g., Black Friday, new product launches) to optimize timing
-- **Volatility Measurement** — Standard deviation analysis for price stability and risk assessment
-- **Forecasting & Econometrics** — Hybrid AI + ML predictions (30‑day short‑term, 90‑day long‑term) apply econometric forecasting principles to procurement costs
-
-### 🎯 Procurement Optimization
-- **Economic Order Quantity (EOQ)** — Reinforcement learning (RL) driven recommendations for optimal order quantities to minimize holding and transaction costs
-- **Bulk Purchase Optimization** — Q-learning agent learns when bulk discounts justify larger orders
-- **Inventory Timing** — Predicts optimal purchase windows based on price trends, strengthening working capital management
-- **Cost Optimization & Purchasing Timing** — Reinforcement learning simulates optimal buying strategies, echoing EOQ and dynamic pricing theory
-
-### 🔬 Risk Management
-- **Supplier Risk Scoring** — Identifies single-supplier dependencies and concentration risk
-- **Price Shock Detection** — Flags sudden price changes >15% within 30 days for proactive mitigation
-- **Supply Chain Resilience** — Recommends supplier diversification strategies to safeguard against disruptions
-- **Risk Management Theory** — Anomaly detection and risk scoring apply statistical finance methods to identify volatility and supply risk
-
-## 🔄 Finance Transformation Impact
-- Automation of Procurement Workflows - Scheduled price checks, email/calendar integration, and Windows notifications reduce manual effort, aligning with digital transformation goals
-- Data‑Driven Decision Making - Apache Spark and MLflow enable big data analytics, strengthening transparency and compliance in procurement
-- Strategic Alignment - Embedding AI into procurement helps finance teams anticipate market changes, optimize supplier contracts, and align purchasing with corporate strategy
-- Cross‑Functional Efficiency - Integration with Gmail/Google Calendar/Windows demonstrates how finance operations can be embedded into enterprise workflows, reducing silos
-
-## 💡 Procurement Transformation Impact
-This project showcases how AI can reshape procurement and supply chain management by:  
-- Digitizing strategic sourcing with predictive modeling and real-time insights  
-- Enhancing procurement decisions through scenario simulations and supplier ranking  
-- Optimizing purchasing costs with high cost savings across test categories  
-- Driving supply chain resilience by identifying alternative suppliers automatically  
-- Promoting data-driven procurement with secure handling of pricing intelligence
-
-## 💡 Finance Skills Strengthened
-|Skill Area	|Specific Competencies|Business Impact|
-|-----------|---------------------|---------------|
-|Analytical Skills | Applied AI/ML predictive modeling to interpret complex financial data and identify actionable insights | Enhances forecasting accuracy, supports smarter purchasing, and strengthens data driven decision making|
-|Risk & Compliance Management | Automated anomaly detection and supplier risk scoring embedded into workflows | Improves governance, reduces fraud exposure, and ensures compliance with internal controls|
-|Strategic Procurement & Negotiation | Supplier ranking models balance cost, delivery, and quality for optimal vendor selection | Drives cost savings, strengthens negotiation leverage, and supports long term supplier relationships|
-|Digital Finance Transformation Leadership | ERP like integration using PostgreSQL, Redis, Docker, and Kubernetes for scalable automation | Demonstrates readiness to lead modernization initiatives and align finance systems with enterprise digital strategy|
-|Reporting & Communication | Automated generation of HTML, PDF, and CSV reports for stakeholders |	Improves transparency, accelerates decision cycles, and strengthens executive communication|
-
-## ⭐ Technical Skills Strengthened
-|Skill Area	| Specific Competencies|Business Impact|
-|-----------|----------------------|---------------|
-|AI/ML Engineering | Multi-agent systems, LLM integration (GPT-4o-ca, DeepSeek-V3, GPT-4.1-mini), hybrid AI+ML predictions, cross-encoder rerank models, reinforcement learning (Q-learning)|Enables smarter procurement decisions, supplier ranking, and predictive cost optimization — directly improving financial efficiency and risk management|
-|Big Data	| Apache Spark for distributed processing, Parquet data warehousing, PySpark analytics|Provides scalable analytics for large procurement datasets, strengthening transparency, compliance, and enterprise‑wide financial reporting|
-|MLOps	| MLflow model tracking, experiment logging, model versioning|Ensures reliable, auditable AI models for finance workflows, supporting governance, reproducibility, and continuous improvement in transformation projects|
-|Full-Stack Development	| FastAPI async backend, Next.js frontend, Tailwind CSS, real-time dashboards|Delivers user‑friendly dashboards for CFOs and procurement managers, improving decision speed and stakeholder engagement|
-|Database Design	| PostgreSQL with SQLAlchemy async, Redis caching, schema design|Provides robust financial data storage and fast retrieval, ensuring accuracy in procurement records and compliance reporting|
-|DevOps	| Docker containerization, Kubernetes orchestration, GitHub Actions CI/CD|Guarantees scalable, resilient finance applications with automated deployment — reducing downtime and supporting digital transformation|
-|API Integration	| Google Calendar OAuth, Gmail SMTP, Windows API, ChatAnywhere LLM API|Embeds finance workflows into enterprise systems (scheduling, notifications, communication), breaking silos and improving cross‑functional efficiency|
-
 ## 🪟 Automated Scheduling with Windows Integration
 Set up a price check once — the system handles everything else:
 - ⏰ **Scheduled Checks**	— Daily / Weekly / Monthly automatic price checks
@@ -273,82 +273,15 @@ Your calendar and email work for you automatically.
 |Rate Limiting|Applied to public APIs|Prevents abuse, ensures system stability, and protects financial workflows from denial‑of‑service risks|
 |Input Validation|Pydantic models enforce strict schema validation|Reduces errors, prevents injection attacks, and strengthens data integrity in procurement records|
 
-## 📦 Getting Started
+## 💼 Who Uses This System?
 
-### Prerequisites
-- Python 3.11+
-- Node.js 18+
-- Docker & Docker Compose
-- Kubernetes
-- OpenAI API Key (via chatanywhere.tech)
-- Docker Desktop (for PostgreSQL/Redis)
+|Role    | How They Benefit|
+|--------|-----------------|
+|Procurement Managers | Stop overpaying, find the best suppliers instantly|
+|Supply Chain Teams | Predict price changes, optimize inventory timing|
+|Finance Departments | Accurate budget forecasting, cost reduction|
+|Business Owners | Competitive intelligence, margin improvement|
 
-### ⚙️ Setup
-
-#### 1. Clone and install backend
-
-##### Clone repository
-```
-git clone https://github.com/jeffreywoo/smart-price-comparison.git
-cd SmartPriceComparison
-```
-##### Backend setup
-```
-cd ../backend
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-```
-##### Frontend setup
-```
-cd ../frontend
-npm install
-```
-#### 2. Configure Environment
-```
-cp .env.example .env
-Edit .env with your API keys
-```
-##### Environment Configuration
-
-```
-//.env file
-
-OPENAI_API_KEY=your-chatanywhere-api-key
-OPENAI_BASE_URL=https://api.chatanywhere.tech/v1
-DATABASE_URL=postgresql://admin:password@localhost:5432/price_comparison
-EMAIL_USER=your-email@gmail.com
-EMAIL_PASSWORD=your-app-password
-GOOGLE_CLIENT_ID=your-google-client-id
-GOOGLE_CLIENT_SECRET=your-google-client-secret
-GOOGLE_CALENDAR_ID=primary
-GOOGLE_REFRESH_TOKEN=your-google-refresh-token
-MLFLOW_TRACKING_URI=http://localhost:5000
-```
-#### 3. Run with Docker Compose
-```
-docker-compose up -d postgres redis
-python init_db.py
-```
-#### 4. Run both services
-
-##### Terminal 1 - Backend
-```
-cd backend
-uvicorn app.main:app --reload --port 8000
-```
-##### Terminal 2 - Frontend
-```
-cd frontend
-npm install
-npm run dev
-```
-#### 5. Access Applications
-```
-Frontend: http://localhost:3000
-Backend API: http://localhost:8000
-API Documentation: http://localhost:8000/docs
-```
 ## 📑 Project Structure
 ```text
 SmartPriceComparison/
@@ -574,11 +507,11 @@ Windows automatically saves all reports in organized folders:
 Documents/PriceReports/
 ├── 2026/
 │   ├── January/
-│   │   ├── iPhone_17_Pro_2026-01-15.html
-│   │   ├── iPhone_17_Pro_2026-01-15.json
-│   │   └── iPhone_17_Pro_2026-01-15.csv
+│   │   ├── iPhone 17 Pro_report_2026-01-25.html
+│   │   ├── iPhone 17 Pro_report_2026-01-25.json
+│   │   └── iPhone 17 Pro_report_2026-01-25.csv
 │   └── February/
-│       └── iPhone_17_Pro_2026-02-15.html
+│       └── iPhone 17 Pro_report_2026-02-25.html
 ```
 
 ## 📋 Sample
@@ -600,14 +533,82 @@ Documents/PriceReports/
   <img src="assets/JeffreyWooSmartPriceComparison14.png" alt="JeffreyWooSmartPriceComparison14" width="1200" height="1400" />
   <img src="assets/JeffreyWooSmartPriceComparison15.png" alt="JeffreyWooSmartPriceComparison15" width="1200" height="600" />
 
-## 💼 Who Uses This System?
+## 📦 Getting Started
 
-|Role    | How They Benefit|
-|--------|-----------------|
-|Procurement Managers | Stop overpaying, find the best suppliers instantly|
-|Supply Chain Teams | Predict price changes, optimize inventory timing|
-|Finance Departments | Accurate budget forecasting, cost reduction|
-|Business Owners | Competitive intelligence, margin improvement|
+### Prerequisites
+- Python 3.11+
+- Node.js 18+
+- Docker & Docker Compose
+- Kubernetes
+- OpenAI API Key (via chatanywhere.tech)
+- Docker Desktop (for PostgreSQL/Redis)
+
+### ⚙️ Setup
+
+#### 1. Clone and install backend
+
+##### Clone repository
+```
+git clone https://github.com/jeffreywoo/smart-price-comparison.git
+cd SmartPriceComparison
+```
+##### Backend setup
+```
+cd ../backend
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
+##### Frontend setup
+```
+cd ../frontend
+npm install
+```
+#### 2. Configure Environment
+```
+cp .env.example .env
+Edit .env with your API keys
+```
+##### Environment Configuration
+
+```
+//.env file
+
+OPENAI_API_KEY=your-chatanywhere-api-key
+OPENAI_BASE_URL=https://api.chatanywhere.tech/v1
+DATABASE_URL=postgresql://admin:password@localhost:5432/price_comparison
+EMAIL_USER=your-email@gmail.com
+EMAIL_PASSWORD=your-app-password
+GOOGLE_CLIENT_ID=your-google-client-id
+GOOGLE_CLIENT_SECRET=your-google-client-secret
+GOOGLE_CALENDAR_ID=primary
+GOOGLE_REFRESH_TOKEN=your-google-refresh-token
+MLFLOW_TRACKING_URI=http://localhost:5000
+```
+#### 3. Run with Docker Compose
+```
+docker-compose up -d postgres redis
+python init_db.py
+```
+#### 4. Run both services
+
+##### Terminal 1 - Backend
+```
+cd backend
+uvicorn app.main:app --reload --port 8000
+```
+##### Terminal 2 - Frontend
+```
+cd frontend
+npm install
+npm run dev
+```
+#### 5. Access Applications
+```
+Frontend: http://localhost:3000
+Backend API: http://localhost:8000
+API Documentation: http://localhost:8000/docs
+```
 
 ## ⚖️ Disclaimer
 
