@@ -84,7 +84,7 @@ Most price comparison tools just show you today's prices. This system goes furth
 |Feature	|Description|Business Impact|
 |---------|-----------|---------------|
 |Price Trend Analysis	|Statistical analysis of price movements over time|Improves forecasting accuracy, enabling finance teams to anticipate cost changes and optimize procurement timing|
-|Supplier Performance Scoring	|Hybrid scoring model combining deterministic weighted factors (price 50% + delivery 20% + rating 30%) with a cross‑encoder neural network that understands semantic trade‑offs|Reduces procurement costs through optimal supplier selection, provides transparent and audit‑ready rationale, and strengthens negotiation leverage by quantifying value beyond simple price comparisons|
+|Supplier Performance Scoring	|Hybrid scoring model combining deterministic weighted factors (price 50% + delivery 20% + rating 30%) with a cross‑encoder neural network (ms-marco-MiniLM-L-6-v2) that understands semantic trade‑offs|Reduces procurement costs through optimal supplier selection, provides transparent and audit‑ready rationale, and strengthens negotiation leverage by quantifying value beyond simple price comparisons|
 |Market Volatility Tracking	|Standard deviation and volatility calculations|Identifies unstable markets early, supporting risk mitigation and resilient procurement strategies|
 |Seasonal Pattern Detection	|Identification of recurring price patterns|Helps procurement managers align purchasing with seasonal cycles, reducing costs and improving inventory planning|
 |Bulk Purchase Optimization	|RL-driven recommendations for optimal order quantities|Minimizes holding and transaction costs while maximizing discounts, strengthening working capital efficiency|
