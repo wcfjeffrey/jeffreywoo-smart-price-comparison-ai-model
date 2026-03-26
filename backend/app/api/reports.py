@@ -7,12 +7,9 @@ import csv
 import io
 import os
 from app.services.product_analyzer import ProductAnalyzer
-import logging
 
 router = APIRouter()
 analyzer = ProductAnalyzer()
-logger = logging.getLogger(__name__)
-
 
 @router.post("/generate/{product_name}")
 async def generate_report(product_name: str, format: str = "html"):
@@ -40,7 +37,6 @@ async def generate_report(product_name: str, format: str = "html"):
         }
 
     except Exception as e:
-        logger.error(f"Error generating report: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
@@ -74,7 +70,6 @@ async def download_report(product_name: str, format: str = "html"):
         )
 
     except Exception as e:
-        logger.error(f"Error downloading report: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
