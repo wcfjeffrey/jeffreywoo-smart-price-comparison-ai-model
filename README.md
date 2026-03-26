@@ -520,7 +520,7 @@ Documents/Reports/
   <img src="assets/JeffreyWooSmartPriceComparison10.png" alt="JeffreyWooSmartPriceComparison10" width="1200" height="600" />
   <img src="assets/JeffreyWooSmartPriceComparison11.png" alt="JeffreyWooSmartPriceComparison11" width="1200" height="600" />
   <img src="assets/JeffreyWooSmartPriceComparison12.png" alt="JeffreyWooSmartPriceComparison12" width="1200" height="600" />
-  <img src="assets/JeffreyWooSmartPriceComparison17.png" alt="JeffreyWooSmartPriceComparison17" width="1200" height="600" />
+  <img src="assets/JeffreyWooSmartPriceComparison17.png" alt="JeffreyWooSmartPriceComparison17" width="600" height="300" />
   <img src="assets/JeffreyWooSmartPriceComparison13.png" alt="JeffreyWooSmartPriceComparison13" width="1200" height="1000" />
   <img src="assets/JeffreyWooSmartPriceComparison14.png" alt="JeffreyWooSmartPriceComparison14" width="1200" height="1400" />
   <img src="assets/JeffreyWooSmartPriceComparison15.png" alt="JeffreyWooSmartPriceComparison15" width="1200" height="600" />
