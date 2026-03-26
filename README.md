@@ -196,15 +196,15 @@ This project showcases how AI can reshape procurement and supply chain managemen
 - Cross‑Functional Efficiency - Integration with Gmail/Google Calendar/Windows demonstrates how finance operations can be embedded into enterprise workflows, reducing silos
 
 ## ⭐ Technical Skills Strengthened
-|Skill Area	| Specific Competencies|
-|-----------|----------------------|
-|AI/ML Engineering | Multi-agent systems, LLM integration (GPT-4o-ca, DeepSeek-V3, GPT-4.1-mini), hybrid AI+ML predictions, cross-encoder rerank models, reinforcement learning (Q-learning)|
-|Big Data	| Apache Spark for distributed processing, Parquet data warehousing, PySpark analytics|
-|MLOps	| MLflow model tracking, experiment logging, model versioning|
-|Full-Stack Development	| FastAPI async backend, Next.js frontend, Tailwind CSS, real-time dashboards|
-|Database Design	| PostgreSQL with SQLAlchemy async, Redis caching, schema design|
-|DevOps	| Docker containerization, Kubernetes orchestration, GitHub Actions CI/CD|
-|API Integration	| Google Calendar OAuth, Gmail SMTP, Windows API, ChatAnywhere LLM API|
+|Skill Area	| Specific Competencies|Business Impact|
+|-----------|----------------------|---------------|
+|AI/ML Engineering | Multi-agent systems, LLM integration (GPT-4o-ca, DeepSeek-V3, GPT-4.1-mini), hybrid AI+ML predictions, cross-encoder rerank models, reinforcement learning (Q-learning)|Enables smarter procurement decisions, supplier ranking, and predictive cost optimization — directly improving financial efficiency and risk management|
+|Big Data	| Apache Spark for distributed processing, Parquet data warehousing, PySpark analytics|Provides scalable analytics for large procurement datasets, strengthening transparency, compliance, and enterprise‑wide financial reporting|
+|MLOps	| MLflow model tracking, experiment logging, model versioning|Ensures reliable, auditable AI models for finance workflows, supporting governance, reproducibility, and continuous improvement in transformation projects|
+|Full-Stack Development	| FastAPI async backend, Next.js frontend, Tailwind CSS, real-time dashboards|Delivers user‑friendly dashboards for CFOs and procurement managers, improving decision speed and stakeholder engagement|
+|Database Design	| PostgreSQL with SQLAlchemy async, Redis caching, schema design|Provides robust financial data storage and fast retrieval, ensuring accuracy in procurement records and compliance reporting|
+|DevOps	| Docker containerization, Kubernetes orchestration, GitHub Actions CI/CD|Guarantees scalable, resilient finance applications with automated deployment — reducing downtime and supporting digital transformation|
+|API Integration	| Google Calendar OAuth, Gmail SMTP, Windows API, ChatAnywhere LLM API|Embeds finance workflows into enterprise systems (scheduling, notifications, communication), breaking silos and improving cross‑functional efficiency|
 
 ## 💡 Finance Skills Strengthened
 |Skill Area	|Specific Competencies|Business Impact|
@@ -579,6 +579,25 @@ Documents/PriceReports/
 │       └── iPhone_17_Pro_2026-02-15.html
 ```
 
+## 📋 Sample
+
+  <img src="assets/JeffreyWooSmartPriceComparison1.png" alt="JeffreyWooSmartPriceComparison1" width="1200" height="600" />
+  <img src="assets/JeffreyWooSmartPriceComparison2.png" alt="JeffreyWooSmartPriceComparison2" width="1200" height="1000" />
+  <img src="assets/JeffreyWooSmartPriceComparison3.png" alt="JeffreyWooSmartPriceComparison3" width="1200" height="600" />
+  <img src="assets/JeffreyWooSmartPriceComparison4.png" alt="JeffreyWooSmartPriceComparison4" width="1200" height="600" />
+  <img src="assets/JeffreyWooSmartPriceComparison5.png" alt="JeffreyWooSmartPriceComparison5" width="1200" height="600" />
+  <img src="assets/JeffreyWooSmartPriceComparison6.png" alt="JeffreyWooSmartPriceComparison6" width="1200" height="600" />
+  <img src="assets/JeffreyWooSmartPriceComparison16.png" alt="JeffreyWooSmartPriceComparison16" width="1200" height="600" />
+  <img src="assets/JeffreyWooSmartPriceComparison7.png" alt="JeffreyWooSmartPriceComparison7" width="1200" height="600" />
+  <img src="assets/JeffreyWooSmartPriceComparison8.png" alt="JeffreyWooSmartPriceComparison8" width="1200" height="800" />
+  <img src="assets/JeffreyWooSmartPriceComparison9.png" alt="JeffreyWooSmartPriceComparison9" width="1200" height="600" />
+  <img src="assets/JeffreyWooSmartPriceComparison10.png" alt="JeffreyWooSmartPriceComparison10" width="1200" height="600" />
+  <img src="assets/JeffreyWooSmartPriceComparison11.png" alt="JeffreyWooSmartPriceComparison11" width="1200" height="600" />
+  <img src="assets/JeffreyWooSmartPriceComparison12.png" alt="JeffreyWooSmartPriceComparison12" width="1200" height="600" />
+  <img src="assets/JeffreyWooSmartPriceComparison13.png" alt="JeffreyWooSmartPriceComparison13" width="1200" height="1000" />
+  <img src="assets/JeffreyWooSmartPriceComparison14.png" alt="JeffreyWooSmartPriceComparison14" width="1200" height="1400" />
+  <img src="assets/JeffreyWooSmartPriceComparison15.png" alt="JeffreyWooSmartPriceComparison15" width="1200" height="600" />
+
 ## 💼 Who Uses This System?
 
 |Role    | How They Benefit|
@@ -605,25 +624,6 @@ MIT License - See LICENSE file for details.
 - **Production Ready** - Docker and Kubernetes deployment with high SLA
 - **Real-time Notifications** - Integrated Gmail and Google Calendar APIs
 - **Modern UI** - Next.js dashboard with 60 FPS animations and responsive design
-
-## 📋 Sample
-
-  <img src="assets/JeffreyWooSmartPriceComparison1.png" alt="JeffreyWooSmartPriceComparison1" width="1200" height="600" />
-  <img src="assets/JeffreyWooSmartPriceComparison2.png" alt="JeffreyWooSmartPriceComparison2" width="1200" height="1000" />
-  <img src="assets/JeffreyWooSmartPriceComparison3.png" alt="JeffreyWooSmartPriceComparison3" width="1200" height="600" />
-  <img src="assets/JeffreyWooSmartPriceComparison4.png" alt="JeffreyWooSmartPriceComparison4" width="1200" height="600" />
-  <img src="assets/JeffreyWooSmartPriceComparison5.png" alt="JeffreyWooSmartPriceComparison5" width="1200" height="600" />
-  <img src="assets/JeffreyWooSmartPriceComparison6.png" alt="JeffreyWooSmartPriceComparison6" width="1200" height="600" />
-  <img src="assets/JeffreyWooSmartPriceComparison16.png" alt="JeffreyWooSmartPriceComparison16" width="1200" height="600" />
-  <img src="assets/JeffreyWooSmartPriceComparison7.png" alt="JeffreyWooSmartPriceComparison7" width="1200" height="600" />
-  <img src="assets/JeffreyWooSmartPriceComparison8.png" alt="JeffreyWooSmartPriceComparison8" width="1200" height="800" />
-  <img src="assets/JeffreyWooSmartPriceComparison9.png" alt="JeffreyWooSmartPriceComparison9" width="1200" height="600" />
-  <img src="assets/JeffreyWooSmartPriceComparison10.png" alt="JeffreyWooSmartPriceComparison10" width="1200" height="600" />
-  <img src="assets/JeffreyWooSmartPriceComparison11.png" alt="JeffreyWooSmartPriceComparison11" width="1200" height="600" />
-  <img src="assets/JeffreyWooSmartPriceComparison12.png" alt="JeffreyWooSmartPriceComparison12" width="1200" height="600" />
-  <img src="assets/JeffreyWooSmartPriceComparison13.png" alt="JeffreyWooSmartPriceComparison13" width="1200" height="1000" />
-  <img src="assets/JeffreyWooSmartPriceComparison14.png" alt="JeffreyWooSmartPriceComparison14" width="1200" height="1400" />
-  <img src="assets/JeffreyWooSmartPriceComparison15.png" alt="JeffreyWooSmartPriceComparison15" width="1200" height="600" />
   
 ## 👤 About the Author
 Jeffrey Woo — Finance Manager | Strategic FP&A, AI Automation & Cost Optimization | MBA | FCCA | CTA | FTIHK | SAP Financial Accounting (FI) Certified Application Associate | Xero Advisor Certified
