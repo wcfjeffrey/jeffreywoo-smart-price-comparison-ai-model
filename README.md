@@ -59,7 +59,7 @@
 
 Most price comparison tools just show you today's prices. This system goes further — embedding AI into your procurement workflow so you can anticipate price changes, identify the best suppliers, optimize purchase timing, and align purchasing strategies with long-term business goals.
 
-|     Feature    | Traditional Tools | Smart Price Comparison |
+|     Feature    | Traditional Tools | JeffreyWoo Smart Price Comparison |
 |----------------|-------------------|------------------------|
 |Price Comparison	|✅ Yes	|✅ Yes|
 |Supplier Ranking	|❌ Basic	|✅ AI-powered with trade-off analysis|
@@ -566,7 +566,7 @@ Documents/PriceReports/
 
 ## ⚖️ Disclaimer
 
-Smart Price Comparison provides AI-driven insights for informational purposes only. It does not replace professional procurement advice. Always verify critical purchasing decisions with qualified supply chain professionals.
+JeffreyWoo Smart Price Comparison provides AI-driven insights for informational purposes only. It does not replace professional procurement advice. Always verify critical purchasing decisions with qualified supply chain professionals.
 
 ## 📄 License
 
