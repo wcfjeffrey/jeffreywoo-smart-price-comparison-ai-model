@@ -84,7 +84,7 @@ Most price comparison tools just show you today's prices. This system goes furth
 |Feature	|Description|Business Impact|
 |---------|-----------|---------------|
 |Price Trend Analysis	|Statistical analysis of price movements over time|Improves forecasting accuracy, enabling finance teams to anticipate cost changes and optimize procurement timing|
-|Supplier Performance Scoring	|Multi-factor scoring with customizable weights|Enhances vendor selection, drives cost savings, and strengthens negotiation leverage with transparent supplier evaluation|
+|Supplier Performance Scoring	|AI‑driven evaluation of suppliers using multi‑factor criteria with customizable weights (e.g., price, delivery, rating)|Improves vendor selection, drives measurable cost savings, enhances compliance, and strengthens negotiation leverage through transparent and audit‑ready supplier evaluation|
 |Market Volatility Tracking	|Standard deviation and volatility calculations|Identifies unstable markets early, supporting risk mitigation and resilient procurement strategies|
 |Seasonal Pattern Detection	|Identification of recurring price patterns|Helps procurement managers align purchasing with seasonal cycles, reducing costs and improving inventory planning|
 |Bulk Purchase Optimization	|RL-driven recommendations for optimal order quantities|Minimizes holding and transaction costs while maximizing discounts, strengthening working capital efficiency|
