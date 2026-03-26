@@ -181,6 +181,12 @@ This app leverages procurement, supply chain, and financial principles to automa
 - **Supply Chain Resilience** — Recommends supplier diversification strategies to safeguard against disruptions
 - **Risk Management Theory** — Anomaly detection and risk scoring apply statistical finance methods to identify volatility and supply risk
 
+## 🔄 Finance Transformation Impact
+- Automation of Procurement Workflows - Scheduled price checks, email/calendar integration, and Windows notifications reduce manual effort, aligning with digital transformation goals
+- Data‑Driven Decision Making - Apache Spark and MLflow enable big data analytics, strengthening transparency and compliance in procurement
+- Strategic Alignment - Embedding AI into procurement helps finance teams anticipate market changes, optimize supplier contracts, and align purchasing with corporate strategy
+- Cross‑Functional Efficiency - Integration with Gmail/Google Calendar/Windows demonstrates how finance operations can be embedded into enterprise workflows, reducing silos
+
 ## 💡 Procurement Transformation Impact
 This project showcases how AI can reshape procurement and supply chain management by:  
 - Digitizing strategic sourcing with predictive modeling and real-time insights  
@@ -189,11 +195,14 @@ This project showcases how AI can reshape procurement and supply chain managemen
 - Driving supply chain resilience by identifying alternative suppliers automatically  
 - Promoting data-driven procurement with secure handling of pricing intelligence
 
-## 🔄 Finance Transformation Impact
-- Automation of Procurement Workflows - Scheduled price checks, email/calendar integration, and Windows notifications reduce manual effort, aligning with digital transformation goals
-- Data‑Driven Decision Making - Apache Spark and MLflow enable big data analytics, strengthening transparency and compliance in procurement
-- Strategic Alignment - Embedding AI into procurement helps finance teams anticipate market changes, optimize supplier contracts, and align purchasing with corporate strategy
-- Cross‑Functional Efficiency - Integration with Gmail/Google Calendar/Windows demonstrates how finance operations can be embedded into enterprise workflows, reducing silos
+## 💡 Finance Skills Strengthened
+|Skill Area	|Specific Competencies|Business Impact|
+|-----------|---------------------|---------------|
+|Analytical Skills | Applied AI/ML predictive modeling to interpret complex financial data and identify actionable insights | Enhances forecasting accuracy, supports smarter purchasing, and strengthens data driven decision making|
+|Risk & Compliance Management | Automated anomaly detection and supplier risk scoring embedded into workflows | Improves governance, reduces fraud exposure, and ensures compliance with internal controls|
+|Strategic Procurement & Negotiation | Supplier ranking models balance cost, delivery, and quality for optimal vendor selection | Drives cost savings, strengthens negotiation leverage, and supports long term supplier relationships|
+|Digital Finance Transformation Leadership | ERP like integration using PostgreSQL, Redis, Docker, and Kubernetes for scalable automation | Demonstrates readiness to lead modernization initiatives and align finance systems with enterprise digital strategy|
+|Reporting & Communication | Automated generation of HTML, PDF, and CSV reports for stakeholders |	Improves transparency, accelerates decision cycles, and strengthens executive communication|
 
 ## ⭐ Technical Skills Strengthened
 |Skill Area	| Specific Competencies|Business Impact|
@@ -205,15 +214,6 @@ This project showcases how AI can reshape procurement and supply chain managemen
 |Database Design	| PostgreSQL with SQLAlchemy async, Redis caching, schema design|Provides robust financial data storage and fast retrieval, ensuring accuracy in procurement records and compliance reporting|
 |DevOps	| Docker containerization, Kubernetes orchestration, GitHub Actions CI/CD|Guarantees scalable, resilient finance applications with automated deployment — reducing downtime and supporting digital transformation|
 |API Integration	| Google Calendar OAuth, Gmail SMTP, Windows API, ChatAnywhere LLM API|Embeds finance workflows into enterprise systems (scheduling, notifications, communication), breaking silos and improving cross‑functional efficiency|
-
-## 💡 Finance Skills Strengthened
-|Skill Area	|Specific Competencies|Business Impact|
-|-----------|---------------------|---------------|
-|Analytical Skills | Applied AI/ML predictive modeling to interpret complex financial data and identify actionable insights | Enhances forecasting accuracy, supports smarter purchasing, and strengthens data driven decision making|
-|Risk & Compliance Management | Automated anomaly detection and supplier risk scoring embedded into workflows | Improves governance, reduces fraud exposure, and ensures compliance with internal controls|
-|Strategic Procurement & Negotiation | Supplier ranking models balance cost, delivery, and quality for optimal vendor selection | Drives cost savings, strengthens negotiation leverage, and supports long term supplier relationships|
-|Digital Finance Transformation Leadership | ERP like integration using PostgreSQL, Redis, Docker, and Kubernetes for scalable automation | Demonstrates readiness to lead modernization initiatives and align finance systems with enterprise digital strategy|
-|Reporting & Communication | Automated generation of HTML, PDF, and CSV reports for stakeholders |	Improves transparency, accelerates decision cycles, and strengthens executive communication|
 
 ## 🪟 Automated Scheduling with Windows Integration
 Set up a price check once — the system handles everything else:
