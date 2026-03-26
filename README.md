@@ -363,7 +363,7 @@ SmartPriceComparison/
 |GET	/api/reports/download/{name}	|Download report|
 |GET	/api/notifications/test-email	|Test email notification|
 
-## 🧠 Explanation of JeffreyWoo Smart System
+## 🧠 Explanation of JeffreyWoo Smart Price Comparison System Implementation
 
 ### Three AI Agents
 
