@@ -1,7 +1,6 @@
 from fastapi import APIRouter, HTTPException, status
 from app.models.task import Task, TaskCreate, TaskUpdate
 from app.services.task_scheduler import TaskScheduler
-import logging
 from datetime import datetime, timedelta
 import pytz
 import os
@@ -10,7 +9,6 @@ from google.oauth2.credentials import Credentials
 
 router = APIRouter()
 scheduler = TaskScheduler()
-logger = logging.getLogger(__name__)
 
 
 @router.get("/")
@@ -18,10 +16,8 @@ async def get_tasks():
     """Get all scheduled tasks"""
     try:
         tasks = scheduler.get_tasks()
-        logger.info(f"Retrieved {len(tasks)} tasks")
         return tasks
     except Exception as e:
-        logger.error(f"Error getting tasks: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
@@ -29,7 +25,6 @@ async def get_tasks():
 async def start_scheduler_manually():
     """Manually start the scheduler"""
     try:
-        logger.info("Manual scheduler start requested")
         await scheduler._load_tasks_from_db()
         scheduler.start()
         return {
@@ -38,7 +33,6 @@ async def start_scheduler_manually():
             "tasks_loaded": len(scheduler.tasks)
         }
     except Exception as e:
-        logger.error(f"Manual start failed: {e}")
         return {"status": "error", "message": str(e)}
 
 
@@ -130,7 +124,6 @@ async def get_task(task_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error getting task {task_id}: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 def get_google_credentials():
@@ -145,14 +138,12 @@ def get_google_credentials():
         )
         return creds
     except Exception as e:
-        logger.error(f"Failed to load Google credentials: {e}")
         return None
 
 @router.post("/tasks/")
 async def create_task(task: dict):
     """Create a new scheduled task with Google Calendar support"""
     try:
-        logger.info(f"Creating task for product: {task.get('product_name')}")
 
         # 1. Save task to database
         new_task = await scheduler.create_task(task)
@@ -205,10 +196,7 @@ async def create_task(task: dict):
                     body=event
                 ).execute()
 
-                logger.info(f"✅ Google Calendar event created successfully for {task['product_name']}")
-
             except Exception as calendar_err:
-                logger.warning(f"Failed to create Google Calendar event: {calendar_err}")
                 # Task is still created even if calendar fails
 
         return {
@@ -218,14 +206,12 @@ async def create_task(task: dict):
         }
 
     except Exception as e:
-        logger.error(f"Error creating task: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail=str(e))
 
 @router.put("/{task_id}", response_model=Task)
 async def update_task(task_id: str, task_update: TaskUpdate):
     """Update a task"""
     try:
-        logger.info(f"Updating task {task_id}")
         task = await scheduler.update_task(task_id, task_update)
         if not task:
             raise HTTPException(status_code=404, detail="Task not found")
@@ -233,7 +219,6 @@ async def update_task(task_id: str, task_update: TaskUpdate):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error updating task {task_id}: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
@@ -241,12 +226,10 @@ async def update_task(task_id: str, task_update: TaskUpdate):
 async def delete_task(task_id: str):
     """Delete a task"""
     try:
-        logger.info(f"Deleting task {task_id}")
         if not await scheduler.delete_task(task_id):
             raise HTTPException(status_code=404, detail="Task not found")
         return None
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error deleting task {task_id}: {e}")
         raise HTTPException(status_code=500, detail=str(e))
