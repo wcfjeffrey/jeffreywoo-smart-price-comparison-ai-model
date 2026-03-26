@@ -104,7 +104,7 @@ This app leverages procurement, supply chain, and financial principles to automa
 
 ### 📊 Supplier Evaluation Framework
 - **Total Cost of Ownership (TCO)** — The app calculates true cost beyond purchase price, incorporating delivery time and quality ratings
-- **Supplier Scorecard** — Multi-factor scoring (price 40% + delivery 30% + rating 30%) embedded into dashboards for transparent decision‑making
+- **Supplier Scorecard** — AI‑powered supplier evaluation embedded into dashboards, providing transparent decision‑making by analyzing trade‑offs among price, delivery speed, and rating
 - **Strategic Sourcing** — Identifies optimal supplier mix based on volume, urgency, and risk tolerance, aligning with corporate finance strategies
 - **Portfolio & Trade‑off Analysis** — Supplier rerank models balance price, speed, and reliability, echoing portfolio optimization theory
 
