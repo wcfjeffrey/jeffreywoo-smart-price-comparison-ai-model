@@ -1,11 +1,8 @@
 from typing import Dict, List, Any
 from datetime import datetime, timedelta
-import logging
 from app.services.agent_a import DataFetcherAgent
 from app.services.agent_b import AnalysisAgent
 from app.services.hybrid_predictor import HybridPredictor
-
-logger = logging.getLogger(__name__)
 
 # Simple in-memory cache
 _analysis_cache = {}
@@ -30,19 +27,13 @@ class ProductAnalyzer:
                 logger.info(f"Returning cached analysis for {product_name}")
                 return cached
 
-        logger.info(f"Performing fresh analysis for {product_name}")
-
         try:
             # Step 1: Fetch product-specific data
             product_data = await self.data_fetcher.fetch_price_data_for_product(product_name)
             suppliers_data = product_data.get('data', [])
 
-            logger.info(f"Fetched {len(suppliers_data)} suppliers for {product_name}")
-
             # Step 2: Analyze with AI
             analysis = await self.analysis_agent.analyze_prices(product_data)
-
-            logger.info(f"Analysis complete - anomalies: {len(analysis.get('anomalies', []))}")
 
             # Step 3: Get hybrid predictions (AI + ML)
             hybrid_predictions = await self.hybrid_predictor.get_enhanced_predictions(
@@ -51,8 +42,6 @@ class ProductAnalyzer:
 
             # Get the AI predictions
             raw_ai_predictions = hybrid_predictions.get("ai_predictions", {})
-
-            logger.info(f"AI predictions received: {raw_ai_predictions.keys()}")
 
             # Transform to match frontend expected format
             short_term = raw_ai_predictions.get("short_term_trend", raw_ai_predictions.get("short_term", {}))
@@ -73,8 +62,6 @@ class ProductAnalyzer:
                 "confidence_score": raw_ai_predictions.get("confidence_score", 75),
                 "factors": raw_ai_predictions.get("factors", ["Market conditions"])
             }
-
-            logger.info(f"Transformed predictions: {transformed_predictions}")
 
             # Step 4: Generate enhanced risk analysis (with predictions)
             risk_analysis = await self._analyze_risks_enhanced(product_data, analysis, transformed_predictions)
@@ -111,7 +98,6 @@ class ProductAnalyzer:
             return result
 
         except Exception as e:
-            logger.error(f"Error analyzing product {product_name}: {e}")
             return self._get_fallback_data(product_name)
 
     def _get_cached_analysis(self, product_name: str) -> Dict | None:
@@ -128,7 +114,6 @@ class ProductAnalyzer:
     def _cache_analysis(self, product_name: str, data: Dict):
         """Cache analysis result"""
         _analysis_cache[product_name] = (data, datetime.now())
-        logger.info(f"Cached analysis for {product_name}")
 
     def clear_cache(self, product_name: str = None):
         """Clear cache for specific product or all"""
@@ -136,15 +121,11 @@ class ProductAnalyzer:
             _analysis_cache.pop(product_name, None)
         else:
             _analysis_cache.clear()
-        logger.info(f"Cache cleared for {product_name if product_name else 'all products'}")
 
     async def _analyze_risks_enhanced(self, product_data: Dict, analysis: Dict, predictions: Dict) -> Dict:
         """Enhanced risk analysis based on actual data and predictions"""
         suppliers = product_data.get('data', [])
         anomalies = analysis.get('anomalies', [])
-
-        logger.info(f"Risk analysis: {len(suppliers)} suppliers, {len(anomalies)} anomalies")
-        logger.info(f"Predictions received: {predictions.get('short_term_trend', {}).get('direction', 'N/A')}")
 
         risks = []
         risk_score = 0
@@ -232,8 +213,6 @@ class ProductAnalyzer:
         short_dir = short_term_trend.get('direction', 'stable')
         short_change = short_term_trend.get('change_percent', 0)
 
-        logger.info(f"Price trend direction: {short_dir}, change: {short_change}%")
-
         if short_dir == 'up' and short_change > 0:
             if short_change > 10:
                 risks.append({
@@ -293,8 +272,6 @@ class ProductAnalyzer:
             risk_level = "medium"
         else:
             risk_level = "low"
-
-        logger.info(f"Final risk_score: {risk_score}, risk_level: {risk_level}")
 
         # Generate recommendations based on risks
         risk_recommendations = []
