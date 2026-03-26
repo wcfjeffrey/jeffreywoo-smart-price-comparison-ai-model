@@ -611,7 +611,7 @@ Documents/PriceReports/
 
 ## ⚖️ Disclaimer
 
-JeffreyWoo Smart Price Comparison provides AI-driven insights for informational purposes only. It does not replace professional procurement advice. Always verify critical purchasing decisions with qualified supply chain professionals.
+**JeffreyWoo Smart Price Comparison** provides AI-driven insights for informational purposes only. It does not replace professional procurement advice. Always verify critical purchasing decisions with qualified supply chain professionals.
 
 ## 📄 License
 
