@@ -17,8 +17,6 @@
 ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-2.0-orange.svg)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-cyan.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.2-orange.svg)
-![LangChain](https://img.shields.io/badge/LangChain-0.1-purple.svg)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15-orange.svg)
 ![Apache Parquet](https://img.shields.io/badge/Apache%20Parquet-1.13-brown.svg)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-lightgrey.svg)
 ![Windows API](https://img.shields.io/badge/Windows%20API-Integration-blue.svg)
