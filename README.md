@@ -338,6 +338,7 @@ SmartPriceComparison/
 │   │   │   ├── price_compare.py            # Price comparison endpoints
 │   │   │   ├── anomaly_detection.py        # Anomaly detection endpoints
 │   │   │   ├── reports.py                  # Report generation endpoints
+│   │   │   ├── schedule.py                 # Scheduler endpoints
 │   │   │   ├── tasks.py                    # Task management endpoints
 │   │   │   ├── products.py                 # Product analysis endpoints
 │   │   │   └── notifications.py            # Email & calendar endpoints
@@ -348,6 +349,7 @@ SmartPriceComparison/
 │   │   │   ├── agent_c.py                  # AI Agent: Report Generator
 │   │   │   ├── agent_orchestrator.py       # Multi-Agent Workflow Orchestrator
 │   │   │   ├── hybrid_predictor.py         # AI + ML Hybrid Predictions
+│   │   │   ├── product_analyzer.py         # Product Price Analyzer
 │   │   │   ├── rerank_service.py           # Supplier Rerank Model (Cross-Encoder)
 │   │   │   ├── chatanywhere_integration.py # ChatAnywhere API Client
 │   │   │   ├── task_scheduler.py           # APScheduler Task Management
@@ -385,6 +387,7 @@ SmartPriceComparison/
 │   │   │       ├── button.tsx              # Button component
 │   │   │       ├── badge.tsx               # Badge component
 │   │   │       ├── input.tsx               # Input component
+│   │   │       ├── label.tsx               # Label component
 │   │   │       ├── select.tsx              # Dropdown select
 │   │   │       ├── tabs.tsx                # Tab component
 │   │   │       └── alert.tsx               # Alert component
@@ -406,8 +409,8 @@ SmartPriceComparison/
 │   │   ├── procurement_env.py              # OpenAI Gym environment
 │   │   └── train_agent.py                  # RL training script
 │   │
-│   └── tensorflow/                         # TensorFlow Models (optional)
-│       └── price_predictor.py              # TensorFlow neural network
+│   └── mlflow/                         # MLFlow Models (optional)
+│       └── price_predictor.py              # MLFlow neural network
 │
 ├── data/                                   # Data Processing
 │   ├── spark/                              # Apache Spark jobs
@@ -427,7 +430,7 @@ SmartPriceComparison/
 │   └── price_data_*.csv                    # Exported reports
 │
 ├── docker-compose.yml                      # Docker Compose configuration
-├── .env.example                            # Environment variables template
+├── .env                                    # Environment variables template
 ├── .gitignore                              # Git ignore file
 └── README.md                               # Project documentation
 ```
