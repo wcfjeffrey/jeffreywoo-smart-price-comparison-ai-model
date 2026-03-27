@@ -188,6 +188,13 @@ This app leverages procurement, supply chain, and financial principles to automa
 │                                                                             │
 └─────────────────────────────────────────────────────────────────────────────┘</pre>
 
+## ⚡ Benefit of Using Multi-Agent Models
+|Agent|Role|Model|Reason for Choice|
+|---------|-------------|-------------|-------------|
+|Agent A|Data Fetcher|GPT 4o ca|Optimized for fast, reliable data ingestion and structured parsing. Ensures accurate collection and cleaning of supplier/market data streams.|
+|Agent B|Analyst|DeepSeek V3|Strong analytical reasoning and pattern detection. Excels at supplier ranking, anomaly detection, and predictive modeling.|
+|Agent C|Reporter|GPT 4.1 mini|Lightweight, fast, and cost efficient. Ideal for generating concise, human readable reports, alerts, and notifications.|
+
 ## 📦 Data Pipeline
 <pre lang="markdown">
 ┌─────────────────────────────────────────────────────────────────────────────┐
