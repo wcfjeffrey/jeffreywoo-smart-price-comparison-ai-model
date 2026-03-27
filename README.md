@@ -126,19 +126,15 @@ This app leverages procurement, supply chain, and financial principles to automa
 - **Supply Chain Resilience** — Recommends supplier diversification strategies to safeguard against disruptions
 - **Risk Management Theory** — Anomaly detection and risk scoring apply statistical finance methods to identify volatility and supply risk
 
-## 🔄 Finance Transformation Impact
-- Automation of Procurement Workflows - Scheduled price checks, email/calendar integration, and Windows notifications reduce manual effort, aligning with digital transformation goals
-- Data‑Driven Decision Making - Apache Spark and MLflow enable big data analytics, strengthening transparency and compliance in procurement
-- Strategic Alignment - Embedding AI into procurement helps finance teams anticipate market changes, optimize supplier contracts, and align purchasing with corporate strategy
-- Cross‑Functional Efficiency - Integration with Gmail/Google Calendar/Windows demonstrates how finance operations can be embedded into enterprise workflows, reducing silos
-
-## 💡 Procurement Transformation Impact
-This project showcases how AI can reshape procurement and supply chain management by:  
-- Digitizing strategic sourcing with predictive modeling and real-time insights  
-- Enhancing procurement decisions through scenario simulations and supplier ranking  
-- Optimizing purchasing costs with high cost savings across test categories  
-- Driving supply chain resilience by identifying alternative suppliers automatically  
-- Promoting data-driven procurement with secure handling of pricing intelligence
+## 🔄 Finance & Procurement Transformation Impact
+This project showcases how AI can reshape finance, procurement and supply chain management by:  
+- Automation of Workflows – Scheduled price checks, email/calendar integration, and Windows notifications reduce manual effort.
+- Data‑Driven Decisions – Apache Spark and MLflow enable big data analytics, scenario simulations, and supplier ranking.
+- Strategic Alignment – Embedding AI into procurement helps anticipate market changes, optimize contracts, and align with corporate strategy.
+- Cross‑Functional Efficiency – Integration with Gmail/Google Calendar/Windows embeds finance operations into enterprise workflows, reducing silos.
+- Cost Optimization – Predictive modeling and real‑time insights drive significant savings across categories.
+- Supply Chain Resilience – AI identifies alternative suppliers automatically, strengthening continuity.
+- Transparency & Compliance – Secure handling of pricing intelligence supports governance and accountability.
 
 ## 💡 Finance Skills Strengthened
 |Skill Area	|Specific Competencies|Business Impact|
@@ -359,6 +355,29 @@ SmartPriceComparison/
 ├── .gitignore                              # Git ignore file
 └── README.md                               # Project documentation
 ```
+
+## Why It Uses Backend
+In this project, the backend is where the heavy lifting happens:
+-	**Data collection & processing:** It fetches supplier price data, stores it in a database, and applies AI/ML models (like Random Forest, anomaly detection, reinforcement learning).
+-	**Business logic:** Multi-agent orchestration (e.g., Data Fetcher, Price Analyst, Report Generator) runs here.
+-	**APIs:** The backend exposes endpoints (via FastAPI) so the frontend can request forecasts, comparisons, and reports.
+-	**Security:** Credentials (database, Gmail, Google Calendar API keys) are managed here, away from the user interface.
+
+## Why It Uses Frontend
+The frontend is built with Next.js + React and serves as the user-facing layer:
+-	**User interface:** Provides dashboards, charts, and forms for input.
+-	**Visualization:** Displays supplier rankings, price forecasts, anomaly alerts, and historical trends using Recharts and Tailwind CSS.
+-	**Interaction:** Lets users configure inputs (supplier codes, schedule, API keys) without touching backend code.
+-	**Accessibility:** Makes the system usable for non-technical users by abstracting away the backend complexity.
+
+## Benefits of Splitting Backend & Frontend
+|Aspect           | Backend	Frontend    |
+|-----------------|---------------------|
+|Role|AI models, data pipelines, APIs	Dashboards, charts, input forms|
+|Tech stack|Python, FastAPI, Spark, MLflow, PostgreSQL, Redis	TypeScript, Next.js, React, Tailwind CSS|
+|Security|Protects credentials & sensitive data	Only interacts via API calls|
+|Scalability|Can run on Docker/Kubernetes clusters	Can be deployed separately (web app, desktop UI)|
+|Maintainability|Easier to update models & logic	Easier to redesign UI without touching backend|
 
 ## 📚 API Documentation
 
