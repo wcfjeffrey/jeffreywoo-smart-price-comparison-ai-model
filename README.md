@@ -334,7 +334,7 @@ SmartPriceComparison/
 │   │   ├── procurement_env.py              # OpenAI Gym environment
 │   │   └── train_agent.py                  # RL training script
 │   │
-│   └── mlflow/                         # MLFlow Models (optional)
+│   └── mlflow/                             # MLFlow Models (optional)
 │       └── price_predictor.py              # MLFlow neural network
 │
 ├── data/                                   # Data Processing
@@ -343,7 +343,7 @@ SmartPriceComparison/
 │   │
 │   ├── ingestion/                          # Data ingestion pipeline
 │   │   └── price_ingestion.py              # Data loader
-│   │
+│   │  
 │   └── warehouse/                          # Data warehouse (Parquet)
 │       ├── price_comparison.parquet
 │       └── historical_prices.parquet
