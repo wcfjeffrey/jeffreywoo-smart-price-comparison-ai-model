@@ -543,8 +543,6 @@ EMAIL_USER=your-email@gmail.com
 EMAIL_PASSWORD=your-app-password
 GOOGLE_CLIENT_ID=your-google-client-id
 GOOGLE_CLIENT_SECRET=your-google-client-secret
-GOOGLE_CALENDAR_ID=primary
-GOOGLE_REFRESH_TOKEN=your-google-refresh-token
 MLFLOW_TRACKING_URI=http://localhost:5000
 ```
 #### 3. Run with Docker Compose
