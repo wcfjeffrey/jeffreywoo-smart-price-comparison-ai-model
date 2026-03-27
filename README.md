@@ -417,7 +417,7 @@ This system uses two prediction engines working together:
 
 When combined, you get high prediction accuracy — far better than either method alone.
 
-### 📊 Reinforcement Learning (RL) in Smart Price Comparison
+### 📊 Reinforcement Learning (RL)
 |Aspect        | Explanation|
 |--------------|------------|
 |Environment | Defined in procurement_env.py using OpenAI Gym. Represents procurement scenarios with supplier prices, delivery times, and ratings.|
@@ -427,7 +427,7 @@ When combined, you get high prediction accuracy — far better than either metho
 |Reward Function | Rewards cost savings, reliable suppliers, and risk reduction. Penalizes poor choices (e.g., high cost, unreliable supplier).|
 |Learning Process | Agent runs thousands of episodes, updating its policy to maximize cumulative rewards. Over time, it discovers optimal procurement strategies.|
 
-### 🎯 Why RL is Used in This Project
+### 🎯 Why RL is Used?
 |Reason        |Benefit     |
 |--------------|------------|
 |Dynamic Decision|Making	RL adapts to changing supplier prices and market volatility, unlike static models.|
