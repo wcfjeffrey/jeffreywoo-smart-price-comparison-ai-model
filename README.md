@@ -349,7 +349,7 @@ SmartPriceComparison/
 └── README.md                               # Project documentation
 ```
 
-### 🖥️ Benefits of Splitting Backend & Frontend
+## 🖥️ Benefits of Splitting Backend & Frontend
 |Aspect           | Backend             |Frontend             |
 |-----------------|---------------------|---------------------|
 |Role|AI models, data pipelines, APIs|Dashboards, charts, input forms|
