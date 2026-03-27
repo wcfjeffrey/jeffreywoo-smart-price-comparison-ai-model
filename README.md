@@ -413,7 +413,7 @@ This system uses two prediction engines working together:
 |Engine | What It Does | Example|
 |-------|--------------|--------|
 |AI Engine | Manages orchestration, decision logic, and communication (understanding why prices change) | iPhone 17 Pro prices increased in the global market during 2026 due to structural factors such as rising component costs (DRAM and NAND memory), tariff impacts, and supply chain pressures.|
-|ML Engine | Provides the mathematical predictions and analytics (learning from historical patterns) | Analysis of three years of procurement data shows a consistent upward adjustment trend, with recurring cost escalations linked to memory price cycles, tariff effects, and supply chain disruptions.|
+|ML Engine | Provides the mathematical predictions and trend analysis (learning from historical patterns) | Analysis of three years of procurement data shows a consistent upward adjustment trend, with recurring cost escalations linked to memory price cycles, tariff effects, and supply chain disruptions.|
 
 When combined, you get high prediction accuracy — far better than either method alone.
 
