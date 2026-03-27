@@ -288,10 +288,6 @@ SmartPriceComparison/
 │   │   │
 │   │   └── main.py                         # FastAPI Application Entry Point
 │   │
-│   ├── data/                               # Persistent Data Storage
-│   │   ├── tasks.json                      # Task storage (fallback)
-│   │   └── price_comparison.db             # SQLite (fallback)
-│   │
 │   ├── requirements.txt                    # Python dependencies
 │   └── Dockerfile                          # Docker container configuration
 │
@@ -346,9 +342,6 @@ SmartPriceComparison/
 │
 ├── kubernetes/                             # Kubernetes Deployment
 │   └── deployment.yaml                     # K8s manifests
-│
-├── reports/                                # Generated Reports
-│   └── price_data_*.csv                    # Exported reports
 │
 ├── docker-compose.yml                      # Docker Compose configuration
 ├── .env                                    # Environment variables template (you need to create)
