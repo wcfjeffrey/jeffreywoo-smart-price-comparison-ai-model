@@ -412,39 +412,8 @@ This system uses two prediction engines working together:
 
 When combined, you get high prediction accuracy — far better than either method alone.
 
-### 🔄 MCP Task Scheduler for Task Management
-
-The system uses MCP (Message Control Protocol) to manage all scheduled tasks:
-
-<pre lang="markdown">
-┌─────────────────────────────────────────────────────────────────┐
-│                    Task Scheduling Flow                         │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                 │
-│  You create a task:                                             │
-│  "Check iPhone 17 Pro prices every Monday at 9 AM"              │
-│                              │                                  │
-│                              ▼                                  │
-│  ┌─────────────────────────────────────────────┐                │
-│  │            MCP Scheduler                    │                │
-│  │  • Stores your task                         │                │
-│  │  • Waits for Monday 9 AM                    │                │
-│  │  • Triggers the price check automatically   │                │
-│  └─────────────────────────────────────────────┘                │
-│                              │                                  │
-│                              ▼                                  │
-│  ┌─────────────────────────────────────────────┐                │
-│  │         Automatic Actions                   │                │
-│  │  • Fetch latest prices                      │                │
-│  │  • Compare with previous prices             │                │
-│  │  • Generate report                          │                │
-│  │  • Send notifications                       │                │
-│  └─────────────────────────────────────────────┘                │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘</pre>
-
 ### 🪄 What Happens When a Task Runs?
-When the scheduled price check runs, three things happen automatically:
+When the scheduled price check runs, 3 things happen automatically:
 
 #### 1. 🪟 Windows Desktop Notification
 Set up a price check once — the system handles everything else:
