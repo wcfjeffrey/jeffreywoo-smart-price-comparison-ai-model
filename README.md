@@ -168,7 +168,7 @@ This project showcases how AI can reshape procurement and supply chain managemen
 │                                                                             │
 │  ┌──────────────────┐    ┌──────────────────┐    ┌──────────────────┐       │
 │  │   Agent A        │    │   Agent B        │    │   Agent C        │       │
-│  │   Data Fetcher   │───▶│   Analyst       │───▶│   Reporter       │       │
+│  │   Data Fetcher   │───▶│   Analyst        │───▶│   Reporter       │       │
 │  │   (GPT-4o-ca)    │    │   (DeepSeek-V3)  │    │   (GPT-4.1-mini) │       │
 │  └──────────────────┘    └──────────────────┘    └──────────────────┘       │
 │          │                       │                       │                  │
