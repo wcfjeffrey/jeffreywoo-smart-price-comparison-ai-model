@@ -371,13 +371,13 @@ The frontend is built with Next.js + React and serves as the user-facing layer:
 -	**Accessibility:** Makes the system usable for non-technical users by abstracting away the backend complexity.
 
 ### Benefits of Splitting Backend & Frontend
-|Aspect           | Backend	Frontend    |
-|-----------------|---------------------|
-|Role|AI models, data pipelines, APIs	Dashboards, charts, input forms|
-|Tech stack|Python, FastAPI, Spark, MLflow, PostgreSQL, Redis	TypeScript, Next.js, React, Tailwind CSS|
-|Security|Protects credentials & sensitive data	Only interacts via API calls|
-|Scalability|Can run on Docker/Kubernetes clusters	Can be deployed separately (web app, desktop UI)|
-|Maintainability|Easier to update models & logic	Easier to redesign UI without touching backend|
+|Aspect           | Backend             |Frontend             |
+|-----------------|---------------------|---------------------|
+|Role|AI models, data pipelines, APIs|Dashboards, charts, input forms|
+|Tech stack|Python, FastAPI, Spark, MLflow, PostgreSQL, Redis|TypeScript, Next.js, React, Tailwind CSS|
+|Security|Protects credentials & sensitive data|Only interacts via API calls|
+|Scalability|Can run on Docker/Kubernetes clusters|Can be deployed separately (web app, desktop UI)|
+|Maintainability|Easier to update models & logic|Easier to redesign UI without touching backend|
 
 ## 📚 API Documentation
 
