@@ -446,6 +446,8 @@ Set up a price check once — the system handles everything else:
 │  📁 Files automatically organized in your Documents folder         │
 │       │                                                             │
 │       └── Reports/2026/January/iPhone 17 Pro_report_2026-01-25.html │
+│       └── Reports/2026/January/iPhone 17 Pro_report_2026-01-25.json │
+│       └── Reports/2026/January/iPhone 17 Pro_report_2026-01-25.csv  │
 │                                                                     │
 └─────────────────────────────────────────────────────────────────────┘</pre>
 
