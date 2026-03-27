@@ -128,13 +128,13 @@ This app leverages procurement, supply chain, and financial principles to automa
 
 ## 🔄 Finance & Procurement Transformation Impact
 This project showcases how AI can reshape finance, procurement and supply chain management by:  
-- Automation of Workflows – Scheduled price checks, email/calendar integration, and Windows notifications reduce manual effort.
-- Data‑Driven Decisions – Apache Spark and MLflow enable big data analytics, scenario simulations, and supplier ranking.
-- Strategic Alignment – Embedding AI into procurement helps anticipate market changes, optimize contracts, and align with corporate strategy.
-- Cross‑Functional Efficiency – Integration with Gmail/Google Calendar/Windows embeds finance operations into enterprise workflows, reducing silos.
-- Cost Optimization – Predictive modeling and real‑time insights drive significant savings across categories.
-- Supply Chain Resilience – AI identifies alternative suppliers automatically, strengthening continuity.
-- Transparency & Compliance – Secure handling of pricing intelligence supports governance and accountability.
+- **Automation of Workflows** – Scheduled price checks, email/calendar integration, and Windows notifications reduce manual effort.
+- **Data‑Driven Decisions** – Apache Spark and MLflow enable big data analytics, scenario simulations, and supplier ranking.
+- **Strategic Alignment** – Embedding AI into procurement helps anticipate market changes, optimize contracts, and align with corporate strategy.
+- **Cross‑Functional Efficiency** – Integration with Gmail/Google Calendar/Windows embeds finance operations into enterprise workflows, reducing silos.
+- **Cost Optimization** – Predictive modeling and real‑time insights drive significant savings across categories.
+- **Supply Chain Resilience** – AI identifies alternative suppliers automatically, strengthening continuity.
+- **Transparency & Compliance** – Secure handling of pricing intelligence supports governance and accountability.
 
 ## 💡 Finance Skills Strengthened
 |Skill Area	|Specific Competencies|Business Impact|
