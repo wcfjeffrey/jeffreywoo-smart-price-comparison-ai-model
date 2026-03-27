@@ -351,7 +351,7 @@ SmartPriceComparison/
 │   └── price_data_*.csv                    # Exported reports
 │
 ├── docker-compose.yml                      # Docker Compose configuration
-├── .env                                    # Environment variables template
+├── .env                                    # Environment variables template (you need to create)
 ├── .gitignore                              # Git ignore file
 └── README.md                               # Project documentation
 ```
