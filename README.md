@@ -406,7 +406,7 @@ Think of it as hiring three expert employees:
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘</pre>
 
-### 🧠 Hybrid AI + Machine Learning
+### 🧠 Artificial Intelligence (AI) + Machine Learning (ML) Hybrid Prediction
 
 This system uses two prediction engines working together:
 
