@@ -420,8 +420,8 @@ When combined, you get high prediction accuracy — far better than either metho
 ### 📊 Reinforcement Learning (RL)
 |Aspect        | Explanation|
 |--------------|------------|
-|Environment | Defined in procurement_env.py using OpenAI Gym. Represents procurement scenarios with supplier prices, delivery times, and ratings.|
-|Agent | Trained in train_agent.py using Q learning. Learns procurement strategies by interacting with the environment.|
+|Environment | Defined in `procurement_env.py` using OpenAI Gym. Represents procurement scenarios with supplier prices, delivery times, and ratings.|
+|Agent | Trained in `train_agent.py` using Q learning. Learns procurement strategies by interacting with the environment.|
 |State Space | Includes supplier attributes (price, reliability, delivery time) and market conditions.|
 |Action Space | Decisions such as: buy now vs. wait, choose supplier A vs. supplier B, adjust timing of purchase.|
 |Reward Function | Rewards cost savings, reliable suppliers, and risk reduction. Penalizes poor choices (e.g., high cost, unreliable supplier).|
@@ -430,7 +430,7 @@ When combined, you get high prediction accuracy — far better than either metho
 ### 🎯 Why RL is Used?
 |Reason        |Benefit     |
 |--------------|------------|
-|Dynamic Decision|Making	RL adapts to changing supplier prices and market volatility, unlike static models.|
+|Dynamic Decision Making|RL adapts to changing supplier prices and market volatility, unlike static models.|
 |Optimization|Learns strategies that minimize procurement costs while maintaining resilience.|
 |Scenario Simulation|Can simulate thousands of procurement scenarios to uncover strategies humans might miss.|
 |Continuous Improvement|Agent improves with more training episodes, refining supplier selection and timing.|
