@@ -258,11 +258,14 @@ export default function HomePage() {
         return <Mail className="h-4 w-4 text-blue-500" />;
       case 'calendar':
         return <GoogleCalendar className="h-4 w-4 text-green-500" />;
-      case 'both':
+      case 'windows':
+        return <Bell className="h-4 w-4 text-orange-500" />;
+      case 'all':
         return (
           <div className="flex gap-1">
             <Mail className="h-4 w-4 text-blue-500" />
             <GoogleCalendar className="h-4 w-4 text-green-500" />
+            <Bell className="h-4 w-4 text-orange-500" />
           </div>
         );
       default:
