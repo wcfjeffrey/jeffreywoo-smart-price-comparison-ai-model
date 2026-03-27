@@ -65,6 +65,16 @@
 - Apache Spark (Big Data Processing) for processing millions of price records across thousands of suppliers
 - MLflow for model versioning and experiment tracking
 
+## 🔄 Finance & Procurement Transformation Impact
+This project showcases how AI can reshape finance, procurement and supply chain management by:  
+- **Automation of Workflows** – Scheduled price checks, email/calendar integration, and Windows notifications reduce manual effort.
+- **Data‑Driven Decisions** – Apache Spark and MLflow enable big data analytics, scenario simulations, and supplier ranking.
+- **Strategic Alignment** – Embedding AI into procurement helps anticipate market changes, optimize contracts, and align with corporate strategy.
+- **Cross‑Functional Efficiency** – Integration with Gmail/Google Calendar/Windows embeds finance operations into enterprise workflows, reducing silos.
+- **Cost Optimization** – Predictive modeling and real‑time insights drive significant savings across categories.
+- **Supply Chain Resilience** – AI identifies alternative suppliers automatically, strengthening continuity.
+- **Transparency & Compliance** – Secure handling of pricing intelligence supports governance and accountability.
+
 ## 🚀 Why Choose JeffreyWoo Smart Price Comparison
 
 Most price comparison tools just show you today's prices. This system goes further — embedding AI into your procurement workflow so you can anticipate price changes, identify the best suppliers, optimize purchase timing, and align purchasing strategies with long-term business goals.
@@ -125,16 +135,6 @@ This app leverages procurement, supply chain, and financial principles to automa
 - **Price Shock Detection** — Flags sudden price changes >15% within 30 days for proactive mitigation
 - **Supply Chain Resilience** — Recommends supplier diversification strategies to safeguard against disruptions
 - **Risk Management Theory** — Anomaly detection and risk scoring apply statistical finance methods to identify volatility and supply risk
-
-## 🔄 Finance & Procurement Transformation Impact
-This project showcases how AI can reshape finance, procurement and supply chain management by:  
-- **Automation of Workflows** – Scheduled price checks, email/calendar integration, and Windows notifications reduce manual effort.
-- **Data‑Driven Decisions** – Apache Spark and MLflow enable big data analytics, scenario simulations, and supplier ranking.
-- **Strategic Alignment** – Embedding AI into procurement helps anticipate market changes, optimize contracts, and align with corporate strategy.
-- **Cross‑Functional Efficiency** – Integration with Gmail/Google Calendar/Windows embeds finance operations into enterprise workflows, reducing silos.
-- **Cost Optimization** – Predictive modeling and real‑time insights drive significant savings across categories.
-- **Supply Chain Resilience** – AI identifies alternative suppliers automatically, strengthening continuity.
-- **Transparency & Compliance** – Secure handling of pricing intelligence supports governance and accountability.
 
 ## 💡 Finance Skills Strengthened
 |Skill Area	|Specific Competencies|Business Impact|
