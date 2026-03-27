@@ -356,20 +356,6 @@ SmartPriceComparison/
 └── README.md                               # Project documentation
 ```
 
-### Why It Uses Backend
-In this project, the backend is where the heavy lifting happens:
--	**Data collection & processing:** It fetches supplier price data, stores it in a database, and applies AI/ML models (like Random Forest, anomaly detection, reinforcement learning).
--	**Business logic:** Multi-agent orchestration (e.g., Data Fetcher, Price Analyst, Report Generator) runs here.
--	**APIs:** The backend exposes endpoints (via FastAPI) so the frontend can request forecasts, comparisons, and reports.
--	**Security:** Credentials (database, Gmail, Google Calendar API keys) are managed here, away from the user interface.
-
-### Why It Uses Frontend
-The frontend is built with Next.js + React and serves as the user-facing layer:
--	**User interface:** Provides dashboards, charts, and forms for input.
--	**Visualization:** Displays supplier rankings, price forecasts, anomaly alerts, and historical trends using Recharts and Tailwind CSS.
--	**Interaction:** Lets users configure inputs (supplier codes, schedule, API keys) without touching backend code.
--	**Accessibility:** Makes the system usable for non-technical users by abstracting away the backend complexity.
-
 ### Benefits of Splitting Backend & Frontend
 |Aspect           | Backend             |Frontend             |
 |-----------------|---------------------|---------------------|
