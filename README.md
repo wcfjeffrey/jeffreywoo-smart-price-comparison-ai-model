@@ -188,7 +188,7 @@ This app leverages procurement, supply chain, and financial principles to automa
 │                                                                             │
 └─────────────────────────────────────────────────────────────────────────────┘</pre>
 
-## ⚡ Reasons of Using Multi-Agent Models
+## ⚡ Benefits of Multi‑Agent Models
 |Agent|Role|Model|Reason for Choice|
 |---------|-------------|-------------|-------------|
 |Agent A|Data Fetcher|GPT 4o ca|Optimized for fast, reliable data ingestion and structured parsing. Ensures accurate collection and cleaning of supplier/market data streams.|
