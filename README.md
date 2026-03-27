@@ -413,7 +413,7 @@ This system uses two prediction engines working together:
 When combined, you get high prediction accuracy — far better than either method alone.
 
 ### 🪄 What Happens When a Task Runs?
-When the scheduled price check runs, 3 things happen automatically:
+When the scheduled price check runs, 4 things happen automatically:
 
 #### 1. 🪟 Windows Desktop Notification
 Set up a price check once — the system handles everything else:
