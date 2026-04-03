@@ -598,7 +598,13 @@ API Documentation: http://localhost:8000/docs
 
 ## ⚖️ Disclaimer
 
-**JeffreyWoo Smart Price Comparison** provides AI-driven insights for informational purposes only. It does not replace professional procurement advice. Always verify critical purchasing decisions with qualified supply chain professionals.
+**JeffreyWoo Smart Price Comparison** provides AI-driven insights for informational, educational, and demonstration purposes only. It does not replace professional pricing, financial, or procurement advice.
+
+Price data may be sourced from third‑party websites or APIs and may not be accurate, complete, or up‑to‑date. The AI‑generated comparisons and recommendations are based on models that may produce errors or omissions.
+
+Always verify prices and terms directly with the merchant or official source before making any purchase decision. The developer assumes no liability for any losses, damages, or disputes arising from the use of this software.
+
+Use at your own risk.
 
 ## 📄 License
 
