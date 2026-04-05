@@ -191,9 +191,9 @@ This app leverages procurement, supply chain, and financial principles to automa
 ## ⚡ Benefits of Multi‑Agent Models
 |Agent|Role|Model|Reason for Choice|
 |---------|-------------|-------------|-------------|
-|Agent A|Data Fetcher|GPT 4o ca|Optimized for fast, reliable data ingestion and structured parsing. Ensures accurate collection and cleaning of supplier/market data streams.|
-|Agent B|Analyst|DeepSeek V3|Strong analytical reasoning and pattern detection. Excels at supplier ranking, anomaly detection, and predictive modeling.|
-|Agent C|Reporter|GPT 4.1 mini|Lightweight, fast, and cost efficient. Ideal for generating concise, human readable reports, alerts, and notifications.|
+|Agent A|Data Fetcher|GPT-4o-ca|A deployment of OpenAI’s GPT-4o model made available through ChatAnyWhere's Azure OpenAI Service. Optimized for fast, reliable data ingestion and structured parsing. Ensures accurate collection and cleaning of supplier/market data streams.|
+|Agent B|Analyst|DeepSeek-V3|A large-scale Mixture-of-Experts (MoE) language model with Dynamic Attention Routing (DAR) to allocate compute resources more intelligently. Strong analytical reasoning and pattern detection. Excels at supplier ranking, anomaly detection, and predictive modeling.|
+|Agent C|Reporter|GPT-4.1-mini|A lightweight, high-speed, and cost-efficient deployment of OpenAI’s GPT-4.1 model. Designed for everyday tasks where efficiency matters more than deep reasoning. Ideal for generating concise, human-readable reports, alerts, and notifications.|
 
 ## 📦 Data Pipeline
 <pre lang="markdown">
