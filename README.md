@@ -27,7 +27,7 @@
 
 > **Not your typical price comparison tool!**
 
-**JeffreyWoo Smart Price Comparison** is an enterprise-grade AI-powered procurement decision-making assistant app through multi-agent AI architecture (with multi‑LLM backbone), hybrid AI+ML predictions, reinforcement learning, and big data analytics with email/calendar integration to help procurement professionals, supply chain managers, and businesses make smarter, faster, and more confident purchasing decisions. It automatically compares prices, predicts future trends, detects anomalies, and optimizes procurement strategies, strengthening compliance, and enabling cost optimization.
+**JeffreyWoo Smart Price Comparison** is an enterprise-grade AI-powered procurement decision-making assistant app through multi-agent AI architecture (with a multi‑LLM backbone), hybrid AI+ML predictions, reinforcement learning, and big data analytics with seamless email and calendar integration to help procurement professionals, supply chain managers, and businesses make smarter, faster, and more confident purchasing decisions. It automatically compares prices, predicts future trends, detects anomalies, and optimizes procurement strategies, strengthening compliance, and enabling cost optimization.
 
 ## ✨ What It Does
 
