@@ -243,7 +243,7 @@ This app leverages procurement, supply chain, and financial principles to automa
 | Rerank Models	| Sentence-Transformers (Cross-Encoder)| 
 | Big Data	| Apache Spark (PySpark), Parquet| 
 | MLOps	| MLflow| 
-| Database	| PostgreSQL, Redis| 
+| Database	| PostgreSQL, Redis, SQL (complex queries, analytics, joins)| 
 | DevOps	| Docker, Kubernetes, GitHub Actions| 
 | APIs	| Google Calendar, Gmail, Windows API| 
 
