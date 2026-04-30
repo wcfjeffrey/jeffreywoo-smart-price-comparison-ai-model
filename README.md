@@ -251,6 +251,8 @@ This app leverages procurement, supply chain, and financial principles to automa
 
 ## 📐Data Flow and Logic Sequence
 
+The following diagram shows how the system's components work together in sequence — from user scheduling to multi-agent AI execution, hybrid predictions, reinforcement learning, and automated notifications.
+
 ```mermaid
 flowchart TD
     subgraph SCHEDULE["Phase 1: Scheduling"]
