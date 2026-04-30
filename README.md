@@ -596,6 +596,57 @@ Backend API: http://localhost:8000
 API Documentation: http://localhost:8000/docs
 ```
 
+## Data Flow and Logic Sequence
+
+```mermaid
+flowchart TD
+    subgraph SCHEDULE["Phase 1: Scheduling"]
+        direction TB
+        S1["User Configures Schedule"] --> S2["Select Product and Frequency"]
+        S2 --> S3["Set Daily/Weekly/Monthly"]
+        S3 --> S4["Task Saved to PostgreSQL"]
+    end
+
+    subgraph AGENT["Phase 2: Multi-Agent AI Execution"]
+        direction TB
+        A1["Agent A: Data Fetcher GPT-4o-ca"] --> A2["Fetch Prices from ChatAnywhere API"]
+        A2 --> A3["Agent B: Price Analyst DeepSeek-V3"]
+        A3 --> A4["Detect Anomalies >2.5 Std Dev"]
+        A4 --> A5["Calculate Risk Score 0-100"]
+        A5 --> A6["Rank Suppliers with Cross-Encoder"]
+        A6 --> A7["Agent C: Reporter GPT-4.1-mini"]
+        A7 --> A8["Generate HTML JSON CSV Reports"]
+    end
+
+    subgraph PREDICT["Phase 3: Hybrid Predictions"]
+        direction TB
+        P1["AI Engine LLM Reasoning"] --> P3["Why Prices Change"]
+        P2["ML Engine Random Forest"] --> P4["Numeric Forecasts"]
+        P3 --> P5["Hybrid High Accuracy Result"]
+        P4 --> P5
+    end
+
+    subgraph RL["Phase 4: Reinforcement Learning"]
+        direction TB
+        R1["Q-Learning Agent"] --> R2["2,000+ Training Episodes"]
+        R2 --> R3["Buy Now vs Wait Decision"]
+        R3 --> R4["Optimal Order Quantity"]
+    end
+
+    subgraph NOTIFY["Phase 5: Automated Notifications"]
+        direction TB
+        N1["Windows Desktop Pop-up"] --> N2["Email Report with Attachments"]
+        N2 --> N3["Google Calendar Meeting Invite"]
+        N3 --> N4["Files Saved to Documents/Reports"]
+    end
+
+    S4 --> A1
+    A8 --> N1
+    A3 --> P1
+    A3 --> P2
+    A6 --> R1
+```
+
 ## ⚖️ Disclaimer
 
 **JeffreyWoo Smart Price Comparison** provides AI-driven insights for informational, educational, and demonstration purposes only. It does not replace professional pricing, financial, or procurement advice.
