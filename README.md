@@ -32,33 +32,39 @@
 ## ✨ What It Does
 
 ### 📊 Real-Time Price Intelligence
+
 - Compare prices across multiple suppliers instantly using AI agents
 - Analyze price trends by day/week/month with predictive models
 - Track supplier performance (price, delivery time, rating) in real-time
 
 ### 🧠 AI-Powered Strategic Guidance
+
 - **Multi-Agent AI Architecture** — Three specialized AI agents (Data Fetcher, Price Analyst, Report Generator) work together like a team of experts
 - **Hybrid AI + ML Predictions** — Combines AI reasoning (why prices change) with ML accuracy (numeric forecasts) for high prediction accuracy
 - **Rerank Models** — Cross-encoder rerank models that understand trade-offs between price, delivery speed, and reliability for ranking vendors
 
 ### 🔍 Advanced Analytics & Automation
+
 - **Price Predictions** — Short-term (30-day) and long-term (90-day) forecasts with confidence scores
 - **Anomaly Detection** — Automatically detects price outliers (statistical anomalies >2.5 standard deviations), and provide anomaly alerts
 - **Risk Analysis** — Risk scores (0-100) with detailed risk factors (price volatility, limited supply, long delivery)
 - **Reinforcement Learning** — Q-learning agent that learns optimal purchasing strategies through 2,000+ training episodes
 
 ### ⏰ Task Automation & Notifications
+
 - **Scheduled Price Checks** — Daily/weekly/monthly automatic price monitoring
 - **Email Reports** — Delivery of HTML reports to emails (compatible with Gmail, Outlook, Exchange, and any SMTP-enabled email system)
 - **Calendar Integration** — Auto-creates review meetings with attendees and reminders (compatible with any calendar system that supports iCal/ICS format)
 - **Windows Desktop Notifications** — Real-time pop-up alerts when prices change
 
 ### 🌍 Multi-Market & Multi-Supplier Analysis
+
 - Supports any product category (electronics, office supplies, industrial equipment)
 - Unlimited supplier comparison with intelligent ranking
 - Historical trend analysis across 10+ years of price data
 
 ### 🔒 Enterprise-Grade Architecture
+
 - Built with Docker and Kubernetes for scalable deployment
 - PostgreSQL for persistent task and history storage
 - Redis for high-performance caching
@@ -66,6 +72,7 @@
 - MLflow for model versioning and experiment tracking
 
 ## 🔄 Finance & Procurement Transformation Impact
+
 This project showcases how AI can reshape finance, procurement and supply chain management by:  
 - **Automation of Workflows** – Scheduled price checks, email/calendar integration, and Windows notifications reduce manual effort.
 - **Data‑Driven Decisions** – Apache Spark and MLflow enable big data analytics, scenario simulations, and supplier ranking.
@@ -91,6 +98,7 @@ Most price comparison tools just show you today's prices. This system goes furth
 |Report Generation	|❌ Manual	|✅ Automatic (HTML/JSON/CSV)|
 
 ## 📈 Advanced Analytics
+
 |Feature	|Description|Business Impact|
 |---------|-----------|---------------|
 |Price Trend Analysis	|Statistical analysis of price movements over time|Improves forecasting accuracy, enabling finance teams to anticipate cost changes and optimize procurement timing|
@@ -100,6 +108,7 @@ Most price comparison tools just show you today's prices. This system goes furth
 |Bulk Purchase Optimization	|RL-driven recommendations for optimal order quantities|Minimizes holding and transaction costs while maximizing discounts, strengthening working capital efficiency|
 
 ## 🔐 Security & Authentication
+
 |Feature	|Description|Business Impact|
 |---------|-----------|---------------|
 |JWT Authentication|Secure token‑based authentication for user sessions|Ensures controlled access to procurement dashboards and financial data|
@@ -110,33 +119,39 @@ Most price comparison tools just show you today's prices. This system goes furth
 |Input Validation|Pydantic models enforce strict schema validation|Reduces errors, prevents injection attacks, and strengthens data integrity in procurement records|
 
 ## 📈 Financial & Procurement Theories Applied
+
 This app leverages procurement, supply chain, and financial principles to automate supplier evaluation, price analysis, and purchase decisions. It transforms raw price data into actionable insights for procurement managers, supply chain directors, and CFOs:
 
 ### 📊 Supplier Evaluation Framework
+
 - **Total Cost of Ownership (TCO)** — The app calculates true cost beyond purchase price, incorporating delivery time and quality ratings
 - **Supplier Scorecard** — Hybrid AI‑powered supplier evaluation combining deterministic weighted metrics (price 50% + delivery 20% + rating 30%) with a cross‑encoder neural network that understands semantic trade‑offs, delivering transparent, audit‑ready decision‑making by quantifying value beyond simple price comparisons
 - **Strategic Sourcing** — Identifies optimal supplier mix based on volume, urgency, and risk tolerance, aligning with corporate finance strategies
 - **Portfolio & Trade‑off Analysis** — Supplier rerank models balance price, speed, and reliability, echoing portfolio optimization theory
 
 ### 📉 Price Analysis & Forecasting
+
 - **Time Series Analysis** — Moving averages and trend detection for procurement cost forecasting
 - **Seasonal Adjustment** — Detects recurring cycles (e.g., Black Friday, new product launches) to optimize timing
 - **Volatility Measurement** — Standard deviation analysis for price stability and risk assessment
 - **Forecasting & Econometrics** — Hybrid AI + ML predictions (30‑day short‑term, 90‑day long‑term) apply econometric forecasting principles to procurement costs
 
 ### 🎯 Procurement Optimization
+
 - **Economic Order Quantity (EOQ)** — Reinforcement learning (RL) driven recommendations for optimal order quantities to minimize holding and transaction costs
 - **Bulk Purchase Optimization** — Q-learning agent learns when bulk discounts justify larger orders
 - **Inventory Timing** — Predicts optimal purchase windows based on price trends, strengthening working capital management
 - **Cost Optimization & Purchasing Timing** — Reinforcement learning simulates optimal buying strategies, echoing EOQ and dynamic pricing theory
 
 ### 🔬 Risk Management
+
 - **Supplier Risk Scoring** — Identifies single-supplier dependencies and concentration risk
 - **Price Shock Detection** — Flags sudden price changes >15% within 30 days for proactive mitigation
 - **Supply Chain Resilience** — Recommends supplier diversification strategies to safeguard against disruptions
 - **Risk Management Theory** — Anomaly detection and risk scoring apply statistical finance methods to identify volatility and supply risk
 
 ## 💡 Finance Skills Strengthened
+
 |Skill Area	|Specific Competencies|Business Impact|
 |-----------|---------------------|---------------|
 |Analytical Skills | Applied AI/ML predictive modeling to interpret complex financial data and identify actionable insights | Enhances forecasting accuracy, supports smarter purchasing, and strengthens data-driven decision making|
@@ -146,6 +161,7 @@ This app leverages procurement, supply chain, and financial principles to automa
 |Reporting & Communication | Automated generation of HTML, JSON, and CSV reports for stakeholders |	Improves transparency, accelerates decision cycles, and strengthens executive communication|
 
 ## ⭐ Technical Skills Strengthened
+
 |Skill Area	| Specific Competencies|Business Impact|
 |-----------|----------------------|---------------|
 |AI/ML Engineering | Multi-agent systems, LLM integration (GPT-4o-ca, DeepSeek-V3, GPT-4.1-mini), hybrid AI+ML predictions, cross-encoder rerank models, reinforcement learning (Q-learning)|Enables smarter procurement decisions, supplier ranking, and predictive cost optimization — directly improving financial efficiency and risk management|
@@ -157,6 +173,7 @@ This app leverages procurement, supply chain, and financial principles to automa
 |API Integration	| Google Calendar OAuth, Gmail SMTP, Windows API, ChatAnywhere LLM API|Embeds finance workflows into enterprise systems (scheduling, notifications, communication), breaking silos and improving cross‑functional efficiency|
 
 ## 🏗️ Multi-Agent AI System Architecture
+
 <pre lang="markdown">
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                   JeffreyWoo Smart Price Comparison                         │
@@ -189,6 +206,7 @@ This app leverages procurement, supply chain, and financial principles to automa
 └─────────────────────────────────────────────────────────────────────────────┘</pre>
 
 ## ⚡ Benefits of Multi‑Agent Models
+
 |Agent|Role|Model|Reason for Choice|
 |---------|-------------|-------------|-------------|
 |Agent A|Data Fetcher|GPT-4o-ca|A deployment of OpenAI’s GPT-4o model made available through ChatAnyWhere's Azure OpenAI Service. Optimized for fast, reliable data ingestion and structured parsing. Ensures accurate collection and cleaning of supplier/market data streams.|
@@ -196,6 +214,7 @@ This app leverages procurement, supply chain, and financial principles to automa
 |Agent C|Reporter|GPT-4.1-mini|A lightweight, high-speed, and cost-efficient deployment of OpenAI’s GPT-4.1 model. Designed for everyday tasks where efficiency matters more than deep reasoning. Ideal for generating concise, human-readable reports, alerts, and notifications.|
 
 ## 📦 Data Pipeline
+
 <pre lang="markdown">
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                         Complete Data Pipeline                              │
@@ -230,7 +249,188 @@ This app leverages procurement, supply chain, and financial principles to automa
 │                                                                             │
 └─────────────────────────────────────────────────────────────────────────────┘</pre>
 
+## 📐Data Flow and Logic Sequence
+
+```mermaid
+flowchart TD
+    subgraph SCHEDULE["Phase 1: Scheduling"]
+        direction TB
+        S1["User Configures Schedule"] --> S2["Select Product and Frequency"]
+        S2 --> S3["Set Daily/Weekly/Monthly"]
+        S3 --> S4["Task Saved to PostgreSQL"]
+    end
+
+    subgraph AGENT["Phase 2: Multi-Agent AI Execution"]
+        direction TB
+        A1["Agent A: Data Fetcher GPT-4o-ca"] --> A2["Fetch Prices from ChatAnywhere API"]
+        A2 --> A3["Agent B: Price Analyst DeepSeek-V3"]
+        A3 --> A4["Detect Anomalies >2.5 Std Dev"]
+        A4 --> A5["Calculate Risk Score 0-100"]
+        A5 --> A6["Rank Suppliers with Cross-Encoder"]
+        A6 --> A7["Agent C: Reporter GPT-4.1-mini"]
+        A7 --> A8["Generate HTML JSON CSV Reports"]
+    end
+
+    subgraph PREDICT["Phase 3: Hybrid Predictions"]
+        direction TB
+        P1["AI Engine LLM Reasoning"] --> P3["Why Prices Change"]
+        P2["ML Engine Random Forest"] --> P4["Numeric Forecasts"]
+        P3 --> P5["Hybrid High Accuracy Result"]
+        P4 --> P5
+    end
+
+    subgraph RL["Phase 4: Reinforcement Learning"]
+        direction TB
+        R1["Q-Learning Agent"] --> R2["2,000+ Training Episodes"]
+        R2 --> R3["Buy Now vs Wait Decision"]
+        R3 --> R4["Optimal Order Quantity"]
+    end
+
+    subgraph NOTIFY["Phase 5: Automated Notifications"]
+        direction TB
+        N1["Windows Desktop Pop-up"] --> N2["Email Report with Attachments"]
+        N2 --> N3["Google Calendar Meeting Invite"]
+        N3 --> N4["Files Saved to Documents/Reports"]
+    end
+
+    S4 --> A1
+    A8 --> N1
+    A3 --> P1
+    A3 --> P2
+    A6 --> R1
+```
+
+## 🧠 Explanation of JeffreyWoo Smart Price Comparison System Implementation
+
+### Three AI Agents
+
+Think of it as hiring three expert employees:
+
+<pre lang="markdown">
+┌─────────────────────────────────────────────────────────────────┐
+│                     Your AI Team                                │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  👤 Agent A: The Researcher                                    │
+│     • Goes out and finds prices from all suppliers              │
+│     • Reads through supplier websites and catalogs              │
+│     • Brings back all the raw data                              │
+│                                                                 │
+│  👤 Agent B: The Analyst                                       │
+│     • Looks at all the data and finds patterns                  │
+│     • Spots anomalies (prices that don't make sense)            │
+│     • Predicts future price movements                           │
+│                                                                 │
+│  👤 Agent C: The Reporter                                      │
+│     • Creates beautiful reports with charts and tables          │
+│     • Writes easy-to-understand recommendations                 │
+│     • Sends everything to your email and calendar               │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘</pre>
+
+### 🪄 What Happens When a Task Runs?
+
+When the scheduled price check runs, 4 things happen automatically:
+
+#### 1. 🪟 Windows Desktop Notification
+
+Set up a price check once — the system handles everything else:
+- ⏰ **Scheduled Checks**	— Daily / Weekly / Monthly automatic price checks
+- 📧 **Email Reports**	— Get price reports in HTML
+- 📅 **Calendar Events**	— Auto-create Google Calendar meetings to review prices
+- 💬 **Desktop Alerts**	— Windows notifications when prices change
+
+<pre lang="markdown">
+┌─────────────────────────────────────────────────────────────────────┐
+│                  What Happens Automatically                         │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  Monday 9:00 AM                                                     │
+│       │                                                             │
+│       ▼                                                             │
+│  📊 System checks prices (takes 5 seconds)                         │
+│       │                                                             │
+│       ▼                                                             │
+│  💬 Windows Desktop Notification: "🔔 Price check complete!        │
+│      iPhone 17 Pro prices have been updated.                        │
+│      Best price: $1,129.99 at GadgetHub"                            │
+│       │                                                             │
+│       ▼                                                             │
+│  📁 Files automatically organized in your Documents folder         │
+│       │                                                             │
+│       └── Reports/2026/January/iPhone 17 Pro_report_2026-01-25.html │
+│       └── Reports/2026/January/iPhone 17 Pro_report_2026-01-25.json │
+│       └── Reports/2026/January/iPhone 17 Pro_report_2026-01-25.csv  │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘</pre>
+
+#### 2. 📧 Email Report
+
+You automatically receive an email with:
+- 📊 **HTML Report** — Beautifully formatted HTML summary for printing or sharing arrives in your inbox
+- 📄 **JSON File** — Easily imported into Power BI, Tableau, Power Query, or turned into a spreadsheet by any converters for further analysis
+- 📁 **CSV File** — Raw data for your own analysis
+
+#### 3. 🗓️ Google Calendar Event
+
+A meeting is automatically created in your Google Calendar (e.g., including reminders set for 1 day before and 10 minutes before):
+
+```bash
+📅 Weekly Price Review: iPhone 17 Pro
+📆 Monday at 9:00 AM
+👥 Invited: procurement@company.com
+📝 Agenda: Review price trends, discuss purchasing strategy
+```
+
+#### 4. 🗂️ Files Automatically Organized
+
+Windows automatically saves all reports in organized folders:
+
+```text
+Documents/Reports/
+├── 2026/
+│   ├── January/
+│   │   ├── iPhone 17 Pro_report_2026-01-25.html
+│   │   ├── iPhone 17 Pro_report_2026-01-25.json
+│   │   └── iPhone 17 Pro_report_2026-01-25.csv
+│   └── February/
+│       └── iPhone 17 Pro_report_2026-02-25.html
+```
+
+### 🧠 Artificial Intelligence (AI) + Machine Learning (ML) Hybrid Prediction
+
+This system uses two prediction engines working together:
+
+|Engine | What It Does | Example|
+|-------|--------------|--------|
+|AI Engine | Manages orchestration, decision logic, and communication (understanding why prices change) | iPhone 17 Pro prices increased in the global market during 2026 due to structural factors such as rising component costs (DRAM and NAND memory), tariff impacts, and supply chain pressures.|
+|ML Engine | Provides the mathematical predictions and trend analysis (learning from historical patterns) | Analysis of three years of procurement data shows a consistent upward adjustment trend, with recurring cost escalations linked to memory price cycles, tariff effects, and supply chain disruptions.|
+
+When combined, you get high prediction accuracy — far better than either method alone.
+
+### 📊 Reinforcement Learning (RL)
+
+|Aspect        | Explanation|
+|--------------|------------|
+|Environment | Defined in `procurement_env.py` using OpenAI Gym. Represents procurement scenarios with supplier prices, delivery times, and ratings.|
+|Agent | Trained in `train_agent.py` using Q learning. Learns procurement strategies by interacting with the environment.|
+|State Space | Includes supplier attributes (price, reliability, delivery time) and market conditions.|
+|Action Space | Decisions such as: buy now vs. wait, choose supplier A vs. supplier B, adjust timing of purchase.|
+|Reward Function | Rewards cost savings, reliable suppliers, and risk reduction. Penalizes poor choices (e.g., high cost, unreliable supplier).|
+|Learning Process | Agent runs thousands of episodes, updating its policy to maximize cumulative rewards. Over time, it discovers optimal procurement strategies.|
+
+### 🎯 Why RL is Used?
+
+|Reason        |Benefit     |
+|--------------|------------|
+|Dynamic Decision Making|RL adapts to changing supplier prices and market volatility, unlike static models.|
+|Optimization|Learns strategies that minimize procurement costs while maintaining resilience.|
+|Scenario Simulation|Can simulate thousands of procurement scenarios to uncover strategies humans might miss.|
+|Continuous Improvement|Agent improves with more training episodes, refining supplier selection and timing.|
+|Strategic Value|Helps finance and procurement teams anticipate market changes and optimize contracts.|
+
 ## 🤖 Tech Stack
+
 | Category| Technologies| 
 |---------|-------------|
 | Language	| Python, TypeScript| 
@@ -257,6 +457,7 @@ This app leverages procurement, supply chain, and financial principles to automa
 |Business Owners | Competitive intelligence, margin improvement|
 
 ## 📑 Project Structure
+
 ```text
 SmartPriceComparison/
 │
@@ -357,6 +558,7 @@ SmartPriceComparison/
 ```
 
 ## 🖥️ Benefits of Splitting Backend & Frontend
+
 |Aspect           | Backend             |Frontend             |
 |-----------------|---------------------|---------------------|
 |Role|AI models, data pipelines, APIs|Dashboards, charts, input forms|
@@ -377,128 +579,6 @@ SmartPriceComparison/
 |GET	/api/products/compare/{name}	|Product analysis|
 |GET	/api/reports/download/{name}	|Download report|
 |GET	/api/notifications/test-email	|Test email notification|
-
-## 🧠 Explanation of JeffreyWoo Smart Price Comparison System Implementation
-
-### Three AI Agents
-
-Think of it as hiring three expert employees:
-
-<pre lang="markdown">
-┌─────────────────────────────────────────────────────────────────┐
-│                     Your AI Team                                │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                 │
-│  👤 Agent A: The Researcher                                    │
-│     • Goes out and finds prices from all suppliers              │
-│     • Reads through supplier websites and catalogs              │
-│     • Brings back all the raw data                              │
-│                                                                 │
-│  👤 Agent B: The Analyst                                       │
-│     • Looks at all the data and finds patterns                  │
-│     • Spots anomalies (prices that don't make sense)            │
-│     • Predicts future price movements                           │
-│                                                                 │
-│  👤 Agent C: The Reporter                                      │
-│     • Creates beautiful reports with charts and tables          │
-│     • Writes easy-to-understand recommendations                 │
-│     • Sends everything to your email and calendar               │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘</pre>
-
-### 🧠 Artificial Intelligence (AI) + Machine Learning (ML) Hybrid Prediction
-
-This system uses two prediction engines working together:
-
-|Engine | What It Does | Example|
-|-------|--------------|--------|
-|AI Engine | Manages orchestration, decision logic, and communication (understanding why prices change) | iPhone 17 Pro prices increased in the global market during 2026 due to structural factors such as rising component costs (DRAM and NAND memory), tariff impacts, and supply chain pressures.|
-|ML Engine | Provides the mathematical predictions and trend analysis (learning from historical patterns) | Analysis of three years of procurement data shows a consistent upward adjustment trend, with recurring cost escalations linked to memory price cycles, tariff effects, and supply chain disruptions.|
-
-When combined, you get high prediction accuracy — far better than either method alone.
-
-### 📊 Reinforcement Learning (RL)
-|Aspect        | Explanation|
-|--------------|------------|
-|Environment | Defined in `procurement_env.py` using OpenAI Gym. Represents procurement scenarios with supplier prices, delivery times, and ratings.|
-|Agent | Trained in `train_agent.py` using Q learning. Learns procurement strategies by interacting with the environment.|
-|State Space | Includes supplier attributes (price, reliability, delivery time) and market conditions.|
-|Action Space | Decisions such as: buy now vs. wait, choose supplier A vs. supplier B, adjust timing of purchase.|
-|Reward Function | Rewards cost savings, reliable suppliers, and risk reduction. Penalizes poor choices (e.g., high cost, unreliable supplier).|
-|Learning Process | Agent runs thousands of episodes, updating its policy to maximize cumulative rewards. Over time, it discovers optimal procurement strategies.|
-
-### 🎯 Why RL is Used?
-|Reason        |Benefit     |
-|--------------|------------|
-|Dynamic Decision Making|RL adapts to changing supplier prices and market volatility, unlike static models.|
-|Optimization|Learns strategies that minimize procurement costs while maintaining resilience.|
-|Scenario Simulation|Can simulate thousands of procurement scenarios to uncover strategies humans might miss.|
-|Continuous Improvement|Agent improves with more training episodes, refining supplier selection and timing.|
-|Strategic Value|Helps finance and procurement teams anticipate market changes and optimize contracts.|
-
-### 🪄 What Happens When a Task Runs?
-When the scheduled price check runs, 4 things happen automatically:
-
-#### 1. 🪟 Windows Desktop Notification
-Set up a price check once — the system handles everything else:
-- ⏰ **Scheduled Checks**	— Daily / Weekly / Monthly automatic price checks
-- 📧 **Email Reports**	— Get price reports in HTML
-- 📅 **Calendar Events**	— Auto-create Google Calendar meetings to review prices
-- 💬 **Desktop Alerts**	— Windows notifications when prices change
-
-<pre lang="markdown">
-┌─────────────────────────────────────────────────────────────────────┐
-│                  What Happens Automatically                         │
-├─────────────────────────────────────────────────────────────────────┤
-│                                                                     │
-│  Monday 9:00 AM                                                     │
-│       │                                                             │
-│       ▼                                                             │
-│  📊 System checks prices (takes 5 seconds)                         │
-│       │                                                             │
-│       ▼                                                             │
-│  💬 Windows Desktop Notification: "🔔 Price check complete!        │
-│      iPhone 17 Pro prices have been updated.                        │
-│      Best price: $1,129.99 at GadgetHub"                            │
-│       │                                                             │
-│       ▼                                                             │
-│  📁 Files automatically organized in your Documents folder         │
-│       │                                                             │
-│       └── Reports/2026/January/iPhone 17 Pro_report_2026-01-25.html │
-│       └── Reports/2026/January/iPhone 17 Pro_report_2026-01-25.json │
-│       └── Reports/2026/January/iPhone 17 Pro_report_2026-01-25.csv  │
-│                                                                     │
-└─────────────────────────────────────────────────────────────────────┘</pre>
-
-#### 2. 📧 Email Report
-You automatically receive an email with:
-- 📊 **HTML Report** — Beautifully formatted HTML summary for printing or sharing arrives in your inbox
-- 📄 **JSON File** — Easily imported into Power BI, Tableau, Power Query, or turned into a spreadsheet by any converters for further analysis
-- 📁 **CSV File** — Raw data for your own analysis
-
-#### 3. 🗓️ Google Calendar Event
-A meeting is automatically created in your Google Calendar (e.g., including reminders set for 1 day before and 10 minutes before):
-
-```bash
-📅 Weekly Price Review: iPhone 17 Pro
-📆 Monday at 9:00 AM
-👥 Invited: procurement@company.com
-📝 Agenda: Review price trends, discuss purchasing strategy
-```
-
-#### 4. 🗂️ Files Automatically Organized
-Windows automatically saves all reports in organized folders:
-
-```text
-Documents/Reports/
-├── 2026/
-│   ├── January/
-│   │   ├── iPhone 17 Pro_report_2026-01-25.html
-│   │   ├── iPhone 17 Pro_report_2026-01-25.json
-│   │   └── iPhone 17 Pro_report_2026-01-25.csv
-│   └── February/
-│       └── iPhone 17 Pro_report_2026-02-25.html
-```
 
 ## 📋 Sample
 
@@ -594,57 +674,6 @@ npm run dev
 Frontend: http://localhost:3000
 Backend API: http://localhost:8000
 API Documentation: http://localhost:8000/docs
-```
-
-## 📐Data Flow and Logic Sequence
-
-```mermaid
-flowchart TD
-    subgraph SCHEDULE["Phase 1: Scheduling"]
-        direction TB
-        S1["User Configures Schedule"] --> S2["Select Product and Frequency"]
-        S2 --> S3["Set Daily/Weekly/Monthly"]
-        S3 --> S4["Task Saved to PostgreSQL"]
-    end
-
-    subgraph AGENT["Phase 2: Multi-Agent AI Execution"]
-        direction TB
-        A1["Agent A: Data Fetcher GPT-4o-ca"] --> A2["Fetch Prices from ChatAnywhere API"]
-        A2 --> A3["Agent B: Price Analyst DeepSeek-V3"]
-        A3 --> A4["Detect Anomalies >2.5 Std Dev"]
-        A4 --> A5["Calculate Risk Score 0-100"]
-        A5 --> A6["Rank Suppliers with Cross-Encoder"]
-        A6 --> A7["Agent C: Reporter GPT-4.1-mini"]
-        A7 --> A8["Generate HTML JSON CSV Reports"]
-    end
-
-    subgraph PREDICT["Phase 3: Hybrid Predictions"]
-        direction TB
-        P1["AI Engine LLM Reasoning"] --> P3["Why Prices Change"]
-        P2["ML Engine Random Forest"] --> P4["Numeric Forecasts"]
-        P3 --> P5["Hybrid High Accuracy Result"]
-        P4 --> P5
-    end
-
-    subgraph RL["Phase 4: Reinforcement Learning"]
-        direction TB
-        R1["Q-Learning Agent"] --> R2["2,000+ Training Episodes"]
-        R2 --> R3["Buy Now vs Wait Decision"]
-        R3 --> R4["Optimal Order Quantity"]
-    end
-
-    subgraph NOTIFY["Phase 5: Automated Notifications"]
-        direction TB
-        N1["Windows Desktop Pop-up"] --> N2["Email Report with Attachments"]
-        N2 --> N3["Google Calendar Meeting Invite"]
-        N3 --> N4["Files Saved to Documents/Reports"]
-    end
-
-    S4 --> A1
-    A8 --> N1
-    A3 --> P1
-    A3 --> P2
-    A6 --> R1
 ```
 
 ## ⚖️ Disclaimer
