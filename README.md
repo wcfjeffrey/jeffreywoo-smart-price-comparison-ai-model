@@ -253,6 +253,16 @@ This app leverages procurement, supply chain, and financial principles to automa
 
 The following diagram shows how the system's components work together in sequence — from user scheduling to multi-agent AI execution, hybrid predictions, reinforcement learning, and automated notifications.
 
+> **How to read this diagram:** The system follows 5 sequential phases:
+> 
+> | Phase | Name | Key Activities |
+> |-------|------|----------------|
+> | **1** | **Scheduling** | User configures schedule, selects product, sets frequency → task saved to PostgreSQL |
+> | **2** | **Multi-Agent AI Execution** | Agent A (Data Fetcher) → Agent B (Analyst: anomaly detection, risk scoring, supplier ranking) → Agent C (Reporter: generates HTML/JSON/CSV reports) |
+> | **3** | **Hybrid Predictions** | AI Engine (LLM reasoning: why prices change) + ML Engine (Random Forest: numeric forecasts) → high accuracy result |
+> | **4** | **Reinforcement Learning** | Q-learning agent (2,000+ episodes) → buy now vs. wait decision → optimal order quantity |
+> | **5** | **Automated Notifications** | Windows pop-up → email report with attachments → Google Calendar meeting invite → files saved to Documents/Reports |
+
 ```mermaid
 flowchart TD
     subgraph SCHEDULE["Phase 1: Scheduling"]
