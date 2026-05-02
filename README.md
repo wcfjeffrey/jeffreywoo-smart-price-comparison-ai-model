@@ -688,6 +688,44 @@ Backend API: http://localhost:8000
 API Documentation: http://localhost:8000/docs
 ```
 
+## References
+
+**AI & Language Models**
+
+- [OpenAI. (2024). *GPT-4o* (Large language model).](https://openai.com/index/hello-gpt-4o/)
+- [DeepSeek-AI. (2024). *DeepSeek-V3* (Mixture-of-Experts language model).](https://github.com/deepseek-ai/DeepSeek-V3)
+- [ChatAnywhere. (2024). ChatAnywhere API. (Platform providing access to LLMs).](https://chatanywhere.tech)
+
+**Machine Learning & Reinforcement Learning Frameworks**
+
+- [Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J., Passos, A., Cournapeau, D., Brucher, M., Perrot, M., & Duchesnay, É. (2011). Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research, 12, 2825–2830.](https://jmlr.csail.mit.edu/papers/v12/pedregosa11a.html)
+- [Brockman, G., Cheung, V., Pettersson, L., Schneider, J., Schulman, J., Tang, J., & Zaremba, W. (2016). OpenAI Gym (Reinforcement learning toolkit). arXiv preprint arXiv:1606.01540.](https://arxiv.org/abs/1606.01540)
+- [Watkins, C. J. C. H., & Dayan, P. (1992). Q-learning. Machine Learning, 8(3), 279–292.](https://henriquetmaia.github.io/pdf/papers/watkins1992.pdf)
+
+**Rerank Model (Cross-Encoder Model ms-marco-MiniLM-L-6-v2)**
+
+- [Reimers, N., & Gurevych, I. (2019). Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks. In *Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)* (pp. 3982–3992). Association for Computational Linguistics.](https://aclanthology.org/D19-1410/)
+- [Model specific: The model is fine-tuned on the MS MARCO Passage Ranking dataset. Cite: Nguyen, T., Rosenberg, M., Song, X., Gao, J., Tiwary, S., Majumder, R., & Deng, L. (2016). MS MARCO: A Human Generated MAchine Reading COmprehension Dataset. arXiv preprint arXiv:1611.09268.](https://arxiv.org/abs/1611.09268)
+
+**Big Data, MLOps, & Backend Frameworks**
+
+- [Zaharia, M., Xin, R. S., Wendell, P., Das, T., Armbrust, M., Dave, A., Meng, X., Rosen, J., Venkataraman, S., Franklin, M. J., Ghodsi, A., Gonzalez, J., Shenker, S., & Stoica, I. (2016). Apache Spark: A Unified Engine for Big Data Processing. Communications of the ACM, 59(11), 56–65.](https://dl.acm.org/doi/10.1145/2934664)
+- [Chen, A., Chow, A., Davidson, A., DCunha, A., Ghodsi, A., Hong, S. A., Konwinski, A., Mewald, C., Murching, P., Nykodym, T., Ogilvie, M., Parkhe, M., Singh, A., Xie, Z., Zaharia, M., Zumar, C., & Zhang, M. (2022). MLflow: A Platform for Managing the Machine Learning Lifecycle. arXiv preprint arXiv:2211.08525.](https://arxiv.org/abs/2211.08525)
+- [Ramírez, A. (2024). FastAPI (Web framework for building APIs).](https://fastapi.tiangolo.com/)
+- [Vercel. (2025). Next.js: The React Framework for the Web (JavaScript framework).](https://nextjs.org/)
+
+**Database & Caching Systems**
+
+- [The PostgreSQL Global Development Group. (2025). PostgreSQL: The World's Most Advanced Open Source Relational Database (Database system).](https://www.postgresql.org/)
+- [Redis Labs. (2025). Redis: The Real-time Data Platform (In-memory data structure store).](https://redis.io/)
+
+**Financial & Procurement Theories Mentioned**
+
+- [Total Cost of Ownership (TCO): Ellram, L. M. (1995). Total cost of ownership: an analysis approach for purchasing. International Journal of Physical Distribution & Logistics Management, 25(8), 4–23.](https://www.researchgate.net/publication/235292888_Total_Cost_of_Ownership_An_Analysis_Approach_for_Purchasing)
+- [Economic Order Quantity (EOQ): Harris, F. W. (1913). How Many Parts to Make at Once. Factory, The Magazine of Management, 10(2), 135–136, 152.](https://userhome.brooklyn.cuny.edu/irudowsky/CIS10.31/articles/EOQModel-OriginalPaper.pdf)
+- [Portfolio Optimization (referenced in "Portfolio & Trade-off Analysis"): Markowitz, H. (1952). Portfolio Selection. The Journal of Finance, 7(1), 77–91.](https://www.researchgate.net/publication/228051028_Portfolio_Selection)
+- [Seasonal Adjustment / Time Series Analysis: Box, G. E. P., Jenkins, G. M., Reinsel, G. C., & Ljung, G. M. (2015). Time Series Analysis: Forecasting and Control (5th ed.). John Wiley & Sons. (Original work published 1970)](https://www.researchgate.net/publication/299459188_Time_Series_Analysis_Forecasting_and_Control5th_Edition_by_George_E_P_Box_Gwilym_M_Jenkins_Gregory_C_Reinsel_and_Greta_M_Ljung_2015_Published_by_John_Wiley_and_Sons_Inc_Hoboken_New_Jersey_pp_712_ISBN_)
+
 ## ⚖️ Disclaimer
 
 **JeffreyWoo Smart Price Comparison** provides AI-driven insights for informational, educational, and demonstration purposes only. It does not replace professional pricing, financial, or procurement advice.
